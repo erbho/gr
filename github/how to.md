@@ -3,7 +3,7 @@
 
 Follow A or B below:
 
-##A. Already has remote repository in Github and no local repository folder
+## A. Already has remote repository in Github and no local repository folder
 
 3. Start VS Code, click on Explorer icon (top left)
 
@@ -21,7 +21,7 @@ Follow A or B below:
 
 
 
-##B. No file in remote repository in Gitub but added files to local repository folder
+## B. No file in remote repository in Gitub but added files to local repository folder
 
 3. Start VS Code, click on Explorer icon (top left)
 
@@ -62,7 +62,7 @@ Follow A or B below:
 19. The local repository is saved to the remote repository on github and changes will be tracked
 
 
-After completing new coding:
+## After completing new coding:
 
 a. Click on Source Control icon (third icon on left)
 
