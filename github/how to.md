@@ -3,7 +3,7 @@
 
 Follow A or B below:
 
-A. Already has remote repository in Github and no local repository folder
+##A. Already has remote repository in Github and no local repository folder
 
 3. Start VS Code, click on Explorer icon (top left)
 
@@ -21,7 +21,7 @@ A. Already has remote repository in Github and no local repository folder
 
 
 
-B. No file in remote repository in Gitub but added files to local repository folder
+##B. No file in remote repository in Gitub but added files to local repository folder
 
 3. Start VS Code, click on Explorer icon (top left)
 
