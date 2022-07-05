@@ -2,6 +2,7 @@
 2. Create a GitHub account
 
 Follow A or B below:
+
 A. Already has remote repository in Github and no local repository folder
 3. Start VS Code, click on Explorer icon (top left)
 4. Select Clone Repository
