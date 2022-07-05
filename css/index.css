@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Noto Sans TC' !important;
+    margin: 0;
 }
 
 .bgColor{
@@ -14,11 +15,12 @@ body {
 }
 
 .greenRentalLogo{
-    width: 215px;
+    width: 210px;
     position: absolute;
     top: 0;
     margin-left: 2rem;
 }
+
 
 .nav-car{
     width: 45px;
@@ -28,13 +30,14 @@ body {
 }
 
 .building-img{
-    width: 350px;
+    width: 100%;
 }
 
 
 
 /* -----------side bar---------- */
 .sideBarFilter{
-    background-color: rgb(85, 85, 85);
-    height: 450px;
+    background-color: rgba(169, 169, 169, 0.6);
+    width: 100%;
+    border-radius: 20px;
 }
