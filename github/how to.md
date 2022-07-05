@@ -1,3 +1,5 @@
+# Connecting VS Code and Github
+
 1. Install Git and VS Code
 2. Create a GitHub account
 
