@@ -15,7 +15,7 @@ Follow A or B below:
 
 6. Select local folder to save repository
 
-7. VS Code with redirect to github login on browser
+7. VS Code will redirect to github login on browser
 
 8. Login to github on browser(if already logged in, browser may show local host error - this is OK, just return to VS Code)
 
@@ -45,23 +45,25 @@ Follow A or B below:
 
 12. Enter a name for the repository (can be different from the folder name)
 
-13. Click on "Terminal" on the top menu bar, open a new terminal
+13. VS Code will redirect to github login on browser
 
-14. In the terminal, enter the following commands:
+14. Login to github on browser(if already logged in, browser may show local host error - this is OK, just return to VS Code)Click on "Terminal" on the top menu bar, open a new terminal
+
+15. In the terminal, enter the following commands:
 
 > git config --global user.name "username" (your github user name)
 
 > git config --global user.email "email" (your github user email)
 
-15. Enter "exit" to close the terminal
+16. Enter "exit" to close the terminal
 
-16. Hover over "Changes" in the left menu and click on "+"
+17. Hover over "Changes" in the left menu and click on "+"
 
-17. Type a comment (cannot be blank) in the box with "Message (Ctrl+Enter to commit on'main')"
+18. Type a comment (cannot be blank) in the box with "Message (Ctrl+Enter to commit on'main')"
 
-18. Click the "tick" icon, then click on "Publish the branch"
+19. Click the "tick" icon, then click on "Publish the branch"
 
-19. The local repository is saved to the remote repository on github and changes will be tracked
+20. The local repository is saved to the remote repository on github and changes will be tracked
 
 
 ## After completing new coding:
