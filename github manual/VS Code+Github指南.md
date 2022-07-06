@@ -45,23 +45,27 @@
 
 12. 輸入存儲庫的名稱（可以與電腦文件夾名稱不同）
 
-13. 點擊頂部菜單欄上的“Terminal”，選擇"New Terminal"
+13. VS Code會轉到瀏覽器上登錄您的github帳戶
 
-14. 在Terminal中，輸入以下指令：
+14. 在瀏覽器上登錄您的github帳戶（如果已經登錄，瀏覽器可能會顯示local host error，只需返回 VS Code）
+
+15. 點擊頂部菜單欄上的“Terminal”，選擇"New Terminal"
+
+16. 在Terminal中，輸入以下指令：
 
     git config --global user.name "username" (你的github用戶名)
 
     git config --global user.email "email" (你的github郵箱)
 
-15. 輸入“exit”關閉Terminal
+17. 輸入“exit”關閉Terminal
 
-16. 將鼠標懸停在左側菜單中的“Changes”上，然後點擊“+”
+18. 將鼠標懸停在左側菜單中的“Changes”上，然後點擊“+”
 
-17. 在“Message (Ctrl+Enter to commit on'main')”框中輸入批注（不能留空）
+19. 在“Message (Ctrl+Enter to commit on'main')”框中輸入批注（不能留空）
 
-18. 點擊“勾號”圖標，然後點擊“Publish the branch”
+20. 點擊“勾號”圖標，然後點擊“Publish the branch”
 
-19. GIthub檔案將保存到電腦文件夾，並跟踪更改
+21. GIthub檔案將保存到電腦文件夾，並跟踪更改
 
 ## 完成新編程後：
 
