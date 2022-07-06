@@ -47,41 +47,30 @@
           <img src="./image/index-img/logo.png" alt="green rental logo" class="greenRentalLogo">
         </div>
 
+
       <div class="row gx-0">
 
         <div class="col-2 container">
-          <img src="./image/index-img/building.png" alt="building" class="building-img">
-          <div class="sideBarFilter">
-              <div class="form-check-reverse text-center  container row row-cols-1 row-cols-lg-2 siderCar p-0">
-                <div class="form-check col my-4">
-                  <input type="checkbox" class="btn-check" id="Audi-check" autocomplete="off">
-                  <label class="btn btn-outline-success   fw-bold" for="Audi-check">Audi</label>
-                </div>
-                <div class="form-check col my-4">
-                  <input type="checkbox" class="btn-check" id="BMW-check" autocomplete="off">
-                  <label class="btn btn-outline-success fw-bold" for="BMW-check">BMW</label>
-                </div>
-                <div class="form-check col my-4">
-                  <input type="checkbox" class="btn-check" id="benz-check" autocomplete="off">
-                  <label class="btn btn-outline-success fw-bold" for="benz-check">Benz</label>
-                </div>
-                <div class="form-check col my-4">
-                  <input type="checkbox" class="btn-check" id="nissan-check" autocomplete="off">
-                  <label class="btn btn-outline-success fw-bold" for="nissan-check">Nissan</label>
-                </div>
-                <div class="form-check col my-4">
-                  <input type="checkbox" class="btn-check" id="tesla-check" autocomplete="off">
-                  <label class="btn btn-outline-success fw-bold" for="tesla-check">Tesla</label>
-                </div>
-                <div class="form-check col my-4">
-                  <input type="checkbox" class="btn-check" id="toyota-check" autocomplete="off">
-                  <label class="btn btn-outline-success fw-bold" for="toyota-check">Toyota</label>
-                </div>
 
-                </div>
-            </div>
-          </div>
+            <img src="./image/index-img/building.png" alt="building" class="building-img d-none d-md-block">
+             
+    
+              <div class="dropdown mt-5 ms-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                  Sort
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                  <li><a class="dropdown-item active" href="#">Audi</a></li>
+                  <li><a class="dropdown-item" href="#">BMW</a></li>
+                  <li><a class="dropdown-item" href="#">Mercedes Benz</a></li>
+                  <li><a class="dropdown-item" href="#">Nissan</a></li>
+                  <li><a class="dropdown-item" href="#">Tesla</a></li>
+                  <li><a class="dropdown-item" href="#">Toyota</a></li>
+                </ul>
+              </div>
 
+         </div>
+        
 
 
           <div class="col text-center car-items">
@@ -90,8 +79,10 @@
                 <div class="card w-50">
                   <img src="./image/index-img/audi.png" class="card-img-top" alt="car-items">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title">Audi RS e-tron GT</h5>
+                    <p class="card-text">日租:$1200</p>
+                    <hr>
+                    <button type="button" class="btn btn-outline-success">選擇</button>
                   </div>
                 </div>
               </div>
@@ -99,8 +90,10 @@
                 <div class="card w-50">
                   <img src="./image/index-img/benz.avif" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title">MERCEDES-BENZ EQA</h5>
+                    <p class="card-text">日租:$700</p>
+                    <hr>
+                    <button type="button" class="btn btn-outline-success">選擇</button>
                   </div>
                 </div>
               </div>
@@ -108,8 +101,10 @@
                 <div class="card w-50">
                   <img src="./image/index-img/bmw.png" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    <h5 class="card-title">BMW THE i4</h5>
+                    <p class="card-text">日租:$700</p>
+                    <hr>
+                    <button type="button" class="btn btn-outline-success">選擇</button>
                   </div>
                 </div>
               </div>
@@ -117,8 +112,10 @@
                 <div class="card w-50">
                   <img src="./image/index-img/nissan.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title">NISSAN Leaf</h5>
+                    <p class="card-text">日租:$700</p>
+                    <hr>
+                    <button type="button" class="btn btn-outline-success">選擇</button>
                   </div>
                 </div>
                </div>
@@ -126,8 +123,10 @@
                 <div class="card w-50">
                     <img src="./image/index-img/model y.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <h5 class="card-title">Tesla Model Y</h5>
+                      <p class="card-text">日租:$800</p>
+                      <hr>
+                    <button type="button" class="btn btn-outline-success">選擇</button>
                     </div>
                   </div>
               </div>
@@ -135,8 +134,10 @@
                 <div class="card w-50">
                   <img src="./image/index-img/toyota.jfif" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title">Toyota RAV4 電動版</h5>
+                    <p class="card-text">日租:$700</p>
+                    <hr>
+                    <button type="button" class="btn btn-outline-success">選擇</button>
                   </div>
                 </div>
               </div>

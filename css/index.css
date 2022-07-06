@@ -34,17 +34,6 @@ body {
 }
 
 
-
-/* -----------side bar---------- */
-.sideBarFilter{
-    background-color: rgba(169, 169, 169, 0.6);
-    width: 100%;
-    border-radius: 20px;
-    min-width: 100px;
-}
-
-
-
 /* ----items----- */
 .car-items{
     padding-top: 120px;
