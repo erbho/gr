@@ -1,10 +1,11 @@
 <?php include('header.php');?>
 
-<nav class="navbar bg-light">
-  <div class="container-fluid">
-    <span class="navbar-brand">Navbar</span>
-  </div>
+<nav class="navbar container-fluid">
+    <div class="navbar-brand staff-footer-companyName">
+      <h2 class="fw-bolder">Green-Rental Intranet</h2>
+    </div>
 </nav>
+
 
 
 <h1><?php echo $_SESSION['name']?></h1>
