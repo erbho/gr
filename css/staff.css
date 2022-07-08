@@ -1,0 +1,30 @@
+.form-wapper{
+    border-radius: 20px;
+
+}
+
+.submitBtn{
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(36, 36, 36, 0.808);
+    border: 0px;
+    letter-spacing: 0.5px;
+    box-shadow: 6px 6px 6px rgba(99, 99, 99, 0.808);
+}
+
+.submitBtn:active{
+    box-shadow: 3px 3px 3px rgba(30, 30, 30, 0.849);
+}
+
+
+
+/* ----------staff-footer-------- */
+.staff-footer-nav li{
+    list-style-type: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+
+.staff-footer-companyName{
+    font-family: 'Niconne', cursive;
+}
