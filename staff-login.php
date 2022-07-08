@@ -31,7 +31,7 @@
   </div>
 
   <div class="mb-3 form-check py-3 w-50" style="margin: auto;">
-    <input type="radio" class="form-check-input" id="exampleCheck1" required>
+    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
     <label class="form-check-label" for="exampleCheck1">I'm not a robot</label>
   </div>
   
@@ -47,5 +47,5 @@
 
 
 
-<?php include('footer.php')?>
+<?php include('staff-footer.php')?>
 </div>
