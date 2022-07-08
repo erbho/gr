@@ -1,19 +1,19 @@
-<footer class="">
-<div class="d-flex justify-content-between container">
-<div class="d-flex align-items-center">
-  <ul class="row staff-footer-nav">
-    <li class="col mx-2"><a href="./index.html"><i class="fa-solid fa-house fa-2x" style="color: rgba(37, 37, 37, 0.781);"></i></a></li>
-    <li class="col mx-2"><a href="./contact-us.html"><i class="fa-solid fa-circle-question fa-2x" style="color: rgba(37, 37, 37, 0.781);"></i></a></li>
-    <li class="col mx-2"><a href="./flow.html"><i class="fa-solid fa-location-pin fa-2x" style="color: rgba(37, 37, 37, 0.781);"></i></a></li>
-  </ul>
-</div>
+<footer class="py-4">
+  <div class="d-flex justify-content-between container">
+    <div class="d-flex align-items-center">
+      <ul class="row staff-footer-nav">
+        <li class="col mx-2"><a href="./index.html"><i class="fa-solid fa-house fa-2x" style="color: rgba(37, 37, 37, 0.781);"></i></a></li>
+        <li class="col mx-2"><a href="./contact-us.html"><i class="fa-solid fa-circle-question fa-2x" style="color: rgba(37, 37, 37, 0.781);"></i></a></li>
+        <li class="col mx-2"><a href="./flow.html"><i class="fa-solid fa-location-pin fa-2x" style="color: rgba(37, 37, 37, 0.781);"></i></a></li>
+      </ul>
+    </div>
 
 
-  <div class="">
-    <h2 class="staff-footer-companyName fw-bold">Green Rental Company Account</h2>
-    <p class="text-end">@2022 Copyright: GreenRental Company</p>
+    <div class="">
+      <h2 class="staff-footer-companyName fw-bold" style="color: rgb(41, 119, 101);">Green Rental Company Account</h2>
+      <p class="text-end fw-light" style="color:#888888">Copyright &#9400; 2022 GreenRental Company. All Rights Reserved.</p>
+    </div>
   </div>
-</div>
     
 </footer>
 

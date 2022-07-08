@@ -1,7 +1,7 @@
 <?php include('header.php')?>
 
 
-<div style="background-color:rgb(213, 213, 213)">
+<div style="background-color:rgb(213, 213, 213);">
 
 
 
@@ -17,7 +17,7 @@
 
 <div class="form-wapper bg-white container my-5 w-50" style="--bs-bg-opacity:.8"> 
 
-<form class="container py-5" action="./function.php?op=checkLogin" method="post">
+<form class="container py-5 " action="./function.php?op=checkLogin" method="post">
   <h1 class="text-center py-3">Staff Login</h1>
 
   <div class="mb-3 d-flex justify-content-center align-items-center py-3">
