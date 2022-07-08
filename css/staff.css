@@ -23,10 +23,11 @@
     list-style-type: none;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@700&family=Josefin+Sans:wght@200&family=Lobster&family=Lora:ital,wght@1,700&display=swap');
+
 
 .staff-footer-companyName{
-    font-family: 'Niconne', cursive;
+    font-family: 'Gentium Book Plus', serif;
 }
 
 
@@ -34,4 +35,45 @@
 /* ----------staff-index----------- */
 .staff-greenRentalLogo{
     width: 100px;
+}
+
+.staff-info-manageAccount{
+    border-right: 1px solid rgb(68, 68, 68);
+}
+
+.staff-info-manageAccount-op a{
+    text-decoration: none;
+}
+
+.staff-resetPasswordBtn{
+    background-color: rgba(145, 22, 0, 0.808);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+}
+
+.staff-resetPasswordBtn:hover{
+    background-color: rgba(145, 22, 0, 1);
+}
+
+.staff-logoutBtn{
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.staff-logoutBtn:hover{
+    background-color: rgba(226, 226, 226, 0.795);
+}
+
+.staff-info-company{
+    margin: 0;
+    border-top: 1px solid rgb(201, 201, 201);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.staff-info-company p{
+    color: rgb(187, 187, 187);
+    font-style: italic;
 }

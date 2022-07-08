@@ -22,6 +22,7 @@ function checkLogin($username,$password){
     if($username == $staff['username'] && $password == $staff['password']){
         session_start();
         $_SESSION['name'] = $staff['name'];
+        $_SESSION['email'] = $staff['email'];
 
         header("Location: ./staff-index.php");
     }else header("Location: ./staff-login.php");

@@ -3,7 +3,7 @@
     <div class="d-flex align-items-center">
       <ul class="row staff-footer-nav">
         <li class="col mx-2"><a href="./index.html"><i class="fa-solid fa-house fa-2x" style="color: rgba(37, 37, 37, 0.781);"></i></a></li>
-        <li class="col mx-2"><a href="./contact-us.html"><i class="fa-solid fa-circle-question fa-2x" style="color: rgba(37, 37, 37, 0.781);"></i></a></li>
+        <li class="col mx-2"><a href="./contact-us.html#img-location"><i class="fa-solid fa-circle-question fa-2x" style="color: rgba(37, 37, 37, 0.781);"></i></a></li>
         <li class="col mx-2"><a href="./flow.html"><i class="fa-solid fa-location-pin fa-2x" style="color: rgba(37, 37, 37, 0.781);"></i></a></li>
       </ul>
     </div>
