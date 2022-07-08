@@ -9,7 +9,7 @@ body {
     position: fixed;
     bottom: 0;
     right: 0;
-    color: rgb(58, 184, 106);
+    color:rgb(49, 216, 49);
     animation-play-state:paused;
 }
 
@@ -45,10 +45,19 @@ body {
     width: 100%;
 }
 
-.footerUl li{
+.footerUl li, .footerUl li a{
     list-style-type: none;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 
+.footerUl li a:hover{
+    color:rgb(109, 221, 118);
+}
+
+.footerUl li a:visited{
+    text-decoration: underline;
+}
 
 /* ----items----- */
 .car-items{
