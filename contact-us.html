@@ -8,6 +8,42 @@
     <link rel="stylesheet" href="./css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Green Rental</title>
+
+    <style>
+      body {font-family: Arial, Helvetica, sans-serif;}
+      * {box-sizing: border-box;}
+      
+      input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      
+      input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+      
+      .container {
+        border-radius: 5px;
+        background-color: #e7e8e78d;
+        padding: 100px;
+      }
+      </style>
+
 </head>
 <body>
 <div class="bgColor"><br><br>
@@ -41,45 +77,33 @@
     </div>
     </nav>
 
-    <div class="container ">
-        <div class="row">
-          <div class="col">
-            聯絡我們
-            <hr>
-            (852) 2345 6789<br>
-            <a href="mailto:info@greenrental.com"> info@greenrental.com</a>
-          </div>
-          <div class="col">
-
-          <div class="col">
-           店鋪地址
-           <hr>
-           九龍觀塘海濱道167-169號<br>營業時間：10:00 – 23:00 (星期一 至 星期日)<br>
-           地址：新界上水嘉富坊3號上水貿易廣場<br>營業時間：10:00 – 23:00 (星期一 至 星期日)<br>
-          </div>
+    
 
     <div class="logo">
         <img src="./image/index-img/round_logo.png" alt="green rental logo" class="greenRentalLogo">
     </div>
+    
+    <h2 style="text-align:start; margin:20px;margin-top:40px;margin-bottom:0px; margin-left: 100px; font-weight:1000; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size:100px; color: #979997;">Contact</h2>
+    <h2 style="text-align:start; margin:20px; margin-top:0px; margin-left:400px;font-weight:1000; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size:100px; color: #5cdd62;">Us</h2>
+    
 
-    <div class="container">
-        <div class="container row row-cols-1 row-cols-lg-2 pt-5 mb-1" style="background-color: rgba(205, 205, 205, 0.6); border-radius: 15px;">
-   
-         <div class="col">
-           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.138758907723!2d114.21744981503439!3d22.31059138531828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34040146419587af%3A0xc803a8dbb01049c4!2z6KeA5aGY5rW35r-x6YGTMTY3LTE2OeiZn-iyqOWAiQ!5e0!3m2!1szh-TW!2shk!4v1657077031771!5m2!1szh-TW!2shk" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-           <p style="text-align: center; font-size: large;letter-spacing: 3px; padding: 30px;">地址：九龍觀塘海濱道167-169號<br>營業時間：10:00 – 23:00 (星期一 至 星期日)</p>
-         </div>
-   
-        <div class="col">
-           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1006.3520443362075!2d114.12145877938995!3d22.508616560854225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403f60d7494cc2f%3A0x6cfd138cef0b0872!2z5qW16YCf5rG96LuK5pyN5YuZ5pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2shk!4v1657077670146!5m2!1szh-TW!2shk" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-           <p style="text-align: center; font-size: large;letter-spacing: 3px; padding: 30px;">地址：新界上水嘉富坊3號上水貿易廣場<br>營業時間：10:00 – 23:00 (星期一 至 星期日)</p>
-         </div>
-         </div>
-         <br>
-         <div class="container d-flex justify-content-evenly">
-         <a href=index.html type="button" class="btn btn-primary btn-lg">立即預訂</a>
-       </div>
-      </div>
+<div class="container d-flex justify-content-center w-75">
+  <form action="/action_page.php">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name..">
+    
+    <label for="Phone">Phone</label>
+    <input class="form control" type="text" pattern="[0-9]" id="Phone" name="Phone" placeholder="Number(s) only..">
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your E-mail address..">
+
+    <label for="Message">Message</label>
+    <textarea id="Message" name="Message" placeholder="Write something.." style="height:300px"></textarea>
+
+    <input style="align-items: center;" type="submit" value="Submit">
+  </form>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
