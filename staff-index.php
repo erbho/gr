@@ -69,7 +69,7 @@ header("location: ./staff-login.php");?>
 
 
 
-<div class="d-flex align-items-start my-5 container-fluid flex-column flex-sm-row ">
+<div class="d-flex align-items-start my-5 container-fluid flex-column flex-sm-row">
 
   <!-- vertical nav -->
   <div class="nav flex-column nav-pills me-3 d-md-flex d-none" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -95,7 +95,7 @@ header("location: ./staff-login.php");?>
         <div class="d-flex justify-content-start align-items-center">
           <label for="searchOrderId" class="me-2">Order Number</label>
           <input type="text" class="me-2" id="searchOrderId" style="width:80px" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');">
-          <button class="order-fitter-icon" style="border:0;"><i class="fa-solid fa-filter fa-2x "></i></button>
+          <button class="order-fitter-icon ms-3" style="border:0;"><i class="fa-solid fa-filter fa-2x "></i></button>
         </div>
 
           <div class="card my-4">
@@ -144,7 +144,7 @@ header("location: ./staff-login.php");?>
 
       while($car=mysqli_fetch_assoc($carQ)){
       echo '<div class="card mb-3 me-md-5 col" style="max-width:600px">';
-      echo '<div class="d-flex justify-content-between container"><div><p class="my-2"><small>Vehicle ID: '.$car['car_id'].'</small></p></div><div class="d-flex align-items-center"><a href="./function.php?op=deleteCar"><i class="fa-solid fa-circle-minus" style="color: rgb(235, 60, 60);"></i></a></div></div><hr class="mt-0 vehiccleList-hr">';
+      echo '<div class="d-flex justify-content-between container"><div><p class="my-2"><small>Vehicle ID: '.$car['car_id'].'</small></p></div><div class="d-flex align-items-center"><a type="button" class="" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-circle-minus" style="color: rgb(235, 60, 60);"></i></a></div></div><hr class="mt-0 vehiccleList-hr">';
       echo '<div class="row g-0 row-cols-md-2">';
       echo '<div class="col-md-6">';
       echo '<img src="./image/index-img/'.$car['image'].'" class="img-fluid rounded-start" alt="car_items">';
@@ -161,10 +161,37 @@ header("location: ./staff-login.php");?>
 
 
   <div class="d-flex justify-content-center my-4">
-    <a href="./function.php?op=addNewCar">
-      <button class="me-md-5 newCarBtn">Add New Vehicle</button>
+    <a href="">
+      <button class="me-md-5 p-2 addCarBtn">Add New Vehicle</button>
     </a>
   </div>
+
+
+
+
+
+
+  <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 
 </div>
     <!--------- nav content-3 ----------->
@@ -174,6 +201,18 @@ header("location: ./staff-login.php");?>
     </div>
   </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <?php include('staff-footer.php');?>

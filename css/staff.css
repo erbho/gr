@@ -17,7 +17,6 @@
 }
 
 
-
 /* ----------staff-footer-------- */
 .staff-footer-nav li{
     list-style-type: none;
@@ -89,7 +88,15 @@
     box-shadow: 2px 2px 4px rgb(109, 109, 109);
 }
 
-.newCarBtn{
-    color: rgb(39, 88, 51);
-    background-color: inherit;
+.addCarBtn {
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(41, 77, 71, 0.808);
+    border: 0px;
+    letter-spacing: 0.5px;
+    box-shadow: 6px 6px 6px rgba(83, 107, 100, 0.808);
+}
+
+.addCarBtn:active {
+    box-shadow: 3px 3px 3px rgba(83, 107, 100,1);
 }
