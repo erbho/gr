@@ -11,7 +11,7 @@
 
     <div class="">
       <h2 class="staff-footer-companyName fw-bold" style="color: rgb(41, 119, 101);">Green Rental Company Account</h2>
-      <p class="text-end fw-light" style="color:#888888">Copyright &#9400; 2022 GreenRental Company. All Rights Reserved.</p>
+      <p class="text-end fw-light" style="color:#888888;font-size: smaller;">Copyright &#9400; 2022 GreenRental Company. All Rights Reserved.</p>
     </div>
   </div>
     

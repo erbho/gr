@@ -77,3 +77,19 @@
     color: rgb(187, 187, 187);
     font-style: italic;
 }
+.order-fitter-icon{
+    background-color: inherit;
+}
+
+.order-fitter-icon i{
+    color:rgb(58, 163, 139);
+}
+
+.vehiccleList-hr{
+    box-shadow: 2px 2px 4px rgb(109, 109, 109);
+}
+
+.newCarBtn{
+    color: rgb(39, 88, 51);
+    background-color: inherit;
+}

@@ -9,6 +9,21 @@ if($_GET['op']=='logout'){
     logout();
 }
 
+if($_GET['op']=='resetPassword'){
+    resetPassword();
+}
+
+if($_GET['op'=='addNewCar']){
+    addNewCar();
+}
+
+if($_GET['op'=='deletCar']){
+    deletCar();
+}
+
+if($_GET['op'=='createOrder']){
+    createOrder();
+}
 
 
 
@@ -27,8 +42,6 @@ function checkLogin($username,$password){
         header("Location: ./staff-index.php");
     }else header("Location: ./staff-login.php");
 }
-
-
 
 
 function logout(){
