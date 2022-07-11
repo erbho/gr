@@ -74,7 +74,7 @@ header("location: ./staff-login.php");?>
   <!-- vertical nav -->
   <div class="nav flex-column nav-pills me-3 d-md-flex d-none" id="v-pills-tab" role="tablist" aria-orientation="vertical">
     <button class="nav-link active my-3" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
-      type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Customer Order</button>
+      type="button" role="tab" aria-controls="v-pills-home" aria-selected="true";>Customer Order</button>
     <button class="nav-link my-3" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
       type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Vehicle List </button>
     <button class="nav-link my-3" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
@@ -161,9 +161,7 @@ header("location: ./staff-login.php");?>
 
 
   <div class="d-flex justify-content-center my-4">
-    <a href="">
-      <button class="me-md-5 p-2 addCarBtn">Add New Vehicle</button>
-    </a>
+    <button class=" me-md-5 p-2 addCarBtn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Add New Vehicle</button>
   </div>
 
 
@@ -173,21 +171,83 @@ header("location: ./staff-login.php");?>
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header d-flex justify-content-center">
-        <h5 class="modal-title" id="staticBackdropLabel"><i class="fa-solid fa-triangle-exclamation fa-2x" style="color: rgb(235, 60, 60);"></i></h5>
+        <h5 class="modal-title" id="staticBackdropLabel"><i class="fa-solid fa-triangle-exclamation fa-2x" style="color: #ffc107;"></i></h5>
       </div>
       <div class="modal-body d-flex justify-content-center align-items-center">
-        <p class="fw-bold d-flex align-items-center">This vehicle will be <a class="text-uppercase text-danger px-2">deleted</a> in database</p>
+        <p class="fw-bold d-flex align-items-center">This vehicle will be <a class="text-uppercase text-danger px-2">deleted</a> in database.</p>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Understood</button>
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      <div class="modal-footer d-flex justify-content-center">
+        <a href="./function.php?op=deletCar"><button type="button" class="btn btn-danger fw-bold">Delete</button></a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancal</button>
       </div>
     </div>
   </div>
 </div>
 
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header d-flex justify-content-center">
+        <i class="fa-solid fa-database fa-2x me-3" style="color:rgb(41, 119, 101)"></i>
+        <h5 class="modal-title" id="exampleModalLabel">New Vehicle Date</h5>
+      </div>
+      <div class="modal-body">
 
-
+        <form class="row row-cols-md-2 row-cols-1" action="./function.php?addNewCar" method="post">
+          <div class="mb-3 col">
+            <label for="new-carName" class="col-form-label">Name:</label>
+            <input type="text" class="form-control" id="new-carName" name="new-carName" required>
+          </div>
+          <div class="mb-3 col">
+            <label for="new-carRent" class="col-form-label">Daily Rent:</label>
+            <input class="form-control" id="new-carRent" name="new-carRent" required>
+          </div>
+          <div class="mb-3 col">
+            <label for="new-carImg" class="col-form-label">Image:</label>
+            <input class="form-control" id="new-carImg" name="new-carImg" required>
+          </div>
+          <div class="mb-3 col">
+            <label for="new-carEngine" class="col-form-label">Engine Type:</label>
+            <input class="form-control" id="new-carEngine" name="new-carEngine" required>  
+          </div>
+          <div class="mb-3 col">
+            <label for="new-carMP" class="col-form-label">Maximum Motor Power:</label>
+            <input class="form-control" id="new-carMP" name="new-carMP" required>
+          </div>
+          <div class="mb-3 col">
+            <label for="new-carMP" class="col-form-label">Maximum Motor Torque:</label>
+            <input class="form-control" id="new-carMP" name="new-carMP" required>
+          </div>
+          <div class="mb-3 col">
+            <label for="new-carBatteryCapacity" class="col-form-label">Gross Battery Capacity:</label>
+            <input class="form-control" id="new-carBatteryCapacity" name="new-carBatteryCapacity" required>
+          </div>
+          <div class="mb-3 col">
+            <label for="new-carRange" class="col-form-label">Range:</label>
+            <input class="form-control" id="new-carRange" name="new-carRange" required>
+          </div>
+          <div class="mb-3 col">
+            <label for="new-carSeating" class="col-form-label">Seating:</label>
+            <input type="number" class="form-control" id="new-carSeating" name="new-carSeating" required>
+          </div>
+          <div class="mb-3 col">
+            <label for="new-carWeight" class="col-form-label">Weight:</label>
+            <input class="form-control" id="new-carWeight" name="new-carWeight" required>
+          </div>
+          <div class="mb-3 col w-100">
+            <label for="new-carDimensions" class="col-form-label">Dimensions:</label>
+            <input class="form-control" id="new-carDimensions" name="new-carDimensions" placeholder="lengthmm x widthmm x Heightmm" required>
+          </div>
+        
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <input type="submit" class="btn btn-success" value="Add Data">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
 
 </div>
     <!--------- nav content-3 ----------->
