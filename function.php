@@ -49,3 +49,20 @@ function logout(){
     session_destroy();
     header('location: ./');
 }
+
+
+function resetPassword(){
+    global $dbConnection;
+
+    $updatePassword = mysqli_query($dbConnection,"UPDATE `staff` SET `password`='[$_POST('newPassword')]' WHERE `staff_name`=$_POST('name')");
+
+    if($_POST['newPassword']==$_POST['newPasswordConfirmation']){
+
+        mysqli_query($dbConnection, $updatePassword);
+        session_start();
+        session_destroy();
+        header("location: ./staff-login.php");
+        
+    }else header("location: ./staff-index.php");
+
+}

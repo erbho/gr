@@ -34,7 +34,7 @@ header("location: ./staff-login.php");?>
               <div class="col-4 staff-info-manageAccount d-flex align-items-center fw-bold fs-5">Manage Your Account</div>
               <div class="col staff-info-manageAccount-op d-flex align-items-center justify-content-center">
                 <div>
-                  <a href="./function.php?op=resetPassword"><button class="d-block my-4 staff-resetPasswordBtn p-2 fw-bold">Reset Password</button></a>
+                  <button class="d-block my-4 staff-resetPasswordBtn p-2 fw-bold" data-bs-toggle="modal" data-bs-target="#resetPassword-modal">Reset Password</button>
                   <a href="./function.php?op=logout"><button class="d-block my-4 w-100 staff-logoutBtn p-2 fw-bold">Logout</button></a>
                 </div>
               </div>
@@ -48,6 +48,37 @@ header("location: ./staff-login.php");?>
         </div>
       </div>
     </div>
+
+
+    <!-- reset password-model -->
+    <div class="modal fade" id="resetPassword-modal" tabindex="-1" aria-labelledby="resetPassword-modalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header d-flex justify-content-center">
+            <i class="fa-solid fa-key fa-2x me-2" style="color: rgb(46, 63, 59);"></i>
+            <h5 class="modal-title" id="resetPassword-modalLabel">Reset Password</h5>
+          </div>
+          <div class="modal-body">
+            <form action="./function.php?op=resetPassword" method="post">
+              <div class="mb-3">
+                <input type="hidden" name="name" value="<?php echo $_SESSION['name']?>">
+
+                <label for="newPassword" class="col-form-label">New Password:</label>
+                <input type="text" class="form-control" id="newPassword" name="newPassword">
+
+                <label for="newPasswordConfirmation" class="col-form-label">Confirm Password:</label>
+                <input type="text" class="form-control" id="newPasswordConfirmation" name="newPasswordConfirmation">
+              </div>
+      
+              <div class="modal-footer d-flex justify-content-center">
+                <input type="submit" class="btn btn-warning" value="Reset Password">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancal</button>
+              </div>
+           </form>
+        </div>
+      </div>
+    </div>
+
 
 </nav><hr>
 
@@ -242,7 +273,7 @@ header("location: ./staff-login.php");?>
       </div>
       <div class="modal-footer d-flex justify-content-center">
         <input type="submit" class="btn btn-success" value="Add Data">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancal</button>
       </div>
     </form>
     </div>
