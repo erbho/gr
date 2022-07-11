@@ -1,0 +1,72 @@
+.staff-greenRentalLogo{
+    width: 100px;
+}
+
+.staff-info-manageAccount{
+    border-right: 1px solid rgb(68, 68, 68);
+}
+
+.staff-info-manageAccount-op a{
+    text-decoration: none;
+}
+
+.staff-resetPasswordBtn{
+    background-color: rgba(145, 22, 0, 0.808);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+}
+
+.staff-resetPasswordBtn:hover{
+    background-color: rgba(145, 22, 0, 1);
+}
+
+.staff-logoutBtn{
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.staff-logoutBtn:hover{
+    background-color: rgba(226, 226, 226, 0.795);
+}
+
+.staff-info-company{
+    margin: 0;
+    border-top: 1px solid rgb(201, 201, 201);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.staff-info-company p{
+    color: rgb(187, 187, 187);
+    font-style: italic;
+}
+.order-fitter-icon{
+    background-color: inherit;
+}
+
+.order-fitter-icon i{
+    color:rgb(58, 163, 139);
+}
+
+.vehicleList-hr{
+    box-shadow: 2px 2px 4px rgb(109, 109, 109);
+}
+
+.addCarBtn {
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(41, 77, 71, 0.808);
+    border: 0px;
+    letter-spacing: 0.5px;
+    box-shadow: 6px 6px 6px rgba(83, 107, 100, 0.808);
+}
+
+.addCarBtn:active {
+    box-shadow: 3px 3px 3px rgba(83, 107, 100,1);
+}
+
+.delcarIcon:hover{
+    color: rgba(180, 46, 46, 0.801);
+}
