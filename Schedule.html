@@ -58,8 +58,8 @@
                 </div>
 
               <div class="container d-flex justify-content-center w-75" style="border-radius:15px ; background-color: rgb(218, 220, 220); margin-top: 40px;">
-                <form class="row g-3" style="margin: 12px;">
-                  <div class="col-md-5">
+                <form class="row g-3" style="margin: 12px;" action="./Cart.html" method="get">
+                  <div class="col-md-6">
                     <p style="font-size:20px ;margin-bottom: 10px;">取車地點</p>
                     <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                       <option selected="">請選擇分店</option>
@@ -67,7 +67,7 @@
                       <option value="2">上水分店</option>
                     </select>
                   </div>
-                  <div class="col-md-5">
+                  <div class="col-md-6">
                     <p style="font-size:20px ;margin-bottom: 10px;">還車地點</p>
                     <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                       <option selected="">請選擇分店</option>
@@ -75,58 +75,37 @@
                       <option value="2">上水分店</option>
                     </select>
                   </div>
-                  <div class="col-5">
-                    <label for="pickuptime" style="font-size:20px ;margin-bottom: 10px;">取車日期和時間</label>
-                    <br>
-                    <input type="datetime-local" id="pickuptime" name="pickuptime">
+                  <div class="col-12 row row-cols-1 row-cols-lg-3">
+                    <div class="col">
+                      <label for="pickuptime" style="font-size:20px ;margin-bottom: 10px;">取車日期和時間</label>
+                      <br>
+                      <input type="datetime-local" id="pickuptime" name="pickuptime">
+                    </div>
+                    <div class="col">
+                      <label for="returntime" style="font-size:20px ;margin-bottom: 10px;">還車日期和時間</label>
+                      <br>
+                      <input type="datetime-local" id="returntime" name="returntime">
+                    </div>
+                    <div class="col">
+                      <label for="inputage" style="font-size:20px ;margin-bottom: 10px;"class="form-label">取車時的年齡</label>
+                      <select id="inputage" class="form-select">
+                        <option selected>30+</option>
+                        <option>29</option>
+                        <option>28</option>
+                        <option>27</option>
+                        <option>26</option>
+                        <option>25</option>
+                        <option>24</option>
+                        <option>23</option>
+                        <option>22</option>
+                        <option>21</option>
+                        <option>20</option>
+                        <option>19</option>
+                        <option>18</option>
+                        
+                      </select>
+                    </div>
                   </div>
-                  <div class="col-5">
-                    <label for="returntime" style="font-size:20px ;margin-bottom: 10px;">還車日期和時間</label>
-                    <br>
-                    <input type="datetime-local" id="returntime" name="returntime">
-                  </div>
-                  <div class="col-3">
-                    <label for="surname" class="form-label"style="font-size:20px ;margin-bottom: 10px;">姓氏</label>
-                    <input type="text" class="form-control" id="surname" placeholder="姓氏">
-                  </div>
-                  <div class="col-5">
-                    <label for="name" class="form-label"style="font-size:20px ;margin-bottom: 10px;">名字</label>
-                    <input type="text" class="form-control" id="name" placeholder="名字">
-                  </div>
-                  <div class="col-md-4">
-                    <label for="inputID" class="form-label"style="font-size:20px ;margin-bottom: 10px;">身份證號碼</label>
-                    <input type="text" class="form-control" id="inputID"placeholder="A123456(7)">
-                  </div>
-                  <div class="col-md-6">
-                    <label for="Phonenumber" class="form-label"style="font-size:20px ;margin-bottom: 10px;">電話號碼</label>
-                    <input type="text" pattern="[0-9]"class="form-control" id="Phonenumber"placeholder="電話號碼">
-                  </div>
-                
-                  <div class="col-md-2">
-                    <label for="inputage" style="font-size:20px ;margin-bottom: 10px;"class="form-label">取車時的年齡</label>
-                    <select id="inputage" class="form-select">
-                      <option selected>30+</option>
-                      <option>29</option>
-                      <option>28</option>
-                      <option>27</option>
-                      <option>26</option>
-                      <option>25</option>
-                      <option>24</option>
-                      <option>23</option>
-                      <option>22</option>
-                      <option>21</option>
-                      <option>20</option>
-                      <option>19</option>
-                      <option>18</option>
-                      
-                    </select>
-                  </div>
-
-                  <div class="col-md-7">
-                    <label for="email" class="form-label"style="font-size:20px ;margin-bottom: 10px;">Email</label>
-                    <input type="text" class="form-control" pattern="[0-9]"id="Email"placeholder="Email">
-                  </div>
-                  
                   <div class="col-12">
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" id="gridCheck">
