@@ -13,9 +13,9 @@ if($_GET['op']=='resetPassword'){
     resetPassword($_POST['newPassword'],$_POST['newPasswordConfirmation']);
 }
 
-/* if($_GET['op'=='addNewCar']){
-    addNewCar();
-} */
+if($_GET['op']=='addNewCar'){
+    addNewCar($_POST['new-carName'],$_POST['new-carRent'],$_POST['new-carImg'],$_POST['new-carEngine'],$_POST['new-carMP'],$_POST['new-carMT'],$_POST['new-carBatteryCapacity'],$_POST['new-carRange'],$_POST['new-carSeating'],$_POST['new-carWeight'],$_POST['new-carDimensions']);
+}
 
 /* if($_GET['op'=='deletCar']){
     deletCar();
@@ -67,4 +67,18 @@ function resetPassword($newPassword,$newPasswordConfirmation){
         echo '<script>alert("Failed to reset the new password");window.location="./staff-index.php";</script>';
 
     }
+}
+
+function addNewCar($carName,$carRent,$carImg,$carEngine,$carMP,$carMT,$carBatteryCapacity,$carRange,$carSeating,$carWeight,$carDimensions){
+    global $dbConnection;
+
+    $updatePassword = "INSERT INTO `green_rental_project`.`car`(`name`, `price`, `image`, `engine type`, `max_motor_power`, `max_motor_torque`, `gross_battery_capacity`, `electric_range`, `seating`, `weight`, `dimensions`) VALUES ('$carName','$carRent','$carImg','$carEngine','$carMP','$carMT','$carBatteryCapacity','$carRange','$carSeating','$carWeight','$carDimensions')";
+
+    if(mysqli_query($dbConnection, $updatePassword)){
+        echo '<script>alert("Data Updated");
+        window.location="./staff-index.php";</script>';
+
+    }else{
+        echo '<script>alert("Failed to update the data");window.location="./staff-index.php";</script>'; 
+}
 }

@@ -224,7 +224,7 @@ header("location: ./staff-login.php");?>
       </div>
       <div class="modal-body">
 
-        <form class="row row-cols-md-2 row-cols-1" action="./function.php?addNewCar" method="post">
+        <form class="row row-cols-md-2 row-cols-1" action="./function.php?op=addNewCar" method="post">
           <div class="mb-3 col">
             <label for="new-carName" class="col-form-label">Name:</label>
             <input type="text" class="form-control" id="new-carName" name="new-carName" required>
@@ -246,8 +246,8 @@ header("location: ./staff-login.php");?>
             <input class="form-control" id="new-carMP" name="new-carMP" required>
           </div>
           <div class="mb-3 col">
-            <label for="new-carMP" class="col-form-label">Maximum Motor Torque:</label>
-            <input class="form-control" id="new-carMP" name="new-carMP" required>
+            <label for="new-carMT" class="col-form-label">Maximum Motor Torque:</label>
+            <input class="form-control" id="new-carMT" name="new-carMT" required>
           </div>
           <div class="mb-3 col">
             <label for="new-carBatteryCapacity" class="col-form-label">Gross Battery Capacity:</label>
