@@ -175,7 +175,7 @@ header("location: ./staff-login.php");?>
 
       while($car=mysqli_fetch_assoc($carQ)){
       echo '<div class="card mb-3 me-md-5 col" style="max-width:600px">';
-      echo '<div class="d-flex justify-content-between container"><div><p class="my-2"><small>Vehicle ID: '.$car['car_id'].'</small></p></div><div class="d-flex align-items-center"><a type="button" class="" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-circle-minus delcarIcon" style="color: rgb(235, 60, 60);"></i></a></div></div><hr class="mt-0 vehicleList-hr">';
+      echo '<div class="d-flex justify-content-between container"><div><p class="my-2"><small>Vehicle ID: '.$car['car_id'].'</small></p></div><div class="d-flex align-items-center"><a type="button" id="delCarBtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-circle-minus delcarIcon" style="color: rgb(235, 60, 60);"></i></a></div></div><hr class="mt-0 vehicleList-hr">';
       echo '<div class="row g-0 row-cols-md-2">';
       echo '<div class="col-md-6">';
       echo '<img src="./image/index-img/'.$car['image'].'" class="img-fluid rounded-start" alt="car_items">';
