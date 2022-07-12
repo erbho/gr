@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="./css/index.css">
     <script src="https://kit.fontawesome.com/ecf1b4cc3d.js" crossorigin="anonymous"></script>
     <title>Green Rental</title>
+    <style>
+     .card:hover{border:thick solid rgb(78, 221, 140)}
+    </style>
 </head>
 <body>    
 <div class="bgColor"><br><br>
@@ -58,6 +61,7 @@
       
           <img src="./image/index-img/building.png" alt="building" class="building-img d-none d-md-block">
       
+          
           <div class="container d-flex justify-content-center dropend" style="padding-top: 20px;">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown"
               aria-expanded="false">
@@ -74,79 +78,177 @@
           </div>
       
         </div>
-        
+      
 
-
-          <div class="col text-center car-items mb-5">
-            <div class="row row-cols-1 row-cols-md-2 gx-0">
-              <div class="col d-flex justify-content-evenly my-4">
-                <div class="card w-50">
-                  <img src="./image/index-img/audi.png" class="card-img-top" alt="car-items">
-                  <div class="card-body">
-                    <h5 class="card-title">Audi RS e-tron GT</h5>
-                    <p class="card-text">日租:$3090</p>
-                    <hr>
-                    <a href="Cart.html"><button type="button" class="btn btn-outline-success">選擇</button></a>
+        <div class="col text-center car-items mb-5">
+          <div class="row row-cols-1 gx-0">
+            <div class="col d-flex justify-content-evenly my-4">
+              <div class="card mb-3" style="max-width: 900px;">
+                <div class="row row-cols-1 row-cols-md-2 g-0">
+                  <div class="col-md-4 d-flex align-items-center">
+                    <img src="./image/index-img/audi.png" class="card-img-top" alt="...">
                   </div>
-                </div>
-              </div>
-              <div class="col d-flex justify-content-evenly my-4">
-                <div class="card w-50">
-                  <img src="./image/index-img/benz.avif" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">MERCEDES-BENZ EQA 250</h5>
-                    <p class="card-text">日租:$1290</p>
-                    <hr>
-                    <a href="Cart.html"><button type="button" class="btn btn-outline-success">選擇</button></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col d-flex justify-content-evenly my-4">
-                <div class="card w-50">
-                  <img src="./image/index-img/bmw.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">BMW THE i4</h5>
-                    <p class="card-text">日租:$1290</p>
-                    <hr>
-                    <a href="Cart.html"><button type="button" class="btn btn-outline-success">選擇</button></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col d-flex justify-content-evenly my-4">
-                <div class="card w-50">
-                  <img src="./image/index-img/nissan.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">NISSAN Leaf</h5>
-                    <p class="card-text">日租:$890</p>
-                    <hr>
-                    <a href="Cart.html"><button type="button" class="btn btn-outline-success">選擇</button></a>
-                  </div>
-                </div>
-               </div>
-              <div class="col d-flex justify-content-evenly my-4">
-                <div class="card w-50">
-                    <img src="./image/index-img/model y.jpg" class="card-img-top" alt="...">
+                  <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">Tesla Model Y</h5>
-                      <p class="card-text">日租:$1090</p>
+                      <h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" class="card-title" >Audi RS E-tron GT</h2>
                       <hr>
-                    <a href="Cart.html"><button type="button" class="btn btn-outline-success">選擇</button></a>
+                      <p style="font-size:25px ;text-align: start; font-weight: 450; margin: 0px;">規格：</p>
+                      <p class="card-text fs-6" style="text-align: start; margin-bottom: 40px;">
+                        <br>引擎型式︰永磁同步馬達
+                        <br>最大馬力︰476 匹（Boost 530 匹）
+                        <br>扭力：630 Nm（Boost 640 Nm）
+                        <br>電量：93.4 kWh
+                        <br>續航力︰488 km                      
+                        <br>總載客人數︰5 人
+                        <br>車身尺寸：4989 mm x 1964 mm x 1413 mm
+                        <br>車身重量：2276 kg</p>
+                        <hr>
+                        <a href="Cart.html"><button type="button" class="btn btn-outline-dark">日租︰$3090</button></a>
                     </div>
-                  </div>
-              </div>
-              <div class="col d-flex justify-content-evenly my-4">
-                <div class="card w-50">
-                  <img src="./image/index-img/toyota.jfif" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Toyota RAV4 電動版</h5>
-                    <p class="card-text">日租:$990</p>
-                    <hr>
-                    <a href="Cart.html"><button type="button" class="btn btn-outline-success">選擇</button></a>
                   </div>
                 </div>
               </div>
             </div>
-           </div>
+
+            <div class="col d-flex justify-content-evenly my-4">
+              <div class="card mb-3" style="max-width: 900px;">
+                <div class="row row-cols-1 row-cols-md-2 g-0">
+                  <div class="col-md-4 d-flex align-items-center">
+                    <img src="./image/index-img/benz.avif" class="card-img-top" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" class="card-title" >Mercedes-Benz EQA 250</h2>
+                      <hr>
+                      <p style="font-size:25px ;text-align: start; font-weight: 450; margin: 0px;">規格：</p>
+                      <p class="card-text fs-6" style="text-align: start; margin-bottom: 40px;">
+                        <br>引擎型式︰前電動馬達 Asynchronous Motor (ASM)
+                        <br>最大馬力︰190 匹
+                        <br>扭力：375 Nm
+                        <br>電量：66.5 kWh
+                        <br>續航力︰426 km
+                        <br>總載客人數︰5 人
+                        <br>車身尺寸：4463 mm x 1834 mm x 1620 mm
+                        <br>車身重量：2040 kg
+                        <hr>
+                        <a href="Cart.html"><button type="button" class="btn btn-outline-dark">日租︰$1290</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col d-flex justify-content-evenly my-4">
+              <div class="card mb-3" style="max-width: 900px;">
+                <div class="row row-cols-1 row-cols-md-2 g-0">
+                  <div class="col-md-4 d-flex align-items-center">
+                    <img src="./image/index-img/bmw.png" class="card-img-top" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" class="card-title" >BMW THE i4</h2>
+                      <hr>
+                      <p style="font-size:25px ;text-align: start; font-weight: 450; margin: 0px;">規格：</p>
+                      <p class="card-text fs-6" style=" text-align: start; margin-bottom: 40px;">
+                        <br>引擎型式︰前及後軸雙摩打「4WD」
+                        <br>最大馬力︰544 匹
+                        <br>扭力：795 Nm
+                        <br>電量：80 kWh
+                        <br>續航力︰521 km
+                        <br>總載客人數︰5 人
+                        <br>車身尺寸：4783 mm x 1852 mm x 1448 mm
+                        <br>車身重量：2215 kg
+                        <hr>
+                        <a href="Cart.html"><button type="button" class="btn btn-outline-dark">日租︰$1290</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="col d-flex justify-content-evenly my-4">
+              <div class="card mb-3" style="max-width: 900px;">
+                <div class="row row-cols-1 row-cols-md-2 g-0">
+                  <div class="col-md-4 d-flex align-items-center">
+                    <img src="./image/index-img/nissan.jpg" class="card-img-top" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" class="card-title" >Nissan LEAF</h2>
+                      <hr>
+                      <p style="font-size:25px ;text-align: start; font-weight: 450; margin: 0px;">規格：</p>
+                      <p class="card-text fs-6" style=" text-align: start; margin-bottom: 40px;">
+                        <br>引擎型式︰同步三相交流電動馬達、前置電動馬達
+                        <br>最大馬力︰150 匹
+                        <br>扭力：320Nm
+                        <br>電量：40 kWh
+                        <br>續航力︰311 km
+                        <br>總載客人數︰5 人
+                        <br>車身尺寸：4480 mm x 1790 mm x 1540 mm
+                        <br>車身重量：1544 kg
+                        <hr>
+                        <a href="Cart.html"><button type="button" class="btn btn-outline-dark">日租︰$890</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col d-flex justify-content-evenly my-4">
+              <div class="card mb-3" style="max-width: 900px;">
+                <div class="row row-cols-1 row-cols-md-2 g-0">
+                  <div class="col-md-4 d-flex align-items-center">
+                    <img src="./image/index-img/model y.jpg" class="card-img-top" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" class="card-title" >Tesla Model Y</h2>
+                      <hr>
+                      <p style="font-size:25px ;text-align: start; font-weight: 450; margin: 0px;">規格：</p>
+                      <p class="card-text fs-6" style=" text-align: start; margin-bottom: 40px;">
+                        <br>引擎型式︰交流感應摩打，液體冷卻，帶變頻驅動
+                        <br>最大馬力︰239 匹
+                        <br>扭力：430 Nm
+                        <br>電量：50 kWh
+                        <br>續航力︰455 km
+                        <br>總載客人數︰5 人
+                        <br>車身尺寸：4750 mm x 1920 mm x 1624 mm
+                        <br>車身重量：1588 kg
+                        <hr>
+                        <a href="Cart.html"><button type="button" class="btn btn-outline-dark">日租︰$1090</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="col d-flex justify-content-evenly my-4">
+              <div class="card mb-3" style="max-width: 900px;">
+                <div class="row row-cols-1 row-cols-md-2 g-0">
+                  <div class="col-md-4 d-flex align-items-center">
+                    <img src="./image/index-img/toyota.png" class="card-img-top" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" class="card-title" >Toyota RAV4 電動版</h2>
+                      <hr>
+                      <p style="font-size:25px ;text-align: start; font-weight: 450; margin: 0px;">規格：</p>
+                      <p class="card-text fs-6" style="text-align: start; margin-bottom: 40px;">
+                        <br>引擎型式︰前及後軸雙摩打「4WD」
+                        <br>最大馬力︰214 匹
+                        <br>扭力：420 Nm
+                        <br>電量：71.4 kWh
+                        <br>續航力︰460 km
+                        <br>總載客人數︰5 人
+                        <br>車身尺寸：4,690mm x 1,860mm x 1,650mm
+                        <br>車身重量：2005 kg
+                        <hr>
+                        <a href="Cart.html"><button type="button" class="btn btn-outline-dark">日租︰$1090</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
          </div>
 

@@ -10,20 +10,20 @@ if($_GET['op']=='logout'){
 }
 
 if($_GET['op']=='resetPassword'){
-    resetPassword();
+    resetPassword($_POST['newPassword'],$_POST['newPasswordConfirmation']);
 }
 
-if($_GET['op'=='addNewCar']){
+/* if($_GET['op'=='addNewCar']){
     addNewCar();
-}
+} */
 
-if($_GET['op'=='deletCar']){
+/* if($_GET['op'=='deletCar']){
     deletCar();
-}
+} */
 
-if($_GET['op'=='createOrder']){
+/* if($_GET['op'=='createOrder']){
     createOrder();
-}
+} */
 
 
 
@@ -51,18 +51,20 @@ function logout(){
 }
 
 
-function resetPassword(){
+function resetPassword($newPassword,$newPasswordConfirmation){
     global $dbConnection;
 
-    $updatePassword = mysqli_query($dbConnection,"UPDATE `staff` SET `password`='[$_POST('newPassword')]' WHERE `staff_name`=$_POST('name')");
+    $updatePassword = "UPDATE `staff` SET `password`= '$newPassword' WHERE `staff`.`name`='{$_POST['name']}'";
 
-    if($_POST['newPassword']==$_POST['newPasswordConfirmation']){
+    if($newPassword==$newPasswordConfirmation){
 
         mysqli_query($dbConnection, $updatePassword);
-        session_start();
-        session_destroy();
-        header("location: ./staff-login.php");
-        
-    }else header("location: ./staff-index.php");
+        echo '<script>alert("Success to reset the new password");
+        window.location="./staff-index.php";</script>';
 
+        
+    }else{
+        echo '<script>alert("Failed to reset the new password");window.location="./staff-index.php";</script>';
+
+    }
 }
