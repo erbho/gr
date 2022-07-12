@@ -17,7 +17,7 @@
 <body>    
 <div class="bgColor"><br><br>
 
-  <a href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp wts fa-4x me-4 mb-3 fa-shake"></i></a>
+  <a href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp wts fa-4x me-4 mb-3 fa-shake" style="z-index: 1;"></i></a>
 
     <nav class="navbar navbar-expand-lg navBg">   
         <div class="container-fluid d-flex justify-content-end">
@@ -85,9 +85,9 @@
         <div class="col text-center car-items mb-5">
 
 
-          <div class="mb-3  d-flex justify-content-center">
+          <div class="mb-3  d-flex justify-content-center fw-bold">
             <label for="staticPupTime" class="col-sm-2 col-form-label">預訂日期及時間:</label>
-            <div class="d-flex d-col d-md-row">
+            <div class="d-flex d-column d-md-row">
               <input type="datetime-local" readonly class="form-control-plaintext" id="staticPupTime" class="fw-bold" value="<?php echo $_GET['pickuptime']?>">
               <input type="datetime-local" readonly class="form-control-plaintext" id="staticPupTime" class="fw-bold" value="<?php echo $_GET['returntime']?>">
             </div>
