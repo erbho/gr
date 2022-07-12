@@ -60,33 +60,33 @@
                 <br>
                 <h1 style="text-align: center; padding: 20px; letter-spacing: 2px;">打算在香港租車自駕遊？<br>立即搜索租車優惠！</h1>
               <div class="container d-flex justify-content-center w-75" style="border-radius:15px ; background-color: rgb(218, 220, 220); margin-top: 40px; margin-bottom: 15px;">
-                <form class="row g-3" style="margin: 12px;" action="./Cart.html" method="get">
+                <form class="row g-3" style="margin: 12px;" action="./index.html" method="get">
                   <div class="col-md-6">
                     <p style="font-size:20px ;margin-bottom: 10px;">取車地點</p>
-                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="pickupLocation" required>
                       <option selected="">請選擇分店</option>
-                      <option value="1">觀塘分店</option>
-                      <option value="2">上水分店</option>
+                      <option value="觀塘分店: 九龍觀塘海濱道167-169號">觀塘分店</option>
+                      <option value="水分店: 新界上水嘉富坊3號上水貿易廣場">上水分店</option>
                     </select>
                   </div>
                   <div class="col-md-6">
                     <p style="font-size:20px ;margin-bottom: 10px;">還車地點</p>
-                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="returnLocation" required>
                       <option selected="">請選擇分店</option>
-                      <option value="1">觀塘分店</option>
-                      <option value="2">上水分店</option>
+                      <option value="觀塘分店: 九龍觀塘海濱道167-169號">觀塘分店</option>
+                      <option value="上水分店: 新界上水嘉富坊3號上水貿易廣場">上水分店</option>
                     </select>
                   </div>
                   <div class="col-12 row row-cols-1 row-cols-lg-3">
                     <div class="col">
                       <label for="pickuptime" style="font-size:20px ;margin-bottom: 10px;">取車日期和時間</label>
                       <br>
-                      <input type="datetime-local" id="pickuptime" name="pickuptime">
+                      <input type="datetime-local" id="pickuptime" name="pickuptime" required>
                     </div>
                     <div class="col">
                       <label for="returntime" style="font-size:20px ;margin-bottom: 10px;">還車日期和時間</label>
                       <br>
-                      <input type="datetime-local" id="returntime" name="returntime">
+                      <input type="datetime-local" id="returntime" name="returntime" required>
                     </div>
                     <div class="col">
                       <label for="inputage" style="font-size:20px ;margin-bottom: 10px;"class="form-label">取車時的年齡</label>
@@ -110,7 +110,7 @@
                   </div>
                   <div class="col-12">
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <input class="form-check-input" type="checkbox" id="gridCheck" required>
                       <label class="form-check-label" for="gridCheck">
                         本人持有有效駕駛執照
                       </label>
@@ -118,7 +118,7 @@
                   </div>
                   <div class="col-12">
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <input class="form-check-input" type="checkbox" id="gridCheck" required>
                       <label class="form-check-label" for="gridCheck">
                         本人已閱讀及同意遵守所有<a href="">條款及細則</a>
                       </label>
@@ -126,7 +126,7 @@
                   </div>
                   
                   <div class="d-grid gap-2 col-6 mx-auto">
-                    <button style="margin: 15px" type="button" class="btn btn-dark">開始租車</button>
+                    <button style="margin: 15px" type="submit" class="btn btn-dark">開始租車</button>
                   </div>
                 </form>
 
