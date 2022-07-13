@@ -57,10 +57,10 @@
         <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
         <ul class="navbar-nav fw-bold fs-5 me-5">
             <li class="nav-item mx-3">
-                <a class="nav-link" href="./index.html">租車</a>
+                <a class="nav-link" href="./index.php">租車</a>
             </li>
             <li class="nav-item mx-3">
-            <a class="nav-link" href="./flow.html">租車流程</a>
+            <a class="nav-link" href="./flow.php">租車流程</a>
             </li>
             <li class="nav-item mx-3">
             <a class="nav-link" href="./promotions.html">最新優惠</a>
@@ -70,7 +70,7 @@
             </li>
             <li class="nav-item mx-3">
                 <div class="d-flex justify-content-center"><img src="./image/index-img/nav-car.png" alt="nav-car" class="nav-car d-none d-lg-inline-block"></div>
-             <a class="nav-link active" aria-current="page" href="./contact-us.html">聯絡我們</a>
+             <a class="nav-link active" aria-current="page" href="./contact-us.php">聯絡我們</a>
             </li>
         </ul>
         </div>
@@ -112,10 +112,4 @@
   </form>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-</body>
-<footer>
-
-</footer>
-</html>
+<?php include("index-footer.php")?>

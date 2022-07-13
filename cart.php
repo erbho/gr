@@ -1,28 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./image/index-img/round_logo.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/index.css">
-    <script src="https://kit.fontawesome.com/ecf1b4cc3d.js" crossorigin="anonymous"></script>
-    <title>Green Rental</title>
-  <style>
-    .nextbutton{
-      background-color: rgb(82, 82, 82);
-    }
-    .nextbutton :hover{
-      opacity:1 ;
-    }
-  </style>
-</head>
-
-<body> 
+<?php include("index-header.php");?>
         <div class="bgColor"><br><br>
         
-          <a style="z-index:1;" href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp wts fa-4x me-4 mb-3 fa-shake"></i></a>
+          
         
             <nav class="navbar navbar-expand-lg navBg">   
                 <div class="container-fluid d-flex justify-content-end">
@@ -36,10 +15,10 @@
                         <div class="d-flex justify-content-center">
                           <img src="./image/index-img/nav-car.png" alt="nav-car" class="nav-car d-none d-lg-inline-block">
                         </div>
-                        <a class="nav-link active" aria-current="page" href="#">租車</a>
+                        <a class="nav-link active" aria-current="page" href="./index.php">租車</a>
                       </li>
                       <li class="nav-item mx-3">
-                        <a class="nav-link" aria-current="page" href="./flow.html">租車流程</a>
+                        <a class="nav-link" aria-current="page" href="./flow.php">租車流程</a>
                       </li>
                       <li class="nav-item mx-3">
                         <a class="nav-link" href="./promotions.html">最新優惠</a>
@@ -48,7 +27,7 @@
                         <a class="nav-link" href="./about-us.html">關於我們</a>
                       </li>
                       <li class="nav-item mx-3">
-                        <a class="nav-link" href="./contact-us.html">聯絡我們</a>
+                        <a class="nav-link" href="./contact-us.php">聯絡我們</a>
                       </li>
                     </ul>
                   </div>
@@ -141,8 +120,4 @@
 
                   </div>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-</body>
-</html>
+<?php include("index-footer.php")?>
