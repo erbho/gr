@@ -64,3 +64,5 @@ body {
     padding-top: 120px;
 }
 
+.card:hover{border:thick solid rgb(148, 150, 148)}
+  
