@@ -6,3 +6,7 @@
     padding: 100px 40px 0 50%;
     box-sizing: border-box;
   }
+.banner-text {
+  font-size: 70px;
+  font-weight: bolder;
+}
