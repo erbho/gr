@@ -112,4 +112,5 @@
   </form>
 </div>
 
-<?php include("index-footer.php")?>
+
+</div>

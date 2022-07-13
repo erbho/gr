@@ -81,7 +81,7 @@
 
           <div class="row row-cols-1 gx-0  text-center">
             <div class="col d-flex justify-content-evenly my-4">
-              <div class="card mb-3" style="max-width: 900px;">
+              <div class="card mb-3 card-select" style="max-width: 900px;">
                 <div class="row row-cols-1 row-cols-md-2 g-0">
                   <div class="col-md-4 d-flex align-items-center">
                     <img src="./image/index-img/audi.png" class="card-img-top" alt="...">

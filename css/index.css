@@ -64,7 +64,9 @@ body {
     padding-top: 120px;
 }
 
-.card:hover{border:thick solid rgb(148, 150, 148)}
+.card-select :hover{
+    border:thick solid rgb(148, 150, 148);
+}
 
 .nextbutton{
     background-color: rgb(82, 82, 82);
