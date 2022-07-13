@@ -17,9 +17,9 @@ if($_GET['op']=='addNewCar'){
     addNewCar($_POST['new-carName'],$_POST['new-carRent'],$_POST['new-carImg'],$_POST['new-carEngine'],$_POST['new-carMP'],$_POST['new-carMT'],$_POST['new-carBatteryCapacity'],$_POST['new-carRange'],$_POST['new-carSeating'],$_POST['new-carWeight'],$_POST['new-carDimensions']);
 }
 
-/* if($_GET['op'=='deletCar']){
-    deletCar();
-} */
+if($_GET['op']=='deleteCar'){
+    deleteCar();
+}
 
 /* if($_GET['op'=='createOrder']){
     createOrder();
@@ -79,6 +79,22 @@ function addNewCar($carName,$carRent,$carImg,$carEngine,$carMP,$carMT,$carBatter
         window.location="./staff-index.php";</script>';
 
     }else{
-        echo '<script>alert("Failed to update the data");window.location="./staff-index.php";</script>'; 
+        echo '<script>alert("Failed to update the data");
+        window.location="./staff-index.php";</script>'; 
+    }
 }
+
+function deleteCar(){
+    global $dbConnection;
+
+    $deleteCarList = "DELETE FROM `car` where `car_id`={$_GET['carList']}";
+    
+    if(mysqli_query($dbConnection, $deleteCarList)){
+        echo '<script>alert("Data Deleted");
+        window.location="./staff-index.php";</script>';
+
+    }else{
+        echo '<script>alert("Failed to delete the data");
+        window.location="./staff-index.php";</script>'; 
+    }
 }

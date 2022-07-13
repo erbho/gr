@@ -175,7 +175,7 @@ header("location: ./staff-login.php");?>
 
       while($car=mysqli_fetch_assoc($carQ)){
       echo '<div class="card mb-3 me-md-5 col" style="max-width:600px">';
-      echo '<div class="d-flex justify-content-between container"><div><p class="my-2"><small>Vehicle ID: '.$car['car_id'].'</small></p></div><div class="d-flex align-items-center"><a type="button" id="delCarBtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-circle-minus delcarIcon" style="color: rgb(235, 60, 60);"></i></a></div></div><hr class="mt-0 vehicleList-hr">';
+      echo '<div class="d-flex justify-content-between container"><div><p class="my-2"><small>Vehicle ID: '.$car['car_id'].'</small></p></div><div class="d-flex align-items-center"><a type="button" id="delCarBtn" data-bs-toggle="modal" data-bs-target="#carList'.$car['car_id'].'"><i class="fa-solid fa-circle-minus delcarIcon" style="color: rgb(235, 60, 60);"></i></a></div></div><hr class="mt-0 vehicleList-hr">';
       echo '<div class="row g-0 row-cols-md-2">';
       echo '<div class="col-md-6">';
       echo '<img src="./image/index-img/'.$car['image'].'" class="img-fluid rounded-start" alt="car_items">';
@@ -185,7 +185,26 @@ header("location: ./staff-login.php");?>
       echo '<h5 class="card-title">'.$car['name'].'</h5>';
       echo '<p class="">$ '.$car['price'].' / Day</p>';
       echo '</div></div></div></div>';
-    }
+    
+
+
+
+    echo '<div class="modal fade" id="carList'.$car['car_id'].'" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header d-flex justify-content-center">
+              <h5 class="modal-title" id="staticBackdropLabel"><i class="fa-solid fa-triangle-exclamation fa-2x" style="color: #ffc107;"></i></h5>
+            </div>
+            <div class="modal-body d-flex justify-content-center align-items-center">
+              <p class="fw-bold d-flex align-items-center"><a class="text-danger pe-2">'.$car['name'].'</a> will be <a class="text-uppercase text-danger px-2">deleted</a> in database.</p>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <a href="./function.php?op=deleteCar&carList='.$car['car_id'].'"><button type="button" class="btn btn-danger fw-bold">Delete</button></a>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancal</button>
+            </div>
+          </div>
+        </div>
+      </div>';}
     ?>
 
   </div>
@@ -198,23 +217,6 @@ header("location: ./staff-login.php");?>
 
 
   <!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header d-flex justify-content-center">
-        <h5 class="modal-title" id="staticBackdropLabel"><i class="fa-solid fa-triangle-exclamation fa-2x" style="color: #ffc107;"></i></h5>
-      </div>
-      <div class="modal-body d-flex justify-content-center align-items-center">
-        <p class="fw-bold d-flex align-items-center">This vehicle will be <a class="text-uppercase text-danger px-2">deleted</a> in database.</p>
-      </div>
-      <div class="modal-footer d-flex justify-content-center">
-        <a href="./function.php?op=deletCar"><button type="button" class="btn btn-danger fw-bold">Delete</button></a>
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancal</button>
-      </div>
-    </div>
-  </div>
-</div>
-
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
