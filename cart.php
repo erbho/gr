@@ -99,19 +99,11 @@
                       <label for="floatingPassword">備註：</label>
                     </div>
 
-                    <!-- <label style="margin: 15px; margin-top:25px" for="name">姓名 : </label>
-                    <input id="name" placeholder="Chan Tai Man">
-                    <br>
-                    <label style="margin: 15px;" for="email">電郵 : </label>
-                    <input id="name" placeholder="ctm@gmail.com">
-                    <br>
-                    <label style="margin: 15px;" for="phone">電話 : </label>
-                    <input id="phone" pattern="0-9" placeholder="62345678">
-                    <br> -->
+                    
                     
                     <div class="container d-flex justify-content-end">
                       <button style="margin: 10px; width:100px;" type="reset" class="btn btn-primary">重設</button>
-                      <button style="margin: 10px ;width:100px;" type="submit" class="btn btn-dark nextbutton">下一步</button>
+                      <button style="margin: 10px ;width:100px;" type="submit" class="btn btn-dark nextbutton">確認訂單</button>
                   
                       </div>
                   </form>

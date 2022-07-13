@@ -4,7 +4,6 @@
     <body>    
         <div class="bgColor"><br><br>
         
-
         
             <nav class="navbar navbar-expand-lg navBg">   
                 <div class="container-fluid d-flex justify-content-end">

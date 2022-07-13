@@ -63,3 +63,13 @@ body {
 .car-items{
     padding-top: 120px;
 }
+
+.card:hover{border:thick solid rgb(148, 150, 148)}
+
+.nextbutton{
+    background-color: rgb(82, 82, 82);
+  }
+  .nextbutton :hover{
+    opacity:1 ;
+  }
+  
