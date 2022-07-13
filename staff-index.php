@@ -80,7 +80,7 @@ header("location: ./staff-login.php");?>
     </div>
 
 
-</nav><hr>
+</nav><hr class="vehicleList-hr">
 
 <!-- horizon nav -->
 <ul class="nav nav-pills mb-3 d-md-none ms-3" id="v-pills-tab" role="tablist">
