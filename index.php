@@ -82,19 +82,19 @@
         </div>
       
 
-        <div class="col text-center car-items mb-5">
+        <div class="col car-items mb-5">
 
 
-          <div class="mb-3  d-flex justify-content-center fw-bold">
+          <!-- <div class="mb-3  d-flex justify-content-center fw-bold">
             <label for="staticPupTime" class="col-sm-2 col-form-label">預訂日期及時間:</label>
             <div class="d-flex d-column d-md-row">
               <input type="datetime-local" readonly class="form-control-plaintext" id="staticPupTime" class="fw-bold" value="<?php echo $_GET['pickuptime']?>">
               <input type="datetime-local" readonly class="form-control-plaintext" id="staticPupTime" class="fw-bold" value="<?php echo $_GET['returntime']?>">
             </div>
-          </div>
+          </div> -->
 
 
-          <div class="row row-cols-1 gx-0">
+          <div class="row row-cols-1 gx-0  text-center">
             <div class="col d-flex justify-content-evenly my-4">
               <div class="card mb-3" style="max-width: 900px;">
                 <div class="row row-cols-1 row-cols-md-2 g-0">
