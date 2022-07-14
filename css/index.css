@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
 
+
 body {
     font-family: 'Noto Sans TC' !important;
     margin: 0;
@@ -64,8 +65,10 @@ body {
     padding-top: 120px;
 }
 
-.card-select :hover{
-    border:thick solid rgb(148, 150, 148);
+
+
+.card-hover :hover{
+    border:thick rgb(148, 150, 148);
 }
 
 .nextbutton{
