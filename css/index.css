@@ -60,16 +60,15 @@ body {
     text-decoration: underline;
 }
 
-/* ----items----- */
 .car-items{
     padding-top: 120px;
 }
 
-
-
-.card-hover :hover{
-    border:thick rgb(148, 150, 148);
+#card :hover{
+    border: thick rgb(148, 150, 148);
 }
+
+
 
 .nextbutton{
     background-color: rgb(82, 82, 82);

@@ -38,32 +38,32 @@
                   <img src="./image/index-img/round_logo.png" alt="green rental logo" class="greenRentalLogo">
                 </div>
         
-                <div class="container mt-5">
-                <table class="table table-bordered">
-                  <thead>
-                    <tr>
-                      <th class="m-0 py-3" scope="col"><h5>預訂車輛：</h5></th>
-                      <th class="m-0 py-3" scope="col" ><h5>日期：</h5></th>
-                      <th class="m-0 py-3" scope="col"><h5>價錢：</h5></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">
-                          <img src="./image/index-img/audi.png" width="300px"> 
-                          <p style="font-size: 20px;">Audi RS e-tron GT</p>                
-                      </th>
-                      <td>12/07/2022 - 16/07/2022</td>
-                      <td style ="text-align: right;">$3,090</td>
-                    </tr>
+                <div class="container mt-5 gx-0">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th class="m-0 py-3" scope="col"><h5>預訂車輛：</h5></th>
+                        <th class="m-0 py-3" scope="col" ><h5>日期：</h5></th>
+                        <th class="m-0 py-3" scope="col"><h5>價錢：</h5></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">
+                            <img src="./image/index-img/audi.png" width="280px"> 
+                            <p style="font-size: 20px;">Audi RS e-tron GT</p>                
+                        </th>
+                        <td>12/07/2022 - 16/07/2022</td>
+                        <td style ="text-align: right;">$3,090</td>
+                      </tr>
 
-                    <tr>
-                      <th class="m-0 py-4" style="text-align:right" scope="row" colspan="3" > 
-                      <h5>租車費 $3,090</h5>
-                      </th>
-                    </tr>
-                  </tbody>
-                  </table>
+                      <tr>
+                        <th class="m-0 py-4" style="text-align:right" scope="row" colspan="3" > 
+                        <h5>租車費 $3,090</h5>
+                        </th>
+                      </tr>
+                    </tbody>
+                    </table>
                 </div>
 
                 <div class="container py-3 w-75 my-5" style="border: 1px solid rgb(233, 231, 231); background-color: rgba(218, 220, 220,1); border-radius: 15px;">

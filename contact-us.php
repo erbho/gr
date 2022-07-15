@@ -37,10 +37,9 @@
         background-color: #45a049;
       }
       
-      .container {
+      .container-ContactUs {
         border-radius: 5px;
         background-color: #e7e8e78d;
-        padding: 100px;
       }
       </style>
 
@@ -94,7 +93,7 @@
     <p style="text-align:right; margin-right:170px;">Phone: +852 21231234</p>
     <p style="text-align: right; margin-right:170px;"><a href="mailto:someone@example.com">CS.Greenrental@gmail.com</a></p>
 
-<div class="container d-flex justify-content-center w-75" style="border-radius:15px ;">
+<div class="container container-ContactUs d-flex justify-content-center w-75 p-5 mb-5" style="border-radius:15px ;">
   <form action="">
     <label for="name">Name</label>
     <input type="text" id="name" name="name" placeholder="Your name..">
@@ -113,4 +112,6 @@
 </div>
 
 
+
+<?php include('index-footer.php')?>
 </div>

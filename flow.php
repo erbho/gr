@@ -1,7 +1,6 @@
 <?php include("index-header.php");?>
 
 <div class="bgColor"><br><br>
-  <a style="z-index: 1;" href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp wts fa-4x me-4 mb-3 fa-shake"></i></a>
     <nav class="navbar navbar-expand-lg navBg">   
         <div class="container-fluid d-flex justify-content-end">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,7 +75,7 @@
       </div>
       <br>
       <div class="container d-flex justify-content-evenly">
-      <a href=index.html type="button" class="btn btn-primary btn-lg">立即預訂</a>
+      <a href="./index.php" type="button" class="btn btn-primary btn-lg">立即預訂</a>
     </div>
    </div>
    <br>
