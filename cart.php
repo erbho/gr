@@ -54,15 +54,27 @@ $car = mysqli_fetch_assoc($carQ);
                     </thead>
                     <tbody>
                       <tr>
-                        <th scope="row">
+                        <th scope="row" width="40%">
                             <img src="./image/index-img/<?php echo $car['image'];?>" width="250"> 
-                            <p style="font-size: 20px;"><?php echo $car['name'];?></p>             
+                            <div class="d-flex justify-content-between" style="font-size: 20px;"><h6><?php echo $car['name'];?></h6>
+                            <button onclick="history.back()" class="btn btn-dark nextbutton">重選車輛</button></div>
+
                         </th>
                         <td>
-                          <input readonly class="form-control-plaintext" type="datetime-local" value="<?php echo $_GET['pickupTime'];?>"> - <input readonly class="form-control-plaintext" type="datetime-local" value="<?php echo $_GET['returnTime'];?>"></td>
-                        <td style ="text-align: right; line-height: 30px;">
+                          <div class="d-flex justify-content-between flex-wrap">
+                            <input readonly class="form-control-plaintext" type="datetime-local" value="<?php echo $_GET['pickupTime'];?>">
+                            <input readonly class="form-control-plaintext" type="text" value="<?php echo $_GET['pickUpLocation'];?>">
+                          </div>
+                           - 
+                          <div class="d-flex justify-content-between flex-wrap">
+                            <input readonly class="form-control-plaintext" type="datetime-local" value="<?php echo $_GET['returnTime'];?>">
+                            <input readonly class="form-control-plaintext" type="text" value="<?php echo $_GET['returnLocation'];?>">
+                          </div>
+
+                        </td>
+                        <td style ="text-align: right; line-height: 30px;"  width="30%">
                           <ul class="cart-priceList" style="list-style: none;">
-                            <li>租車費：$<?php echo $car['price'];?></li>
+                            <li>租車費：$<?php echo $car['price'];?></li> 
                             <li>按金：$10,000</li>
                             <li>附加項目：$0</li>
                             <li>優惠券：N/A</li>
@@ -87,25 +99,31 @@ $car = mysqli_fetch_assoc($carQ);
                   <h5 class="m-0 py-4">個人資料：</h5>
                       <div class="row">
                         <div class=" col form-floating mb-4">
-                          <input type="Name" class="form-control" id="floatingInput" placeholder="姓名" required>
+                          <input type="Name" class="form-control" id="floatingInput" name="name" placeholder="姓名" required>
                           <label class="ms-2" for="floatingInput">姓名：</label>
                         </div>
                         <div class="col form-floating mb-4">
-                          <input  type="Phone" class="form-control" id="floatingInput" placeholder="電話" required>
+                          <input  type="Phone" class="form-control" id="floatingInput" name="phone" placeholder="電話" required>
                           <label class="ms-2" for="floatingInput">電話：</label>
                         </div>
                       </div>
 
                       <div class="row">
-                        <div class="col-8 form-floating mb-4">
-                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                        <div class="col-7 form-floating mb-4">
+                          <input type="email" class="form-control" id="floatingInput" name="email" placeholder="name@example.com" required>
                           <label class="ms-2" for="floatingInput">Email：</label>
                         </div>
                         <div class="col form-floating mb-4">
                           <input type="IDno" class="form-control" id="floatingInput" placeholder="身份證號碼" required>
-                          <label class="ms-2" for="floatingInput">身份證號碼：</label>
+                          <label class="ms-2" for="floatingInput">身份證：</label>
                         </div>
                       </div>
+
+                      <input type="hidden" name="pickupTime" value="<?php echo $_GET['pickupTime'];?>">
+                      <input type="hidden" name="returnTime" value="<?php echo $_GET['returnTime'];?>">
+                      <input type="hidden" name="pickupLocation"value="<?php echo $_GET['pickUpLocation'];?>">
+                      <input type="hidden" name="returnLocation" value="<?php echo $_GET['returnLocation'];?>">
+                      <input type="hidden" name="car_id" value="<?php echo $_GET['car_id'];?>">
 
                       <div class="form-floating">
                         <input style="height: 310px; margin-bottom: 20px;" type="Remark" class="form-control" id="floatingInput" placeholder="備註">
