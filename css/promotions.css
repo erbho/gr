@@ -6,7 +6,22 @@
     padding: 100px 40px 0 50%;
     box-sizing: border-box;
   }
-.banner-text {
+
+.banner-text-header {
   font-size: 70px;
   font-weight: bolder;
+  color: #ff0000;
+}
+
+.banner-text {
+  font-weight: bolder;
+  color: #ff0000;
+}
+
+.promoheader {
+  text-align: center;
+}
+
+.promobody {
+  text-justify: auto;
 }
