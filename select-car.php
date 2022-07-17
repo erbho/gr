@@ -22,10 +22,10 @@
                 <a class="nav-link" aria-current="page" href="./flow.php">租車流程</a>
               </li>
               <li class="nav-item mx-3">
-                <a class="nav-link" href="./promotions.html">最新優惠</a>
+                <a class="nav-link" href="./promotions.php">最新優惠</a>
               </li>
               <li class="nav-item mx-3">
-                <a class="nav-link" href="./about-us.html">關於我們</a>
+                <a class="nav-link" href="./about-us.php">關於我們</a>
               </li>
               <li class="nav-item mx-3">
                 <a class="nav-link" href="./contact-us.php">聯絡我們</a>
@@ -68,15 +68,6 @@
       
 
         <div class="col car-items mb-5">
-
-
-          <!-- <div class="mb-3  d-flex justify-content-center fw-bold">
-            <label for="staticPupTime" class="col-sm-2 col-form-label">預訂日期及時間:</label>
-            <div class="d-flex d-column d-md-row">
-              <input type="datetime-local" readonly class="form-control-plaintext" id="staticPupTime" class="fw-bold" value="<?php echo $_GET['pickuptime']?>">
-              <input type="datetime-local" readonly class="form-control-plaintext" id="staticPupTime" class="fw-bold" value="<?php echo $_GET['returntime']?>">
-            </div>
-          </div> -->
 
 
     <div class="row row-cols-1 gx-0  text-center">

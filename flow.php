@@ -19,10 +19,10 @@
               </li>
 
               <li class="nav-item mx-3">
-                <a class="nav-link" href="./promotions.html">最新優惠</a>
+                <a class="nav-link" href="./promotions.php">最新優惠</a>
               </li>
               <li class="nav-item mx-3">
-                <a class="nav-link" href="./about-us.html">關於我們</a>
+                <a class="nav-link" href="./about-us.php">關於我們</a>
               </li>
               <li class="nav-item mx-3">
                 <a class="nav-link" href="./contact-us.php">聯絡我們</a>

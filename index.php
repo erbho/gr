@@ -23,10 +23,10 @@
                         <a class="nav-link" aria-current="page" href="./flow.php">租車流程</a>
                       </li>
                       <li class="nav-item mx-3">
-                        <a class="nav-link" href="./promotions.html">最新優惠</a>
+                        <a class="nav-link" href="./promotions.php">最新優惠</a>
                       </li>
                       <li class="nav-item mx-3">
-                        <a class="nav-link" href="./about-us.html">關於我們</a>
+                        <a class="nav-link" href="./about-us.php">關於我們</a>
                       </li>
                       <li class="nav-item mx-3">
                         <a class="nav-link" href="./contact-us.php">聯絡我們</a>
@@ -126,48 +126,68 @@
                 <hr style="width: 7cm; border-width: 10px ; color: rgb(35, 242, 16);"></div>
               <br>
               <br>
-              <div class="row gx-0">
-                <div class="col-12">  
+
+             
                   
-                 <H1 style="text-align: center; margin-bottom: 80px; font-weight: 800;">選擇 Green Rental 的原因</H1>
-        
-                  <div class="container d-flex flex-wrap" style="margin-bottom: 50px">
-                    <div class="d-flex justify-content-evenly">
-                      <div class="col-3 my-4 " style="border-style: solid; border-radius: 15px; border-width: 2px;; background-color: rgb(253, 247, 239); ">
-                        <h3 style="text-align: center; font-weight: 700;" id="放心預訂">
-                          <i class="fa-solid fa-heart-circle-check fa-2x fa-fade"style="margin: 30px;"></i>
-                          <br>放心預訂
-                        </h3>
-                        <hr>
-                        <p style="line-height: 30px; margin: 30px;"class="">我們比較來自全港多間租車公司的優惠，讓你輕鬆快速做出選擇</p>
-                      </div>
-                      
-                      <div class="col-3 my-4" style="border-style: solid; border-radius: 15px; border-width: 2px;; background-color: rgb(253, 247, 239);">
-                        <h3 id="環保意識" style="text-align: center;font-weight: 700">
-                          <i class="fa-solid fa-leaf fa-2x fa-fade" style="margin: 30px;"></i><br>環保意識
-                        </h3>
-                          <hr>
-                          <p style="line-height: 30px;margin: 30px;">大量電動車車種供你選擇，以確保你的旅程更有環保意識
-                          </p>
-                      </div>
-                      
-                   
-        
-                      <div class="col-3 my-4" style="border-style: solid; border-radius: 15px; border-width: 2px;; background-color: rgb(253, 247, 239); ">
-                        <h3 id="費用透明" style="text-align: center;font-weight: 700">
-                          <i class="fa-solid fa-hand-holding-dollar fa-2x fa-fade" style="margin: 30px;"></i><br>費用透明
-                        </h3>
-                          <hr>
-                        <p style="line-height: 30px;margin: 30px;">所有顯示的價格均清楚透明，沒有任何隱藏費用或收費，讓你安心預訂</p>
-                      </div>
+              <H1 style="text-align: center; margin-bottom: 80px; font-weight: 800;">選擇 Green Rental 的原因</H1>
+
+              <div class="row row-cols-1 row-cols-lg-3 d-flex justify-content-center gx-0">
+                <div class="card col" style="width: 20rem;background-color: rgb(253, 247, 239); border: 0;">
+                        <div class="card-body">
+                          <div class="my-4"
+                            style="border-style: solid; border-radius: 15px; border-width: 2px; background-color: rgb(253, 247, 239);">
+                            <h3 style="text-align: center; font-weight: 700;" id="放心預訂">
+                              <i class="fa-solid fa-heart-circle-check fa-2x fa-fade" style="margin: 30px;"></i>
+                              <br>放心預訂
+                            </h3>
+                            <hr>
+                            <p class="card-text" style="line-height: 30px; margin: 30px;">我們比較來自全港多間租車公司的優惠，讓你輕鬆快速做出選擇
+                            </p>
+                          </div>
+                        </div>
+                </div>
+
+                <div class="card col" style="width: 20rem;background-color: rgb(253, 247, 239); border: 0;">
+                        <div class="card-body">
+                          <div class="my-4"
+                            style="border-style: solid; border-radius: 15px; border-width: 2px; background-color: rgb(253, 247, 239);">
+                            <h3 style="text-align: center; font-weight: 700;" id="放心預訂">
+                              <i class="fa-solid fa-leaf fa-2x fa-fade" style="margin: 30px;"></i>
+                              <br>環保意識
+                            </h3>
+                            <hr>
+                            <p class="card-text" style="line-height: 30px; margin: 30px;">大量電動車車種供你選擇，以確保你的旅程更有環保意識
+                            </p>
+                          </div>
+                        </div>
+                </div>
+
+                <div class="card col" style="width: 20rem;background-color: rgb(253, 247, 239); border: 0;">
+                        <div class="card-body">
+                          <div class="my-4"
+                            style="border-style: solid; border-radius: 15px; border-width: 2px; background-color: rgb(253, 247, 239);">
+                            <h3 style="text-align: center; font-weight: 700;" id="放心預訂">
+                              <i class="fa-solid fa-hand-holding-dollar fa-2x fa-fade" style="margin: 30px;"></i>
+                              <br>費用透明
+                            </h3>
+                            <hr>
+                            <p class="card-text" style="line-height: 30px; margin: 30px;">所有顯示的價格均清楚透明，沒有任何隱藏費用或收費，讓你安心預訂
+                            </p>
+                          </div>
+                        </div>
+                </div>
+              </div>
+                 
+
+
                     
-                      
-                    </div>
-                 </div>
+
+
 
                 <div class="d-flex justify-content-center">
                   <hr style="width: 7cm; border-width: 10px ; color: rgb(35, 242, 16);">
                 </div>
+
                 <br>
                 <br>
 
@@ -189,13 +209,13 @@
                       
                       <h3 id="上水" style="color:rgb(22, 23, 22);text-align: center;">上水</h3>
 
-                    <div class="d-flex justify-content-center"><hr style="width: 10cm; border-width: 5px"></div>
-                      
-                    <p style="text-align: center; line-height: 40px;">附近景點 :<br>塱原濕地 ................................ 1.7 公里<br>石湖墟 ................................ 2.1 公里<br>馬草壟 ................................ 1.9 公里<br>上水大水管 ................................ 3.1 公里<br>何時．河地湖畔餐廳 ................................ 2.7 公里<br>河上鄉居石侯公祠 ................................ 3.5 公里<br>大石磨瞭望站 ................................ 4.2 公里<br></p></div>
-                  </div>
-                  <div class="d-flex justify-content-center">
-                    <hr style="width: 7cm; border-width: 10px ; color: rgb(35, 242, 16); margin-top: 35px;"></div>
-                  <br><br><br><br>
+                      <div class="d-flex justify-content-center"><hr style="width: 10cm; border-width: 5px"></div>
+                        
+                      <p style="text-align: center; line-height: 40px;">附近景點 :<br>塱原濕地 ................................ 1.7 公里<br>石湖墟 ................................ 2.1 公里<br>馬草壟 ................................ 1.9 公里<br>上水大水管 ................................ 3.1 公里<br>何時．河地湖畔餐廳 ................................ 2.7 公里<br>河上鄉居石侯公祠 ................................ 3.5 公里<br>大石磨瞭望站 ................................ 4.2 公里<br></p></div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                      <hr style="width: 7cm; border-width: 10px ; color: rgb(35, 242, 16); margin-top: 35px;"></div>
+                    <br><br><br><br>
                   </div>
                   <br><br>
             

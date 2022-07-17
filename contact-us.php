@@ -62,10 +62,10 @@
             <a class="nav-link" href="./flow.php">租車流程</a>
             </li>
             <li class="nav-item mx-3">
-            <a class="nav-link" href="./promotions.html">最新優惠</a>
+            <a class="nav-link" href="./promotions.php">最新優惠</a>
             </li>
             <li class="nav-item mx-3">
-           <a class="nav-link" href="./about-us.html">關於我們</a>
+           <a class="nav-link" href="./about-us.php">關於我們</a>
             </li>
             <li class="nav-item mx-3">
                 <div class="d-flex justify-content-center"><img src="./image/index-img/nav-car.png" alt="nav-car" class="nav-car d-none d-lg-inline-block"></div>
