@@ -46,7 +46,7 @@
       <p style="font-size: 20px; margin-bottom: 10px;">Your order number is : #79526631</p>
 
 
-      <div class="row row-cols-1 row-cols-sm-2" style="margin-bottom: 50px;">
+      <div class="row row-cols-1 row-cols-sm-2 ms-4 ms-sm-0" style="margin-bottom: 50px;">
           <div class="card col-4 me-5 mb-5" style="width: 26rem;border-color: black;border-style: solid; border-radius: 15px; border-width: 1px; background-color: rgb(253, 247, 239);">
             <div class="card-body">
              <h3 id="取車地點" style="margin-left: 20px; text-align: start;font-weight: 450; font-size: 25px;"><br><i style="margin-right: 10px;" class="fa-solid fa-location-dot"></i>取車地點 :</h3>

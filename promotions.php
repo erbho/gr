@@ -1,21 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./image/index-img/round_logo.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/promotions.css">
-    <script src="https://kit.fontawesome.com/ecf1b4cc3d.js" crossorigin="anonymous"></script>
-    <title>Green Rental</title>
-</head>
+<?php include('index-header.php')?>
 
-<body>
+
 <div class="bgColor"><br><br>
 
-  <a href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp wts fa-4x me-4 mb-3 fa-shake"></i></a>
+
   
   <nav class="navbar navbar-expand-lg navBg">   
     <div class="container-fluid d-flex justify-content-end">
@@ -59,7 +47,7 @@
         <button type="button" data-bs-target="carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
     
-        <div class="carousel-inner">
+        <div class="carousel-inner rounded-bottom" style="box-shadow: 2px 2px 4px rgb(61, 61, 61);">
           <div class="carousel-item active" data-bs-interval="3000">
             <a  href="#promo1">
               <img src="./image/promo-img/Summer.jpg" class="d-block w-100" alt="promo1">
@@ -130,7 +118,7 @@
 </div>
 </div><br>
 
-<hr><br>
+<hr style="box-shadow: 2px 2px 4px rgb(61, 61, 61);"><br>
 <div id="promo2">
   <div class="container justify-content-center w-75" style="background-color: rgb(218, 220, 220); border-radius: 15px;
   padding: 40px 60px 20px 60px;">
@@ -151,7 +139,7 @@
 </div>
 </div><br>
 
-<hr><br>
+<hr style="box-shadow: 2px 2px 4px rgb(61, 61, 61);"><br>
 <div id="promo3">
   <div class="container justify-content-center w-75" style="background-color: rgb(218, 220, 220); border-radius: 15px;
   padding: 40px 60px 20px 60px;">
@@ -172,10 +160,4 @@
 </div>
 </div><br><br>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-</body>
-<footer>
-
-</footer>
-</html>
+<?php include('index-footer.php')?>

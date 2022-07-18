@@ -105,14 +105,14 @@ function createOrder(){
     $carQ = mysqli_query($dbConnection, "SELECT * from `car` where `car_id`='{$_POST['car_id']}'");
     $car = mysqli_fetch_assoc($carQ);
 
-    // $inputOrderData = "INSERT INTO `green_rental_project`.`order`(`customer_name`, `customer_email`, `customer_phone_number`,`order_car`, `pick_up_time`, `return_time`, `collect_location`, `return_location`, `order_time`) VALUES ('{$_POST['name']}','{$_POST['email']}','{$_POST['phone']}','{$car['name']}','{$_POST['pickupTime']}','{$_POST['returnTime']}','{$_POST['pickupLocation']}','{$_POST['returnLocation']}','".date('Y-m-d H:i:s')."')";
+    /* $inputOrderData = "INSERT INTO `green_rental_project`.`order`(`customer_name`, `customer_email`, `customer_phone_number`,`order_car`, `pick_up_time`, `return_time`, `collect_location`, `return_location`, `order_time`) VALUES ('{$_POST['name']}','{$_POST['email']}','{$_POST['phone']}','{$car['name']}','{$_POST['pickupTime']}','{$_POST['returnTime']}','{$_POST['pickupLocation']}','{$_POST['returnLocation']}','".date('Y-m-d H:i:s')."')"; */
     $inputOrderData = "INSERT INTO `order`(`customer_name`, `customer_email`, `customer_phone_number`,`order_car`, `pick_up_time`, `return_time`, `collect_location`, `return_location`, `order_time`) VALUES ('{$_POST['name']}','{$_POST['email']}','{$_POST['phone']}','{$car['name']}','{$_POST['pickupTime']}','{$_POST['returnTime']}','{$_POST['pickupLocation']}','{$_POST['returnLocation']}','".date('Y-m-d H:i:s')."')";
 
     if(mysqli_query($dbConnection,$inputOrderData)){
         echo '<script>window.location="./confirmation.php";</script>';
 
     }else{
-        echo '<script>alert("Failed to create order, Try Again");
+        echo '<script>alert("Failed to create order, please contact us");
         window.location="./index.php";</script>'; 
     }
 }

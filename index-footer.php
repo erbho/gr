@@ -25,7 +25,7 @@
             </div>
              
             <div class="col-4 d-flex align-items-center">
-              <img src="./image/index-img/rect_logo.png" alt="logo" width="100%">
+              <img src="./image/index-img/rectlogo.png" alt="logo" width="100%">
             </div>
            
 
