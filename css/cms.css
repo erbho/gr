@@ -70,3 +70,7 @@
 .delcarIcon:hover{
     color: rgba(180, 46, 46, 0.801);
 }
+
+.card-height{
+    height: 200px;
+}

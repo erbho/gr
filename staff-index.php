@@ -131,8 +131,8 @@ header("location: ./staff-login.php");?>
 
           <div class="card my-4">
             
-          <div class="card-body table-responsive my-4">
-            <table class="table table-striped table-hover">
+          <div class="card-body table-responsive my-4 overflow-auto">
+            <table class="table table-striped table-hover ">
               <thead>
                 <tr>
                   <th scope="col">Order Number</th>
