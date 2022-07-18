@@ -15,7 +15,7 @@
                     <ul class="navbar-nav fw-bold fs-5 me-5">
                       <li class="nav-item mx-3">
                         <div class="d-flex justify-content-center">
-                          <img src="./image/index-img/nav-car.png" alt="nav-car" class="nav-car d-none d-lg-inline-block">
+                          <img src="./image/index-img/navcar.png" alt="navcar" class="navcar d-none d-lg-inline-block">
                         </div>
                         <a class="nav-link active" aria-current="page" href="#">租車</a>
                       </li>
@@ -126,62 +126,58 @@
                 <hr style="width: 7cm; border-width: 10px ; color: rgb(35, 242, 16);"></div>
               <br>
               <br>
-
-             
-                  
-              <H1 style="text-align: center; margin-bottom: 80px; font-weight: 800;">選擇 Green Rental 的原因</H1>
-
-              <div class="row row-cols-1 row-cols-lg-3 d-flex justify-content-center gx-0">
-                <div class="card col" style="width: 20rem;background-color: rgb(253, 247, 239); border: 0;">
-                        <div class="card-body">
-                          <div class="my-4" style="border-style: solid; border-radius: 15px; border-width: 2px; background-color: rgb(253, 247, 239);">
-                            <h3 style="text-align: center; font-weight: 700;" id="放心預訂">
-                              <i class="fa-solid fa-heart-circle-check fa-2x fa-fade" style="margin: 30px;"></i>
-                              <br>放心預訂
-                            </h3>
-                            <hr>
-                            <p class="card-text" style="line-height: 30px; margin: 30px;">我們比較來自全港多間租車公司的優惠，讓你輕鬆快速做出選擇
-                            </p>
-                          </div>
-                        </div>
-                </div>
-
-                <div class="card col" style="width: 20rem;background-color: rgb(253, 247, 239); border: 0;">
-                        <div class="card-body">
-                          <div class="my-4"
-                            style="border-style: solid; border-radius: 15px; border-width: 2px; background-color: rgb(253, 247, 239);">
-                            <h3 style="text-align: center; font-weight: 700;" id="放心預訂">
-                              <i class="fa-solid fa-leaf fa-2x fa-fade" style="margin: 30px;"></i>
-                              <br>環保意識
-                            </h3>
-                            <hr>
-                            <p class="card-text" style="line-height: 30px; margin: 30px;">大量電動車車種供你選擇，以確保你的旅程更有環保意識
-                            </p>
-                          </div>
-                        </div>
-                </div>
-
-                <div class="card col" style="width: 20rem;background-color: rgb(253, 247, 239); border: 0;">
-                        <div class="card-body">
-                          <div class="my-4"
-                            style="border-style: solid; border-radius: 15px; border-width: 2px; background-color: rgb(253, 247, 239);">
-                            <h3 style="text-align: center; font-weight: 700;" id="放心預訂">
-                              <i class="fa-solid fa-hand-holding-dollar fa-2x fa-fade" style="margin: 30px;"></i>
-                              <br>費用透明
-                            </h3>
-                            <hr>
-                            <p class="card-text" style="line-height: 30px; margin: 30px;">所有顯示的價格均清楚透明，沒有任何隱藏費用或收費，讓你安心預訂
-                            </p>
-                          </div>
-                        </div>
-                </div>
-              </div>
-                 
+              <div class="row gx-0">
+                <div class="col-12">  
 
 
-                    
+                 <H1 style="text-align: center; margin-bottom: 80px; font-weight: 800;">選擇 Green Rental 的原因</H1>
 
-
+                 <div class="row row-cols-1 row-cols-lg-3 d-flex justify-content-center gx-0">
+                   <div class="card col" style="width: 20rem;background-color: rgb(253, 247, 239); border: 0;">
+                           <div class="card-body">
+                             <div class="my-4"
+                               style="border-style: solid; border-radius: 15px; border-width: 2px; background-color: rgb(253, 247, 239); height: 300px;">
+                               <h3 style="text-align: center; font-weight: 700;" id="放心預訂">
+                                 <i class="fa-solid fa-heart-circle-check fa-2x fa-fade" style="margin: 30px;"></i>
+                                 <br>放心預訂
+                               </h3>
+                               <hr>
+                               <p class="card-text" style="line-height: 30px; margin: 30px;">我們比較來自全港多間租車公司的優惠，讓你輕鬆快速做出選擇
+                               </p>
+                             </div>
+                           </div>
+                   </div>
+   
+                   <div class="card col" style="width: 20rem;background-color: rgb(253, 247, 239); border: 0;">
+                           <div class="card-body">
+                             <div class="my-4"
+                               style="border-style: solid; border-radius: 15px; border-width: 2px; background-color: rgb(253, 247, 239); height: 300px;">
+                               <h3 style="text-align: center; font-weight: 700;" id="放心預訂">
+                                 <i class="fa-solid fa-leaf fa-2x fa-fade" style="margin: 30px;"></i>
+                                 <br>環保意識
+                               </h3>
+                               <hr>
+                               <p class="card-text" style="line-height: 30px; margin: 30px;">大量電動車車種供你選擇，以確保你的旅程更有環保意識
+                               </p>
+                             </div>
+                           </div>
+                   </div>
+   
+                   <div class="card col" style="width: 20rem;background-color: rgb(253, 247, 239); border: 0;">
+                           <div class="card-body">
+                             <div class="my-4"
+                               style="border-style: solid; border-radius: 15px; border-width: 2px; background-color: rgb(253, 247, 239);height: 300px;">
+                               <h3 style="text-align: center; font-weight: 700;" id="放心預訂">
+                                 <i class="fa-solid fa-hand-holding-dollar fa-2x fa-fade" style="margin: 30px;"></i>
+                                 <br>費用透明
+                               </h3>
+                               <hr>
+                               <p class="card-text" style="line-height: 30px; margin: 30px;">所有顯示的價格均清楚透明，沒有任何隱藏費用或收費，讓你安心預訂
+                               </p>
+                             </div>
+                           </div>
+                   </div>
+                 </div>
 
                 <div class="d-flex justify-content-center">
                   <hr style="width: 7cm; border-width: 10px ; color: rgb(35, 242, 16);">

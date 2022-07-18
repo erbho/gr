@@ -48,7 +48,6 @@
 <a style="z-index: 1;" href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp wts fa-4x me-4 mb-3 fa-shake"></i></a>
 
 <div class="bgColor"><br><br>
-
 <nav class="navbar navbar-expand-lg navBg">   
     <div class="container-fluid d-flex justify-content-end">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,8 +69,8 @@
            <a class="nav-link" href="./about-us.php">關於我們</a>
             </li>
             <li class="nav-item mx-3">
-                <div class="d-flex justify-content-center"><img src="./image/index-img/nav-car.png" alt="nav-car" class="nav-car d-none d-lg-inline-block"></div>
-             <a class="nav-link active" aria-current="page" href="./contact-us.php">聯絡我們</a>
+                <div class="d-flex justify-content-center"><img src="./image/index-img/navcar.png" alt="navcar" class="navcar d-none d-lg-inline-block"></div>
+             <a class="nav-link active" aria-current="page" href="./contact-us.html">聯絡我們</a>
             </li>
         </ul>
         </div>

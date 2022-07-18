@@ -33,7 +33,7 @@
           </li>
           <li class="nav-item mx-3">
             <div class="d-flex justify-content-center">
-              <img src="./image/index-img/nav-car.png" alt="nav-car" class="nav-car d-none d-lg-inline-block">
+              <img src="./image/index-img/navcar.png" alt="navcar" class="navcar d-none d-lg-inline-block">
             </div>
             <a class="nav-link active" href="./promotions.html">最新優惠</a>
           </li>
@@ -52,51 +52,6 @@
         <img style="z-index:2 ;" src="./image/index-img/round_logo.png" alt="green rental logo" class="greenRentalLogo">
     </div>
 
-<!-- <div class="top-banner" style="background-image: url('./image/promo-img/bg1.jpg')">
-  <div class="banner-text">
-      <h1">最新推廣優惠</h1>
-      <h3>多元化的租車服務，為您提供全面和經濟的租車方案。</h3>
-  </div>
-</div>
-<br> -->
-
-    <!-- <div id="projects" class="carousel slide" data-ride="carousel">
-      <ul class="carousel-indicators">
-        <li data-target="#projects" data-slide-to="0" class="active"></li>
-        <li data-target="#projects" data-slide-to="1"></li>
-        <li data-target="#projects" data-slide-to="2"></li>
-      </ul>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./IMAGE/Project1.jpg" class="d-block mx-auto" alt="Project 1" width="1400" height="500">
-          <div class="carousel-caption">
-            <h3><p class="text-danger font-weight-bold">Project 1</p></h3>
-            <p class="text-danger">Fun Project!</p>
-          </div>   
-        </div>
-        <div class="carousel-item">
-          <img src="./IMAGE/Project2.jpg" class="d-block mx-auto" alt="Project 2" width="1400" height="500">
-          <div class="carousel-caption">
-              <h3><p class="text-danger font-weight-bold">Project 2</p></h3>
-              <p class="text-danger">Easy Job!</p>
-          </div>   
-        </div>
-        <div class="carousel-item">
-          <img src="./IMAGE/Project3.jpg" class="d-block mx-auto" alt="Project 3" width="1400" height="500">
-          <div class="carousel-caption">
-              <h3><p class="text-danger font-weight-bold">Project 3</p></h3>
-              <p class="text-danger">Hard to do!</p>
-          </div>   
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#projects" data-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </a>
-      <a class="carousel-control-next" href="#projects" data-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </a>
-  </div> -->
-
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -109,8 +64,8 @@
             <a  href="#promo1">
               <img src="./image/promo-img/Summer.jpg" class="d-block w-100" alt="promo1">
               <div class="carousel-caption">            
-                  <h1><p class="banner-text-header">炎夏早鳥優惠</p></h1>
-                  <h2><p class="banner-text">最少兩週前預訂租車，即可享10%優惠折扣</p></h2>
+                  <h1 class="head1"><p class="banner-text-header">炎夏早鳥優惠</p></h1>
+                  <h2 class="head2"><p class="banner-text">最少兩週前預訂租車，即可享10%優惠折扣</p></h2>
               </div>
             </a>
           </div>
@@ -118,8 +73,8 @@
             <a  href="#promo2">
               <img src="./image/promo-img/Week.jpg" class="d-block w-100" alt="promo1">
               <div class="carousel-caption">            
-                  <h1><p class="banner-text-header">週租優惠</p></h1>
-                  <h2><p class="banner-text">租車每滿7天，可享一天租金半價</p></h2>
+                  <h1 class="head1"><p class="banner-text-header">週租優惠</p></h1>
+                  <h2 class="head2"><p class="banner-text">租車每滿7天，可享一天租金半價</p></h2>
               </div>
             </a>
           </div>
@@ -127,8 +82,8 @@
             <a  href="#promo3">
               <img src="./image/promo-img/Month.jpg" class="d-block w-100" alt="promo1">
               <div class="carousel-caption">            
-                  <h1><p class="banner-text-header">月租優惠</p></h1>
-                  <h2><p class="banner-text">租車每滿4週，可享3天免費</p></h2>
+                  <h1 class="head1"><p class="banner-text-header">月租優惠</p></h1>
+                  <h2 class="head2"><p class="banner-text">租車每滿4週，可享3天免費</p></h2>
               </div>
             </a>
           </div>
@@ -154,47 +109,69 @@
 
       </div>
   
-<br><br><br><br>
+<br><br>
 <div id="promo1">
-  <div class="promoheader"><h1>炎夏早鳥優惠</h1></div><br>
+  <div class="container justify-content-center w-75" style="background-color: rgb(218, 220, 220); border-radius: 15px;
+  padding: 40px 60px 20px 60px;">
+  <div class="promoheader">
+    <div style="display: inline-block;background: url('./image/promo-img/Fire.gif') repeat; *display:inline;">
+      <h1 class="head1" class="banner-text">炎夏早鳥優惠</h1 class="head1"><br>
+    </div>
+  </div><br>
   <div class="promobody">
-    <h4>&emsp;&emsp;夏日炎炎，最佳消暑方法莫過於與家人朋友一起駕車郊遊。現在夏季早鳥優惠，最少兩週前預訂租車，即可享10%優惠折扣。</h4>
+    <h4>夏日炎炎，最佳消暑方法莫過於與家人朋友一起駕車郊遊。現在夏季早鳥優惠，最少兩週前預訂租車，即可享10%優惠折扣</h4>
     <br>
-    <h4>&emsp;&emsp;預訂期間：即日起至2022年8月31日止</h4>
+    <h4>預訂期間：即日起至2022年8月31日止</h4>
     <br>
     <div class="container d-flex justify-content-evenly">
-      <a href="./index.html" type="button" class="btn btn-primary btn-lg">立即預訂享受省錢優惠</a>
+      <a href="./index.php" type="button" class="btn btn-primary btn-lg">立即預訂<br>享受省錢優惠</a>
     </div><br>
   </div>
 </div>
+</div><br>
 
 <hr><br>
 <div id="promo2">
-  <div class="promoheader"><h1>週租優惠</h1></div><br>
+  <div class="container justify-content-center w-75" style="background-color: rgb(218, 220, 220); border-radius: 15px;
+  padding: 40px 60px 20px 60px;">
+  <div class="promoheader">
+    <div style="display: inline-block;background: url('./image/promo-img/Weekcal.png') repeat; *display:inline;">
+      <h1 class="head1" class="banner-text">週租優惠</h1><br>
+    </div>
+  </div><br>
   <div class="promobody">
-    <h4>&emsp;&emsp;租車每滿7天，可享一天租金半價。</h4>
+    <h4>為回饋客戶，現凡租車每滿7天，可享一天租金半價</h4>
     <br>
-    <h4>&emsp;&emsp;預訂期間：即日起至2022年12月31日止</h4>
+    <h4>預訂期間：即日起至2022年12月31日止</h4>
     <br>
     <div class="container d-flex justify-content-evenly">
-      <a href="./index.html" type="button" class="btn btn-primary btn-lg">立即預訂享受省錢優惠</a>
+      <a href="./index.php" type="button" class="btn btn-primary btn-lg">立即預訂<br>享受省錢優惠</a>
     </div><br>
   </div>
 </div>
+</div><br>
 
 <hr><br>
 <div id="promo3">
-  <div class="promoheader"><h1>月租優惠</h1></div><br>
+  <div class="container justify-content-center w-75" style="background-color: rgb(218, 220, 220); border-radius: 15px;
+  padding: 40px 60px 20px 60px;">
+  <div class="promoheader">
+    <div style="display: inline-block;background: url('./image/promo-img/Moncal.png') repeat; *display:inline;">
+      <h1 class="head1" class="banner-text">月租優惠</h1><br>
+    </div>
+  </div><br>
   <div class="promobody">
-    <h4>&emsp;&emsp;租車每滿4週，可享3天免費。</h4>
+    <h4>為感謝長期租客支持，現租車每滿4整週，可享3天免費</h4>
     <br>
-    <h4>&emsp;&emsp;預訂期間：即日起至2022年12月31日止</h4>
+    <h4>預訂期間：即日起至2022年12月31日止</h4>
     <br>
     <div class="container d-flex justify-content-evenly">
-      <a href="./index.html" type="button" class="btn btn-primary btn-lg">立即預訂享受省錢優惠</a>
+      <a href="./index.php" type="button" class="btn btn-primary btn-lg">立即預訂<br>享受省錢優惠</a>
     </div><br>
   </div>
 </div>
+</div><br><br>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
