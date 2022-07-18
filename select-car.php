@@ -40,7 +40,7 @@
         </div>
 
 
-      <div class="row gx-0 d-flex flex-column flex-sm-row">
+      <div class="row gx-0 d-flex flex-column flex-md-row">
       
         <div class="col-2">
       

@@ -54,7 +54,7 @@
                     <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="pickupLocation" required>
                       <option selected="">請選擇分店</option>
                       <option value="觀塘分店">觀塘分店: 九龍觀塘海濱道167-169號</option>
-                      <option value="水分店">上水分店: 新界上水嘉富坊3號上水貿易廣場</option>
+                      <option value="上水分店">上水分店: 新界上水嘉富坊3號上水貿易廣場</option>
                     </select>
                   </div>
                   <div class="col-md-6">
@@ -134,8 +134,7 @@
               <div class="row row-cols-1 row-cols-lg-3 d-flex justify-content-center gx-0">
                 <div class="card col" style="width: 20rem;background-color: rgb(253, 247, 239); border: 0;">
                         <div class="card-body">
-                          <div class="my-4"
-                            style="border-style: solid; border-radius: 15px; border-width: 2px; background-color: rgb(253, 247, 239);">
+                          <div class="my-4" style="border-style: solid; border-radius: 15px; border-width: 2px; background-color: rgb(253, 247, 239);">
                             <h3 style="text-align: center; font-weight: 700;" id="放心預訂">
                               <i class="fa-solid fa-heart-circle-check fa-2x fa-fade" style="margin: 30px;"></i>
                               <br>放心預訂

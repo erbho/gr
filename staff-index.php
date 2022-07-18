@@ -137,32 +137,36 @@ header("location: ./staff-login.php");?>
                 <tr>
                   <th scope="col">Order Number</th>
                   <th scope="col">Customer Name</th>
-                  <th scope="col">Customer Phone</th>
                   <th scope="col">Customer Email</th>
+                  <th scope="col">Customer Phone</th>
                   <th scope="col">Pick-up Time</th>
                   <th scope="col">Return Time</th>
                   <th scope="col">Collect Location</th>
-                  <th scope="col">Total Price</th>
+                  <th scope="col">Return Location</th>
+                  <th scope="col">Order Time</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                  <td>@mdo</td>
-                  <td>@mdo</td>
-                  <td>@mdo</td>
-                  <td>@mdo</td>
-                </tr>
+              <?php $orderQ = mysqli_query($dbConnection,"SELECT * from `order`");
+                while($order = mysqli_fetch_assoc($orderQ)){
+                  echo '<tr>
+                  <th scope="row">'.$order['order_id'].'</th>
+                  <td>'.$order['customer_email'].'</td>
+                  <td>'.$order['customer_phone_number'].'</td>
+                  <td>'.$order['order_car'].'</td>
+                  <td>'.$order['pick_up_time'].'</td>
+                  <td>'.$order['return_time'].'</td>
+                  <td>'.$order['collect_location'].'</td>
+                  <td>'.$order['return_location'].'</td>
+                  <td>'.$order['order_time'].'</td>
+                </tr>'
+                ;}
+              ?>
               </tbody>
             </table>
           </div>
         </div>
     </div>
- 
-    
 
 
 

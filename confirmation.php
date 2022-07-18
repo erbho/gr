@@ -42,46 +42,36 @@
         A confirmation email has been sent to Peter.kwong1204@gmail.com
       </div>
          
-         <p style="font-size: 60px; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; letter-spacing: 1px; color:rgb(128, 130, 129);margin-bottom: 10px;">Thank you for your order !</p>
-         <p style="font-size: 20px; margin-bottom: 10px;">Your order number is : #79526631</p>
+      <p style="font-size: 60px; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; letter-spacing: 1px; color:rgb(128, 130, 129);margin-bottom: 10px;">Thank you for your order !</p>
+      <p style="font-size: 20px; margin-bottom: 10px;">Your order number is : #79526631</p>
 
-        <div class="d-flex justify-content-start" style="margin-bottom: 50px;">
-          <div class="col-4 my-4 me-4" style="border-style: solid; border-radius: 15px; border-width: 1px;; background-color: rgb(253, 247, 239); ">
-              <h3 id="取車地點" style="margin-left: 20px; text-align: start;font-weight: 450; font-size: 25px;">
-                <br>
-                <i style="margin-right: 10px;" class="fa-solid fa-location-dot"></i>
-                取車地點 : 
-              </h3>
-              <p style="margin-left: 20px; font-size: 17px;">觀塘分店 : 九龍觀塘海濱道167-169號<br><a href="https://goo.gl/maps/D1bYPYAGmVsz7H3AA">按此顯示地圖</a></p>
-              
-              
-              <h3 id="取車日期和時間" style="margin-left: 20px;  text-align: start;font-weight: 450; font-size: 25px;">
-                <br>
-                <i style="margin-right: 10px;" class="fa-solid fa-clock"></i>
-                取車日期和時間 : 
-              </h3>
-              <p style="margin-left: 20px; margin-bottom: 30px; font-size: 17px;">12/07/2022 01:30 pm</p>
+
+      <div class="row row-cols-1 row-cols-sm-2" style="margin-bottom: 50px;">
+        <div class="card col-4 me-5 mb-5" style="width: 24rem;border-color: black;border-style: solid; border-radius: 15px; border-width: 1px; background-color: rgb(253, 247, 239);">
+          <div class="card-body">
+           <h3 id="取車地點" style="margin-left: 20px; text-align: start;font-weight: 450; font-size: 25px;"><br><i style="margin-right: 10px;" class="fa-solid fa-location-dot"></i>取車地點 :</h3>
+           <p style="margin-left: 20px; font-size: 17px;">觀塘分店 : 九龍觀塘海濱道167-169號<br><a href="https://goo.gl/maps/D1bYPYAGmVsz7H3AA">按此顯示地圖</a></p>
+                
+                
+           <h3 id="取車日期和時間" style="margin-left: 20px;  text-align: start;font-weight: 450; font-size: 25px;"><br><i style="margin-right: 10px;" class="fa-solid fa-clock"></i>取車日期和時間 :</h3>
+           <p style="margin-left: 20px; margin-bottom: 30px; font-size: 17px;">12/07/2022 01:30 pm</p>
           </div>
-<!--  -->
-          <div class="col-4 my-4" style="border-style: solid; border-radius: 15px; border-width: 1px;; background-color: rgb(253, 247, 239); ">
-            <h3 id="還車地點" style="margin-left: 20px; text-align: start;font-weight: 450; font-size: 25px;">
-              <br>
-              <i style="margin-right: 10px;" class="fa-solid fa-location-dot"></i>
-              還車地點 : 
-            </h3>
+        </div>
+
+        <div class="card col-4" style="width: 24rem; border-color: black;;border-style: solid; border-radius: 15px; border-width: 1px; background-color: rgb(253, 247, 239);">
+          <div class="card-body">
+            <h3 id="還車地點" style="margin-left: 20px; text-align: start;font-weight: 450; font-size: 25px;"><br><i style="margin-right: 10px;" class="fa-solid fa-location-dot"></i> 還車地點 :</h3>
             <p style="margin-left: 20px; font-size: 17px;">上水分店: 新界上水嘉富坊3號上水貿易廣場<br><a href="https://goo.gl/maps/HE5te23qY7J4nkNVA">按此顯示地圖</a></p>
-            
-            
-            <h3 id="還車日期和時間" style="margin-left: 20px;  text-align: start;font-weight: 450; font-size: 25px;">
-              <br>
-              <i style="margin-right: 10px;" class="fa-solid fa-clock"></i>
-              還車日期和時間 : 
-            </h3>
+
+            <h3 id="還車日期和時間" style="margin-left: 20px;  text-align: start;font-weight: 450; font-size: 25px;"><br><i style="margin-right: 10px;" class="fa-solid fa-clock"></i>還車日期和時間 :</h3>
             <p style="margin-left: 20px; margin-bottom: 30px; font-size: 17px;">16/07/2022 04:00 pm</p>
           </div>
+       </div>
+</div>
+      
+      
 
-        </div>
-         
+        
       <div class="container row mt-5" style="margin-bottom: 50px;">
          <div class="col">
          <p style="font-weight: 450; font-size: 20px;">預訂車輛 : Audi RS e-tron GT</p>
@@ -89,35 +79,35 @@
          </div>
 
          <div class="col">
-         <h3 class="d-inline-block" id="合共" style="color:rgb(109, 204, 109);text-align: left; ">合共：</h3>
-         <span class="col">
-          <h3 class="d-inline-block" id="TotalPrice" style="color:rgb(109, 204, 109);float:right; ">$13,090</h3>
-          <hr>
-          <p class="d-inline-block" id="item" style="color:rgb(0, 0, 0);text-align: left; ">租車費：</p>
-         <span class="col">
-          <p class="d-inline-block" id="Price" style="color:rgb(0, 0, 0);float:right; ">$3090</p>
-          <br>
-          <p class="d-inline-block" id="item" style="color:rgb(0, 0, 0);text-align: left; ">按金：</p>
-         <span class="col">
-          <p class="d-inline-block" id="Price" style="color:rgb(0, 0, 0);float:right; ">$10,000</p>
-          <br>
-          <p class="d-inline-block" id="item" style="color:rgb(0, 0, 0);text-align: left; ">附加項目：</p>
-         <span class="col">
-          <p class="d-inline-block" id="Price" style="color:rgb(0, 0, 0);float:right; ">$0</p>
-          <br>
-          <p class="d-inline-block" id="item" style="color:rgb(0, 0, 0);text-align: left; ">優惠券：</p>
-         <span class="col">
-          <p class="d-inline-block" id="Price" style="color:rgb(0, 0, 0);float:right; ">N/A</p>
-          <br>
-          <p class="d-inline-block" id="item" style="color:rgb(0, 0, 0);text-align: left; ">稅項：</p>
-         <span class="col">
-          <p class="d-inline-block" id="Price" style="color:rgb(0, 0, 0);float:right; ">$0</p>
-          <br>
-          <p class="d-inline-block" id="item" style="color:rgb(0, 0, 0);text-align: left; ">手續費：</p>
-         <span class="col">
-          <p class="d-inline-block" id="Price" style="color:rgb(0, 0, 0);float:right; ">$0</p>
-         </span>
-      </div>
+          <h3 class="d-inline-block" id="合共" style="color:rgb(109, 204, 109);text-align: left; ">合共：</h3>
+          <span class="col">
+            <h3 class="d-inline-block" id="TotalPrice" style="color:rgb(109, 204, 109);float:right; ">$13,090</h3>
+            <hr>
+            <p class="d-inline-block" id="item" style="color:rgb(0, 0, 0);text-align: left; ">租車費：</p>
+          <span class="col">
+            <p class="d-inline-block" id="Price" style="color:rgb(0, 0, 0);float:right; ">$3090</p>
+            <br>
+            <p class="d-inline-block" id="item" style="color:rgb(0, 0, 0);text-align: left; ">按金：</p>
+          <span class="col">
+            <p class="d-inline-block" id="Price" style="color:rgb(0, 0, 0);float:right; ">$10,000</p>
+            <br>
+            <p class="d-inline-block" id="item" style="color:rgb(0, 0, 0);text-align: left; ">附加項目：</p>
+          <span class="col">
+            <p class="d-inline-block" id="Price" style="color:rgb(0, 0, 0);float:right; ">$0</p>
+            <br>
+            <p class="d-inline-block" id="item" style="color:rgb(0, 0, 0);text-align: left; ">優惠券：</p>
+          <span class="col">
+            <p class="d-inline-block" id="Price" style="color:rgb(0, 0, 0);float:right; ">N/A</p>
+            <br>
+            <p class="d-inline-block" id="item" style="color:rgb(0, 0, 0);text-align: left; ">稅項：</p>
+          <span class="col">
+            <p class="d-inline-block" id="Price" style="color:rgb(0, 0, 0);float:right; ">$0</p>
+            <br>
+            <p class="d-inline-block" id="item" style="color:rgb(0, 0, 0);text-align: left; ">手續費：</p>
+          <span class="col">
+            <p class="d-inline-block" id="Price" style="color:rgb(0, 0, 0);float:right; ">$0</p>
+          </span>
+       </div>
       </div>
  </div>
   <?php include("index-footer.php")?>
