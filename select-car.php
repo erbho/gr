@@ -36,7 +36,7 @@
     </nav>
 
       <div class="logo">
-          <a href="./Schedule.html"><img src="./image/index-img/round_logo.png" alt="green rental logo" class="greenRentalLogo"></a>
+          <a><img src="./image/index-img/round_logo.png" alt="green rental logo" class="greenRentalLogo"></a>
         </div>
 
 
