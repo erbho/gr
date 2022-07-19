@@ -34,9 +34,19 @@
   text-justify: auto;
 }
 
+.head1 {
+  font-weight: bolder;
+  color: #cf3000;
+}
+
 .head1:hover
 {
 color: #a200a5;
+}
+
+.head2 {
+  font-weight: bolder;
+  color: #cf3000;
 }
 
 .head2:hover {

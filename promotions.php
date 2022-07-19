@@ -103,7 +103,7 @@
   padding: 40px 60px 20px 60px;">
   <div class="promoheader">
     <div style="display: inline-block;background: url('./image/promo-img/Fire.gif') repeat; *display:inline;">
-      <h1 class="head1" class="banner-text">炎夏早鳥優惠</h1 class="head1"><br>
+      <h1 class="head1" class="banner-text">炎夏早鳥優惠</h1><br>
     </div>
   </div><br>
   <div class="promobody">
