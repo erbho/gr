@@ -1,82 +1,86 @@
-<?php include("index-header.php");?> 
-        <div class="bgColor"><br><br>
+<?php include("index-header.php");?>
+<?php $orderQ = mysqli_query($dbConnection, "SELECT * FROM `order` ORDER BY `order_id` DESC LIMIT 1;");
+$order = mysqli_fetch_assoc($orderQ);
+?> 
+  <div class="bgColor"><br><br>
         
         
-            <nav class="navbar navbar-expand-lg navBg">   
-                <div class="container-fluid d-flex justify-content-end">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                  <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav fw-bold fs-5 me-5">
-                      <li class="nav-item mx-3">
-                        <div class="d-flex justify-content-center">
-                          <img src="./image/index-img/navcar.png" alt="navcar" class="navcar d-none d-lg-inline-block">
-                        </div>
-                        <a class="nav-link active" aria-current="page" href="./index.php">租車</a>
-                      </li>
-                      <li class="nav-item mx-3">
-                        <a class="nav-link" aria-current="page" href="./flow.php">租車流程</a>
-                      </li>
-                      <li class="nav-item mx-3">
-                        <a class="nav-link" href="./promotions.php">最新優惠</a>
-                      </li>
-                      <li class="nav-item mx-3">
-                        <a class="nav-link" href="./about-us.php">關於我們</a>
-                      </li>
-                      <li class="nav-item mx-3">
-                        <a class="nav-link" href="./contact-us.php">聯絡我們</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-        
-              <div class="logo">
-                  <img style="z-index:2 ;" src="./image/index-img/round_logo.png" alt="green rental logo" class="greenRentalLogo">
+    <nav class="navbar navbar-expand-lg navBg">   
+      <div class="container-fluid d-flex justify-content-end">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+          <ul class="navbar-nav fw-bold fs-5 me-5">
+            <li class="nav-item mx-3">
+              <div class="d-flex justify-content-center">
+                <img src="./image/index-img/navcar.png" alt="navcar" class="navcar d-none d-lg-inline-block">
               </div>
+              <a class="nav-link active" aria-current="page" href="./index.php">租車</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" aria-current="page" href="./flow.php">租車流程</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="./promotions.php">最新優惠</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="./about-us.php">關於我們</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="./contact-us.php">聯絡我們</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
- <div class="container">
+    <div class="logo">
+        <img style="z-index:2 ;" src="./image/index-img/round_logo.png" alt="green rental logo" class="greenRentalLogo">
+    </div>
+
+    <div class="container">
       <div class="alert alert-secondary" style="margin-top: 30px;" role="alert"><i style="margin-right:10px;" class="fa-solid fa-circle-check fa-1x"></i>
-        A confirmation email has been sent to Peter.kwong1204@gmail.com
+        A confirmation email has been sent to <span class="fw-bold"><?php echo $order['customer_email']?></span>
       </div>
          
       <p style="font-size: 60px; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; letter-spacing: 1px; color:rgb(128, 130, 129);margin-bottom: 10px;">Thank you for your order !</p>
-      <p style="font-size: 20px; margin-bottom: 10px;">Your order number is : #79526631</p>
+      <p style="font-size: 20px; margin-bottom: 10px;">Your order number is : <span class="fw-bold"><?php echo '#'.$order['order_id']?></span></p>
 
 
       <div class="row row-cols-1 row-cols-sm-2 ms-4 ms-sm-0" style="margin-bottom: 50px;">
           <div class="card col-4 me-5 mb-5" style="width: 26rem;border-color: black;border-style: solid; border-radius: 15px; border-width: 1px; background-color: rgb(253, 247, 239);">
             <div class="card-body">
              <h3 id="取車地點" style="margin-left: 20px; text-align: start;font-weight: 450; font-size: 25px;"><br><i style="margin-right: 10px;" class="fa-solid fa-location-dot"></i>取車地點 :</h3>
-             <p style="margin-left: 20px; font-size: 17px;">觀塘分店 : 九龍觀塘海濱道167-169號<br><a href="https://goo.gl/maps/D1bYPYAGmVsz7H3AA">按此顯示地圖</a></p>
+             <p style="margin-left: 20px; font-size: 17px;"><span class="fw-bold"><?php echo $order['collect_location']?></span><br><a href="https://goo.gl/maps/D1bYPYAGmVsz7H3AA">按此顯示地圖</a></p>
                   
-                  
+               
              <h3 id="取車日期和時間" style="margin-left: 20px;  text-align: start;font-weight: 450; font-size: 25px;"><br><i style="margin-right: 10px;" class="fa-solid fa-clock"></i>取車日期和時間 :</h3>
-             <p style="margin-left: 20px; margin-bottom: 30px; font-size: 17px;">12/07/2022 01:30 pm</p>
+             <p style="margin-left: 20px; margin-bottom: 30px; font-size: 17px;"><input readonly class="form-control-plaintext date1" type="datetime-local" value="<?php echo $order['pick_up_time'];?>"></p>
             </div>
           </div>
 
           <div class="card col-4 me-5 mb-5" style="width: 26rem;border-color: black;border-style: solid; border-radius: 15px; border-width: 1px; background-color: rgb(253, 247, 239);">
             <div class="card-body">
              <h3 id="還車地點" style="margin-left: 20px; text-align: start;font-weight: 450; font-size: 25px;"><br><i style="margin-right: 10px;" class="fa-solid fa-location-dot"></i>還車地點 :</h3>
-             <p style="margin-left: 20px; font-size: 17px;">上水分店: 新界上水嘉富坊3號上水貿易廣場<br><a href="https://goo.gl/maps/D1bYPYAGmVsz7H3AA">按此顯示地圖</a></p>
+             <p style="margin-left: 20px; font-size: 17px;"><span class="fw-bold"><?php echo $order['return_location']?></span><br><a href="https://goo.gl/maps/hMskNwCdmrrGaPy19">按此顯示地圖</a></p>
                   
                   
              <h3 id="還車日期和時間" style="margin-left: 20px;  text-align: start;font-weight: 450; font-size: 25px;"><br><i style="margin-right: 10px;" class="fa-solid fa-clock"></i>還車日期和時間 :</h3>
-             <p style="margin-left: 20px; margin-bottom: 30px; font-size: 17px;">16/07/2022 04:00 pm</p>
+             <p style="margin-left: 20px; margin-bottom: 30px; font-size: 17px;"><input readonly class="form-control-plaintext date2" type="datetime-local" value="<?php echo $order['return_time'];?>"></p>
             </div>
           </div>
      </div>
       
       
-
+<?php $carQ = mysqli_query($dbConnection, "SELECT * FROM `car` WHERE `name`= '$order['order_car']'");
+$car = mysqli_fetch_assoc($carQ);?>
         
       <div class="container row mt-5" style="margin-bottom: 50px;">
          <div class="col">
-         <p style="font-weight: 450; font-size: 20px;">預訂車輛 : Audi RS e-tron GT</p>
-         <img style="background-color: rgb(255, 255, 255); margin: 7px; margin-bottom: 30px; width:400px" src="./image/index-img/audi.png" alt="...">
+         <p style="font-weight: 450; font-size: 20px;">預訂車輛 :<span class="fw-bold"><?php echo $car['name']?></span></p>
+         <img style="background-color: rgb(255, 255, 255); margin: 7px; margin-bottom: 30px; width:400px" src="./image/index-img/<?php echo $car['image']?>" alt="...">
          </div>
 
          <div class="col">
@@ -94,8 +98,8 @@
           <span class="col">
             <p class="d-inline-block" id="Price" style="color:rgb(0, 0, 0);float:right; ">$10,000</p>
           </span>
-       </div>
       </div>
+    </div>
  </div>
   <?php include("index-footer.php")?>
                 
