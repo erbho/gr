@@ -1,7 +1,13 @@
 <?php include("index-header.php");?>
-<?php $orderQ = mysqli_query($dbConnection, "SELECT * FROM `order` ORDER BY `order_id` DESC LIMIT 1;");
+<?php
+$orderQ = mysqli_query($dbConnection, "SELECT * FROM `order` ORDER BY `order_id` DESC LIMIT 1;");
 $order = mysqli_fetch_assoc($orderQ);
+$order_carName = $order['order_car'];
+$carQ = mysqli_query($dbConnection, "SELECT * FROM `car` WHERE `name`='$order_carName'");
+$car = mysqli_fetch_assoc($carQ);
 ?> 
+
+
   <div class="bgColor"><br><br>
         
         
@@ -53,7 +59,7 @@ $order = mysqli_fetch_assoc($orderQ);
           <div class="card col-4 me-5 mb-5" style="width: 26rem;border-color: black;border-style: solid; border-radius: 15px; border-width: 1px; background-color: rgb(253, 247, 239);">
             <div class="card-body">
              <h3 id="取車地點" style="margin-left: 20px; text-align: start;font-weight: 450; font-size: 25px;"><br><i style="margin-right: 10px;" class="fa-solid fa-location-dot"></i>取車地點 :</h3>
-             <p style="margin-left: 20px; font-size: 17px;"><span class="fw-bold"><?php echo $order['collect_location']?></span><br><a href="https://goo.gl/maps/D1bYPYAGmVsz7H3AA">按此顯示地圖</a></p>
+             <p class="py-2" style="margin-left: 20px; font-size: 17px;"><span class="fw-bold"><?php echo $order['collect_location']?></span><br><a href="https://goo.gl/maps/D1bYPYAGmVsz7H3AA">按此顯示地圖</a></p>
                   
                
              <h3 id="取車日期和時間" style="margin-left: 20px;  text-align: start;font-weight: 450; font-size: 25px;"><br><i style="margin-right: 10px;" class="fa-solid fa-clock"></i>取車日期和時間 :</h3>
@@ -64,42 +70,50 @@ $order = mysqli_fetch_assoc($orderQ);
           <div class="card col-4 me-5 mb-5" style="width: 26rem;border-color: black;border-style: solid; border-radius: 15px; border-width: 1px; background-color: rgb(253, 247, 239);">
             <div class="card-body">
              <h3 id="還車地點" style="margin-left: 20px; text-align: start;font-weight: 450; font-size: 25px;"><br><i style="margin-right: 10px;" class="fa-solid fa-location-dot"></i>還車地點 :</h3>
-             <p style="margin-left: 20px; font-size: 17px;"><span class="fw-bold"><?php echo $order['return_location']?></span><br><a href="https://goo.gl/maps/hMskNwCdmrrGaPy19">按此顯示地圖</a></p>
+             <p class="py-2" style="margin-left: 20px; font-size: 17px;"><span class="fw-bold"><?php echo $order['return_location']?></span><br><a href="https://goo.gl/maps/hMskNwCdmrrGaPy19">按此顯示地圖</a></p>
                   
                   
              <h3 id="還車日期和時間" style="margin-left: 20px;  text-align: start;font-weight: 450; font-size: 25px;"><br><i style="margin-right: 10px;" class="fa-solid fa-clock"></i>還車日期和時間 :</h3>
-             <p style="margin-left: 20px; margin-bottom: 30px; font-size: 17px;"><input readonly class="form-control-plaintext date2" type="datetime-local" value="<?php echo $order['return_time'];?>"></p>
+             <p  style="margin-left: 20px; margin-bottom: 30px; font-size: 17px;"><input readonly class="form-control-plaintext date2" type="datetime-local" value="<?php echo $order['return_time'];?>"></p>
             </div>
           </div>
      </div>
       
       
-<?php $carQ = mysqli_query($dbConnection, "SELECT * FROM `car` WHERE `name`= '$order['order_car']'");
-$car = mysqli_fetch_assoc($carQ);?>
         
-      <div class="container row mt-5" style="margin-bottom: 50px;">
-         <div class="col">
-         <p style="font-weight: 450; font-size: 20px;">預訂車輛 :<span class="fw-bold"><?php echo $car['name']?></span></p>
-         <img style="background-color: rgb(255, 255, 255); margin: 7px; margin-bottom: 30px; width:400px" src="./image/index-img/<?php echo $car['image']?>" alt="...">
-         </div>
+    <div class="container row mt-5" style="margin-bottom: 50px;">
+      <div class="col">
+        <p style="font-weight: 450; font-size: 20px;">預訂車輛 :<span class="fw-bold"><?php echo $car['name']?></span></p>
+        <img style="background-color: rgb(255, 255, 255); margin: 7px; margin-bottom: 30px; width:400px" src="./image/index-img/<?php echo $car['image']?>" alt="booking Car Image">
+      </div>
 
-         <div class="col">
-          <h3 class="d-inline-block" id="合共" style="color:rgb(109, 204, 109);text-align: left; ">合共：</h3>
-          <span class="col">
-            <h3 class="d-inline-block" id="TotalPrice" style="color:rgb(109, 204, 109);float:right; ">$13,090</h3>
-            <hr>
-            <p class="d-inline-block" id="item" style="color:rgb(0, 0, 0);text-align: left; ">租車費：</p>
-          </span>
-          <span class="col">
-            <p class="d-inline-block" id="Price" style="color:rgb(0, 0, 0);float:right; ">$3090</p>
-            <br>
-            <p class="d-inline-block" id="item" style="color:rgb(0, 0, 0);text-align: left; ">按金：</p>
-          </span>
-          <span class="col">
-            <p class="d-inline-block" id="Price" style="color:rgb(0, 0, 0);float:right; ">$10,000</p>
-          </span>
+      <div class="col">
+        <div class="d-flex justify-content-between" style="color:rgb(109, 204, 109);">
+          <h3>合共：</h3>
+          <div class="d-flex justify-content-end">
+          <h3 class="me-2">$</h3>
+          <h3 class="totalPrice"></h3>
+          </div>
+        </div><hr>
+        <div class="d-flex justify-content-between  fs-5 my-3 mt-4">
+          <span >租車費：</span>
+          <div class="d-flex justify-content-end">
+            <span class="me-2">$</span>
+            <span class="rentFee"><?php echo $car['price'];?></span>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between fs-5 my-3">
+          <span>日數：</span>
+          <span class="rentDay"></span>
+        </div>
+        <div class="d-flex justify-content-between fs-5 my-3">
+          <span>按金：</span>
+          <div class="d-flex justify-content-end">
+            <span class="me-2">$</span>
+            <span class="deposit">10000</span>
+          </div>
+        </div>
       </div>
     </div>
  </div>
   <?php include("index-footer.php")?>
-                
