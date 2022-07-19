@@ -50,7 +50,7 @@
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
               <div class="col my-4"><h3 style="text-align: center; font-weight: 700;" id="租車所需文件"><i class="fa-solid fa-1" style="margin-bottom: 10px;"></i><br><i class="fa-solid fa-file fa-2x" style="margin-bottom: 10px;"></i><br>租車所需文件</h3><hr><p style="line-height: 30px;">1. 香港身份證正本<br>2. 有效駕駛執照正本<br>3. 三個月內郵寄住址證明</p></div>
               
-              <div class="col my-4"><h3 id="按金" style="text-align: center;font-weight: 700"><i class="fa-solid fa-2" style="margin-bottom: 10px;"></i><br><i class="fa-solid fa-sack-dollar fa-2x" style="margin-bottom: 10px;"></i><br>按金</h3><hr><p style="line-height: 30px;">按金為 $10,000-20,000 (根據車款而定)，「暫準駕駛執照(P牌)」者需另加按金$3,000。如確定請轉帳＄500到本公司銀行戶口留車</p></div>
+              <div class="col my-4"><h3 id="按金" style="text-align: center;font-weight: 700"><i class="fa-solid fa-2" style="margin-bottom: 10px;"></i><br><i class="fa-solid fa-sack-dollar fa-2x" style="margin-bottom: 10px;"></i><br>按金</h3><hr><p style="line-height: 30px;">按金為 $10,000 (「暫準駕駛執照(P牌)」者需另加按金$3,000)。如確定請轉帳＄500到本公司銀行戶口留車</p></div>
               
               <div class="col my-4"><h3 id="罰款按金" style="text-align: center;font-weight: 700"><i class="fa-solid fa-3" style="margin-bottom: 10px;"></i><br><i class="fa-solid fa-dollar-sign fa-2x"style="margin-bottom: 10px;"></i><i class="fa-solid fa-dollar-sign fa-2x"></i><br>罰款按金</h3><hr><p style="line-height: 30px;">歸還車輛後會先扣起＄3,000，作為交通違例罰款按金。若45天後沒有收到任何交通違例信件，餘額會於三個工作天內退還給客戶</p></div>
 
