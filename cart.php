@@ -59,12 +59,12 @@ $car = mysqli_fetch_assoc($carQ);
               </th>
               <td>
                 <div class="d-flex justify-content-between flex-wrap">
-                  <input readonly class="form-control-plaintext" type="datetime-local" value="<?php echo $_GET['pickupTime'];?>">
+                  <input readonly class="form-control-plaintext date1" type="datetime-local" value="<?php echo $_GET['pickupTime'];?>">
                   <input readonly class="form-control-plaintext" type="text" value="<?php echo $_GET['pickUpLocation'];?>">
                 </div>
                   - 
                 <div class="d-flex justify-content-between flex-wrap">
-                  <input readonly class="form-control-plaintext" type="datetime-local" value="<?php echo $_GET['returnTime'];?>">
+                  <input readonly class="form-control-plaintext date2" type="datetime-local" value="<?php echo $_GET['returnTime'];?>">
                   <input readonly class="form-control-plaintext" type="text" value="<?php echo $_GET['returnLocation'];?>">
                 </div>
 
@@ -72,7 +72,7 @@ $car = mysqli_fetch_assoc($carQ);
               <td style ="text-align: right; line-height: 30px;"  width="30%">
                 <ul class="cart-priceList" style="list-style: none;">
                   <li>租車費：$<?php echo $car['price'];?></li> 
-                  <li>日數：</li>
+                  <li><div>日數：</div></li>
                   <li>按金：$10,000</li>
                   <li>(*按金將於還車後退回)</li>
                 </ul>
