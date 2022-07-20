@@ -39,11 +39,11 @@
         <img style="z-index:2 ;" src="./image/index-img/round_logo.png" alt="green rental logo" class="greenRentalLogo">
     </div>
 
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
     
       <div class="carousel-inner rounded-bottom" style="box-shadow: 2px 2px 4px rgb(61, 61, 61);">
@@ -76,26 +76,17 @@
           </div>
         </div>
 
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselFade" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselFade" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       
-        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button> -->
-
       </div>
-  
+      
 <br><br>
 <div id="promo1">
   <div class="container justify-content-center w-75" style="background-color: rgb(218, 220, 220); border-radius: 15px;
