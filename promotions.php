@@ -13,22 +13,22 @@
       <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
         <ul class="navbar-nav fw-bold fs-5 me-5">
           <li class="nav-item mx-3">
-            <a class="nav-link" aria-current="page" href="./index.html">租車</a>
+            <a class="nav-link" aria-current="page" href="./index.php">租車</a>
           </li>
           <li class="nav-item mx-3">
-            <a class="nav-link" aria-current="page" href="./flow.html">租車流程</a>
+            <a class="nav-link" aria-current="page" href="./flow.php">租車流程</a>
           </li>
           <li class="nav-item mx-3">
             <div class="d-flex justify-content-center">
               <img src="./image/index-img/navcar.png" alt="navcar" class="navcar d-none d-lg-inline-block">
             </div>
-            <a class="nav-link active" href="./promotions.html">最新優惠</a>
+            <a class="nav-link active" href="./promotions.php">最新優惠</a>
           </li>
           <li class="nav-item mx-3">
-            <a class="nav-link" href="./about-us.html">關於我們</a>
+            <a class="nav-link" href="./about-us.php">關於我們</a>
           </li>
           <li class="nav-item mx-3">
-            <a class="nav-link" href="./contact-us.html">聯絡我們</a>
+            <a class="nav-link" href="./contact-us.php">聯絡我們</a>
           </li>
         </ul>
       </div>
@@ -111,7 +111,7 @@
     <h4>預訂期間：即日起至2022年8月31日止</h4>
     <br>
     <div class="container d-flex justify-content-evenly">
-      <a href="./Schedule.html" type="button" class="btn btn-primary btn-lg">立即預訂<br>享受省錢優惠</a>
+      <a href="./index.php" type="button" class="btn btn-primary btn-lg">立即預訂<br>享受省錢優惠</a>
     </div><br>
   </div>
 </div>
@@ -132,7 +132,7 @@
     <h4>預訂期間：即日起至2022年12月31日止</h4>
     <br>
     <div class="container d-flex justify-content-evenly">
-      <a href="./Schedule.html" type="button" class="btn btn-primary btn-lg">立即預訂<br>享受省錢優惠</a>
+      <a href="./index.php" type="button" class="btn btn-primary btn-lg">立即預訂<br>享受省錢優惠</a>
     </div><br>
   </div>
 </div>
@@ -153,7 +153,7 @@
     <h4>預訂期間：即日起至2022年12月31日止</h4>
     <br>
     <div class="container d-flex justify-content-evenly">
-      <a href="./Schedule.html" type="button" class="btn btn-primary btn-lg">立即預訂<br>享受省錢優惠</a>
+      <a href="./index.php" type="button" class="btn btn-primary btn-lg">立即預訂<br>享受省錢優惠</a>
     </div><br>
   </div>
 </div>
