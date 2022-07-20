@@ -84,7 +84,7 @@ $car = mysqli_fetch_assoc($carQ);
     <div class="container row mt-5" style="margin-bottom: 50px;">
       <div class="col">
         <p style="font-weight: 450; font-size: 20px;">預訂車輛 :<span class="fw-bold"><?php echo $car['name']?></span></p>
-        <img style="background-color: rgb(255, 255, 255); margin: 7px; margin-bottom: 30px; width:400px" src="./image/index-img/<?php echo $car['image']?>" alt="booking Car Image">
+        <img style=" margin: 7px; margin-bottom: 30px; width:400px" src="./image/index-img/<?php echo $car['image']?>" alt="booking Car Image">
       </div>
 
       <div class="col">

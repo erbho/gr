@@ -11,7 +11,7 @@
                   <li class="my-2"><a href="./index.php">租車</a></li>
                   <li class="my-2"><a href="./flow.php">租車流程</a></li>
                   <li class="my-2"><a href="./promotions.php">最新優惠</a></li>
-                  <li class="my-2"><a href="./about-us.html">關於我們</a></li>
+                  <li class="my-2"><a href="./about-us.php">關於我們</a></li>
                   <li class="my-2"><a href="./contact-us.php">聯絡我們</a></li>
                 </ui>
               </div>
