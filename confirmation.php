@@ -2,6 +2,7 @@
 <?php
 $orderQ = mysqli_query($dbConnection, "SELECT * FROM `order` ORDER BY `order_id` DESC LIMIT 1;");
 $order = mysqli_fetch_assoc($orderQ);
+
 $order_carName = $order['order_car'];
 $carQ = mysqli_query($dbConnection, "SELECT * FROM `car` WHERE `name`='$order_carName'");
 $car = mysqli_fetch_assoc($carQ);

@@ -139,10 +139,13 @@ header("location: ./staff-login.php");?>
                   <th scope="col">Customer Name</th>
                   <th scope="col">Customer Email</th>
                   <th scope="col">Customer Phone</th>
+                  <th scope="col">Vehicle</th>
                   <th scope="col">Pick-up Time</th>
                   <th scope="col">Return Time</th>
                   <th scope="col">Collect Location</th>
                   <th scope="col">Return Location</th>
+                  <th scope="col">Day</th>
+                  <th scope="col">Total Price</th>
                   <th scope="col">Order Time</th>
                 </tr>
               </thead>
@@ -151,6 +154,7 @@ header("location: ./staff-login.php");?>
                 while($order = mysqli_fetch_assoc($orderQ)){
                   echo '<tr>
                   <th scope="row">'.$order['order_id'].'</th>
+                  <td>'.$order['customer_name'].'</td>
                   <td>'.$order['customer_email'].'</td>
                   <td>'.$order['customer_phone_number'].'</td>
                   <td>'.$order['order_car'].'</td>
@@ -158,6 +162,8 @@ header("location: ./staff-login.php");?>
                   <td>'.$order['return_time'].'</td>
                   <td>'.$order['collect_location'].'</td>
                   <td>'.$order['return_location'].'</td>
+                  <td>'.$order['day'].'</td>
+                  <td>'.$order['total_price'].'</td>
                   <td>'.$order['order_time'].'</td>
                 </tr>'
                 ;}

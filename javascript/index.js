@@ -24,6 +24,9 @@
 // / console.log(newdatearray, newdatearray2); 
 // console.log(A);
 
+
+
+
 let date1=document.querySelector(".date1").value;
 let date2=document.querySelector(".date2").value;
 
@@ -47,3 +50,9 @@ const deposit = Number(document.querySelector(".deposit").innerHTML);
 document.querySelector(".totalPrice").innerHTML =rentFee * rentDay + deposit;
 
 
+
+
+
+/* input day & total price for db */
+document.querySelector('.getrentDayValue').value = rentDay;
+document.querySelector('.getTotalPriceValue').value = document.querySelector(".totalPrice").innerHTML;
