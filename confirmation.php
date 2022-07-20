@@ -9,7 +9,7 @@ $car = mysqli_fetch_assoc($carQ);
 ?> 
 
 
-  <div class="bgColor"><br><br>
+<div class="bgColor"><br><br>
         
         
     <nav class="navbar navbar-expand-lg navBg">   
@@ -117,4 +117,5 @@ $car = mysqli_fetch_assoc($carQ);
       </div>
     </div>
  </div>
+
   <?php include("index-footer.php")?>
