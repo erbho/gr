@@ -51,5 +51,10 @@ color: #a200a5;
 
 .head2:hover {
   color: #a200a5;
+}
 
+.carousel .carousel-indicators button {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
 }
