@@ -47,3 +47,4 @@ const deposit = Number(document.querySelector(".deposit").innerHTML);
 document.querySelector(".totalPrice").innerHTML =rentFee * rentDay + deposit;
 
 
+
