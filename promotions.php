@@ -47,13 +47,13 @@
         <button type="button" data-bs-target="carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
     
-        <div class="carousel-inner rounded-bottom" style="box-shadow: 2px 2px 4px rgb(61, 61, 61);">
+      <div class="carousel-inner rounded-bottom" style="box-shadow: 2px 2px 4px rgb(61, 61, 61);">
           <div class="carousel-item active" data-bs-interval="3000">
             <a  href="#promo1">
               <img src="./image/promo-img/Summer.jpg" class="d-block w-100" alt="promo1">
               <div class="carousel-caption">            
-                  <h1 class="head1"><p class="banner-text-header">炎夏早鳥優惠</p></h1>
-                  <h2 class="head2"><p class="banner-text">最少兩週前預訂租車，即可享10%優惠折扣</p></h2>
+                  <h1><p class="banner-text-header">炎夏早鳥優惠</p></h1>
+                  <h2><p class="banner-text">最少兩週前預訂租車，即可享10%優惠折扣</p></h2>
               </div>
             </a>
           </div>
@@ -61,8 +61,8 @@
             <a  href="#promo2">
               <img src="./image/promo-img/Week.jpg" class="d-block w-100" alt="promo1">
               <div class="carousel-caption">            
-                  <h1 class="head1"><p class="banner-text-header">週租優惠</p></h1>
-                  <h2 class="head2"><p class="banner-text">租車每滿7天，可享一天租金半價</p></h2>
+                  <h1><p class="banner-text-header">週租優惠</p></h1>
+                  <h2><p class="banner-text">租車每滿7天，可享一天租金半價</p></h2>
               </div>
             </a>
           </div>
@@ -70,8 +70,8 @@
             <a  href="#promo3">
               <img src="./image/promo-img/Month.jpg" class="d-block w-100" alt="promo1">
               <div class="carousel-caption">            
-                  <h1 class="head1"><p class="banner-text-header">月租優惠</p></h1>
-                  <h2 class="head2"><p class="banner-text">租車每滿4週，可享3天免費</p></h2>
+                  <h1><p class="banner-text-header">月租優惠</p></h1>
+                  <h2><p class="banner-text">租車每滿4週，可享3天免費</p></h2>
               </div>
             </a>
           </div>
