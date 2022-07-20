@@ -137,5 +137,7 @@ $car = mysqli_fetch_assoc($carQ);
       </form>
 
       </div>
+
+      <?php include("index-footer.php")?>
 </div>
-<?php include("index-footer.php")?>
+
