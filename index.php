@@ -106,7 +106,7 @@
                   </div>
                   <div class="col-12">
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="gridCheck2" required>
+                      <input class="form-check-input" type="checkbox" id="gridCheck2" onclick="abc()" required>
                       <label class="form-check-label" for="gridCheck2">
                         本人已閱讀及同意遵守所有<a href="">條款及細則</a>
                       </label>
@@ -114,7 +114,7 @@
                   </div>
                   
                   <div class="d-grid gap-2 col-6 mx-auto">
-                    <button style="margin: 15px" type="submit" class="btn btn-dark">開始租車</button>
+                    <button style="margin: 15px" type="submit" class="btn btn-dark" >開始租車</button>
                   </div>
                 </form>
 
