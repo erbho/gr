@@ -114,7 +114,7 @@
                   </div>
                   
                   <div class="d-grid gap-2 col-6 mx-auto">
-                    <button style="margin: 15px" type="submit" class="btn btn-dark" >開始租車</button>
+                    <button style="margin: 15px" type="submit" class="btn btn-dark submitCheck" >開始租車</button>
                   </div>
                 </form>
 
