@@ -53,12 +53,12 @@
               選擇品牌
             </button>
             <ul class="dropdown-menu dropdown-menu-dark text-center" aria-labelledby="dropdownMenuButton2">
-              <li><a class="dropdown-item active mb-2" href="#">Audi</a></li>
-              <li><a class="dropdown-item mb-2" href="#">BMW</a></li>
-              <li><a class="dropdown-item mb-2" href="#">Mercedes Benz</a></li>
-              <li><a class="dropdown-item mb-2" href="#">Nissan</a></li>
-              <li><a class="dropdown-item mb-2" href="#">Tesla</a></li>
-              <li><a class="dropdown-item" href="#">Toyota</a></li>
+              <li><a class="dropdown-item active mb-2" onclick="filterCar(1)" href="#">Audi</a></li>
+              <li><a class="dropdown-item mb-2" onclick="filterCar(2)" href="#">BMW</a></li>
+              <li><a class="dropdown-item mb-2" onclick="filterCar(3)" href="#">Mercedes Benz</a></li>
+              <li><a class="dropdown-item mb-2" onclick="filterCar(4)" href="#">Nissan</a></li>
+              <li><a class="dropdown-item mb-2" onclick="filterCar(6)" href="#">Tesla</a></li>
+              <li><a class="dropdown-item" onclick="filterCar(5)" href="#">Toyota</a></li>
             </ul>
           </div>
             
@@ -73,11 +73,11 @@
     <div class="row row-cols-1 gx-0  text-center">
       <?php $carQ = mysqli_query($dbConnection, "SELECT * from `car`");
       while($car=mysqli_fetch_assoc($carQ)){
-        echo '<div class="col d-flex justify-content-evenly my-4 '.$car['name'].'">
+        echo '<div class="col d-flex justify-content-evenly my-4 carCard" id="'.$car['car_id'].'">
         <div id="card" class="card mb-3 card-hover" style="max-width: 900px;">
           <div class="row row-cols-1 row-cols-md-2 g-0">
             <div class="col-md-4 d-flex align-items-center">
-              <img src="./image/index-img/'.$car['image'].'" class="card-img-top" alt="...">
+              <img src="./image/index-img/'.$car['image'].'" class="card-img-top" alt="car_items">
             </div>
             <div class="col-md-8">
               <div class="card-body">
@@ -95,7 +95,7 @@
                   <br>車身重量：'.$car['weight'].' kg</p>
                   <hr>
                   <a href="cart.php?pickupTime='.$_GET['pickuptime'].'&returnTime='.$_GET['returntime'].'&pickUpLocation='.$_GET['pickupLocation'].'&returnLocation='.$_GET['returnLocation'].'&car_id='.$car['car_id'].'"><button type="button" class="btn btn-outline-dark">日租︰$'.$car['price'].'</button></a></div></div></div></div></div>';
-       }
+        }
       ?>
           </div>
 
