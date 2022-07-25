@@ -98,7 +98,7 @@ $car = mysqli_fetch_assoc($carQ);
                 <label class="ms-2" for="floatingInput"><a style="color: rgb(255, 0, 0);">*</a>姓名：</label>
               </div>
               <div class="col form-floating mb-4">
-                <input  type="Phone" class="form-control" id="floatingInput" name="phone" placeholder="電話" required>
+                <input  type="Phone" class="form-control" id="floatingInput" name="phone" placeholder="電話" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');" minlength="8" maxlength="8" required>
                 <label class="ms-2" for="floatingInput"><a style="color: rgb(255, 0, 0);">*</a>電話：</label>
               </div>
             </div>
@@ -109,7 +109,7 @@ $car = mysqli_fetch_assoc($carQ);
                 <label class="ms-2" for="floatingInput"><a style="color: rgb(255, 0, 0);">*</a>Email：</label>
               </div>
               <div class="col form-floating mb-4">
-                <input type="IDno" class="form-control" id="floatingInput" placeholder="身份證號碼" required>
+                <input type="IDno" class="form-control" id="floatingInput" placeholder="身份證號碼" maxlength="8" required>
                 <label class="ms-2" for="floatingInput"><a style="color: rgb(255, 0, 0);">*</a>身份證：</label>
               </div>
             </div>
