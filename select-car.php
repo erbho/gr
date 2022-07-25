@@ -73,7 +73,7 @@
     <div class="row row-cols-1 gx-0  text-center">
       <?php $carQ = mysqli_query($dbConnection, "SELECT * from `car`");
       while($car=mysqli_fetch_assoc($carQ)){
-        echo '<div class="col d-flex justify-content-evenly my-4 ">
+        echo '<div class="col d-flex justify-content-evenly my-4 '.$car['name'].'">
         <div id="card" class="card mb-3 card-hover" style="max-width: 900px;">
           <div class="row row-cols-1 row-cols-md-2 g-0">
             <div class="col-md-4 d-flex align-items-center">
