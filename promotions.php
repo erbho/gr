@@ -39,7 +39,7 @@
         <img style="z-index:2 ;" src="./image/index-img/round_logo.png" alt="green rental logo" class="greenRentalLogo">
     </div>
 
-    <div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
