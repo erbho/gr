@@ -1,31 +1,30 @@
+const btnCkeck= document.querySelector('.submitCheck');
+btnCkeck.addEventListener('click',dateCheck);
 
 
 /* date check */
-function abc(){
-let t = document.querySelector(".pickuptime").value;
-let r = document.querySelector(".returntime").value;
-
-/* const btnCkeck= document.querySelector('.submitCheck');
-let disableSubmit = btnCkeck.setAttribute('type','button');
-let ableSubmit = btnCkeck.setAttribute('type','submit');
-
-console.log(disableSubmit,ableSubmit); */
+function dateCheck(){
+let pickuptime = document.querySelector(".pickuptime").value;
+let returntime = document.querySelector(".returntime").value;
 
 
-let tt = new Date(t)
-let rr = new Date(r)
+let pickuptimeDate = new Date(pickuptime)
+let returntimeDate = new Date(returntime)
 
 
-let ttT = tt.getTime();
-let rrR = rr.getTime();
+let numberOfPickuptime = pickuptimeDate.getTime();
+let numberOfReturntime = returntimeDate.getTime();
 
 
-if (t=="" && r==""){
+if (pickuptime=="" && returntime==""){
     alert("Pick the fucking date");
-
-}else if(ttT>rrR || ttT==rrR) {
+    btnCkeck.setAttribute('type','button');
+    
+}else if(numberOfPickuptime>numberOfReturntime || numberOfPickuptime==numberOfReturntime) {
     alert("fuck u!");
+    btnCkeck.setAttribute('type','button');
 } else {
     alert("fuck uUU!");
+    btnCkeck.setAttribute('type','submit');
 }
 }
