@@ -15,4 +15,4 @@
 </head>
 <body>
 
-    <a href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp wts fa-4x me-4 mb-3 fa-shake" style="z-index: 1;"></i></a>
+    <a href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp wts fa-4x me-4 mb-3 fa-shake d-none d-sm-block" style="z-index: 1;"></i></a>

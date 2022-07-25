@@ -95,22 +95,22 @@ $car = mysqli_fetch_assoc($carQ);
             <div class="row">
               <div class=" col form-floating mb-4">
                 <input type="Name" class="form-control" id="floatingInput" name="name" placeholder="姓名" required>
-                <label class="ms-2" for="floatingInput">姓名：</label>
+                <label class="ms-2" for="floatingInput"><a style="color: rgb(255, 0, 0);">*</a>姓名：</label>
               </div>
               <div class="col form-floating mb-4">
-                <input  type="Phone" class="form-control" id="floatingInput" name="phone" placeholder="電話" required>
-                <label class="ms-2" for="floatingInput">電話：</label>
+                <input  type="Phone" class="form-control" id="floatingInput" name="phone" placeholder="電話" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');" minlength="8" maxlength="8" required>
+                <label class="ms-2" for="floatingInput"><a style="color: rgb(255, 0, 0);">*</a>電話：</label>
               </div>
             </div>
 
             <div class="row">
               <div class="col-7 form-floating mb-4">
                 <input type="email" class="form-control" id="floatingInput" name="email" placeholder="name@example.com" required>
-                <label class="ms-2" for="floatingInput">Email：</label>
+                <label class="ms-2" for="floatingInput"><a style="color: rgb(255, 0, 0);">*</a>Email：</label>
               </div>
               <div class="col form-floating mb-4">
-                <input type="IDno" class="form-control" id="floatingInput" placeholder="身份證號碼" required>
-                <label class="ms-2" for="floatingInput">身份證：</label>
+                <input type="IDno" class="form-control" id="floatingInput" placeholder="身份證號碼" maxlength="8" required>
+                <label class="ms-2" for="floatingInput"><a style="color: rgb(255, 0, 0);">*</a>身份證：</label>
               </div>
             </div>
 
