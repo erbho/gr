@@ -77,3 +77,7 @@ body {
 .nextbutton :hover{
     opacity:1 ;
 }
+
+.sortBg{
+    background-color: rgba(38, 190, 201, 0.86);
+}

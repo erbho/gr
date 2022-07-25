@@ -53,12 +53,13 @@
               選擇品牌
             </button>
             <ul class="dropdown-menu dropdown-menu-dark text-center" aria-labelledby="dropdownMenuButton2">
-              <li><a class="dropdown-item active mb-2" onclick="filterCar(1)" href="#">Audi</a></li>
-              <li><a class="dropdown-item mb-2" onclick="filterCar(2)" href="#">BMW</a></li>
-              <li><a class="dropdown-item mb-2" onclick="filterCar(3)" href="#">Mercedes Benz</a></li>
-              <li><a class="dropdown-item mb-2" onclick="filterCar(4)" href="#">Nissan</a></li>
-              <li><a class="dropdown-item mb-2" onclick="filterCar(6)" href="#">Tesla</a></li>
-              <li><a class="dropdown-item" onclick="filterCar(5)" href="#">Toyota</a></li>
+            <li><a class="dropdown-item mb-2 " onclick="allCar()" href="#">All</a></li>
+              <li><a class="dropdown-item none  mb-2" onclick="filterCar(1)" href="#">Audi</a></li>
+              <li><a class="dropdown-item mb-2 none" onclick="filterCar(2)" href="#">BMW</a></li>
+              <li><a class="dropdown-item mb-2 none" onclick="filterCar(3)" href="#">Mercedes Benz</a></li>
+              <li><a class="dropdown-item mb-2 none" onclick="filterCar(4)" href="#">Nissan</a></li>
+              <li><a class="dropdown-item mb-2 none" onclick="filterCar(6)" href="#">Tesla</a></li>
+              <li><a class="dropdown-item none" onclick="filterCar(5)" href="#">Toyota</a></li>
             </ul>
           </div>
             
