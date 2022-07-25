@@ -16,15 +16,14 @@ let numberOfPickuptime = pickuptimeDate.getTime();
 let numberOfReturntime = returntimeDate.getTime();
 
 
-if (pickuptime=="" && returntime==""){
-    alert("Pick the fucking date");
+if (pickuptime=="" || returntime==""){
+    alert("請選取時間");
     btnCkeck.setAttribute('type','button');
     
 }else if(numberOfPickuptime>numberOfReturntime || numberOfPickuptime==numberOfReturntime) {
-    alert("fuck u!");
+    alert("錯誤! 請選擇正確時間");
     btnCkeck.setAttribute('type','button');
 } else {
-    alert("fuck uUU!");
     btnCkeck.setAttribute('type','submit');
 }
 }
