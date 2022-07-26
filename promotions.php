@@ -2,7 +2,6 @@
 
 <div class="bgColor"><br><br>
 
-  <a href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp wts fa-4x me-4 mb-3 fa-shake"></i></a>
   
   <nav class="navbar navbar-expand-lg navBg">   
     <div class="container-fluid d-flex justify-content-end">
