@@ -97,7 +97,7 @@ $car = mysqli_fetch_assoc($carQ);
           </div>
         </div><hr>
         <div class="d-flex justify-content-between  fs-5 my-3 mt-4">
-          <span >租車費：</span>
+          <span >日租：</span>
           <div class="d-flex justify-content-end">
             <span class="me-2">$</span>
             <span class="rentFee"><?php echo $car['price'];?></span>
