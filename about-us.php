@@ -41,16 +41,15 @@
         <img width="100%" style="position: relative;z-index: 1;"
         src="./image/index-img/Car_banner.png" alt="car poster" class="img-fluid">
     </div>
-    <div class="container m-3">
-        Green Rental 給予你駕駛最新電動/混能車的愉悅。你可以在幾分鐘內從七種車款中選擇並確認你的預訂。我們的載具整潔、保養良好並充滿電量。我們承諾將提供優質的客户服務並成為你的信心保證。馬上聯絡我們為你既將到來的岀行或商務公幹提供服務。
+<div class="container d-flex justify-content-center" style="line-height: 40px; letter-spacing: 3px; padding-top: 50px; font-size: large;">
+  Green Rental給予你駕駛最新電動的喜悅。你可以從七種車款中選擇並確認你的預訂。我們的車輛整潔、保養良好並充滿電量。我們承諾將提供優質的客户服務並成為你的信心保證。馬上聯絡我們為你將到來的岀行或商務公幹提供服務。隨着顧客需求日益增加，Green Rental位於上水的全新顧客服務中心正式啟用，足證Green Rental對於提升客戶服務質素的決心。展望未來。Green Rental將繼續強化本身的業務，為客戶提供更優質、更全面的汽車服務，同時亦會致力將業務推向多元化發展的道路，邁向新紀元。
+</div>
 
-<br><br> Green Rental offers you the pleasure of driving current models of Electric Vehicles.   Enjoy 
-the smooth power, quietness and  comfort of electric cars.   Select  from our line-up of 7 models and
-confirm your booking on-line in just a few minutes.   Our fleet is  meticulously prepared, with the 
-batteries fully-charged.     Green Rental is committed to customer service and satisfaction.   Our service 
-team will brief you on the use of the car and locations of controls and switches.    
-
-Why not <a href="./contact-us.php">contact us</a> right-away for your next family outing or business trip ! 
+<br><br>
+<div class="container d-flex justify-content-center">
+    <div style="line-height: 40px; padding-bottom: 50px; font-size: large;">
+  Green Rental offers you the pleasure of driving current models of Electric Vehicles. Enjoy the smooth power, quietness and comfort of electric cars. Select from our line-up of 7 models and confirm your booking on-line in just a few minutes.   Our fleet is  meticulously prepared, with the batteries fully-charged. Green Rental is committed to customer service and satisfaction. Our service team will brief you on the use of the car and locations of controls and switches. Why not <a href="./contact-us.php">contact us</a> right-away for your next family outing or business trip ! 
+   </div>
 </div>
 
 
