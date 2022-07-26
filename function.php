@@ -127,7 +127,7 @@ function customerMessage($cp_Name,$cp_phone,$cp_Email,$cp_Message){
     $Message = "INSERT INTO `message`(`contact_person`,`contact_phone`,`contact_email`,`contact_message`) value ('$cp_Name','$cp_phone','$cp_Email','$cp_Message')";
 
     if(mysqli_query($dbConnection, $Message)){
-        echo '<script>alert("Thank you for your message!");
+        echo '<script>alert("Thank you for contacting us!"  "We will reply you shortly!");
         window.location="./contact-us.php";</script>';
     }else{
         echo '<script>alert("Failed to submit message, please try again");
