@@ -19,6 +19,7 @@ include('database.php');
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/staff.css">
     <link rel="stylesheet" href="./css/cms.css">
+    <link rel="stylesheet" href="./css/cmsMessage.css">
 </head>
 <body>
 

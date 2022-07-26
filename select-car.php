@@ -47,7 +47,7 @@
           <img src="./image/index-img/building.png" alt="building" class="building-img d-none d-md-block">
       
           
-          <div class="container d-flex justify-content-center dropend" style="padding-top: 20px;">
+          <div class="container d-flex justify-content-center dropend sticky-top" style="padding-top: 20px;">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown"
               aria-expanded="false">
               選擇品牌

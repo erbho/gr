@@ -13,7 +13,7 @@ header("location: ./staff-login.php");?>
     <div>
 
       <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" aria-controls="offcanvasExample" style="background-color:#fff;border: 0;">
-      <i class="fa-solid fa-circle-user fa-3x me-5" style="color:rgb(73, 73, 151)"></i>
+      <i class="fa-solid fa-circle-user fa-3x me-4" style="color:rgb(73, 73, 151)"></i>
       </a>
 
       <div class="offcanvas offcanvas-end rounded-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
@@ -74,7 +74,7 @@ header("location: ./staff-login.php");?>
                 <input type="submit" class="btn btn-warning" value="Reset Password">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancal</button>
               </div>
-           </form>
+          </form>
         </div>
       </div>
     </div>
@@ -91,7 +91,7 @@ header("location: ./staff-login.php");?>
     <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Vehicle List</button>
   </li>
   <li class="nav-item" role="presentation">
-    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Customer Contact</button>
+    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Message</button>
   </li>
 </ul>
 
@@ -109,7 +109,7 @@ header("location: ./staff-login.php");?>
     <button class="nav-link my-3" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
       type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Vehicle List </button>
     <button class="nav-link my-3" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
-      type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Customer Contact</button>
+      type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Message</button>
 
 
   </div>
@@ -118,61 +118,62 @@ header("location: ./staff-login.php");?>
 
 
 
-  <div class="tab-content container" id="v-pills-tabContent">
+<div class="tab-content container" id="v-pills-tabContent">
     <!--------- nav content-1 ----------->
     <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"
         tabindex="0">
 
-        <div class="d-flex justify-content-start align-items-center">
-          <label for="searchOrderId" class="me-2">Order Number</label>
-          <input type="text" class="me-2" id="searchOrderId" style="width:80px" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');">
-          <button class="order-fitter-icon ms-3" style="border:0;"><i class="fa-solid fa-filter fa-2x "></i></button>
-        </div>
+      <div class="d-flex justify-content-start align-items-center">
+        <label for="searchOrderId" class="me-2">Order Number</label>
+        <input type="text" class="me-2" id="searchOrderId" style="width:80px" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');">
+        <button class="order-fitter-icon ms-3" style="border:0;"><i class="fa-solid fa-filter fa-2x "></i></button>
+        <a href="" class="mx-2">All</a>
+      </div>
 
-          <div class="card my-4">
-            
-          <div class="card-body table-responsive my-4 overflow-auto">
-            <table class="table table-striped table-hover ">
-              <thead>
-                <tr>
-                  <th scope="col">Order Number</th>
-                  <th scope="col">Customer Name</th>
-                  <th scope="col">Customer Email</th>
-                  <th scope="col">Customer Phone</th>
-                  <th scope="col">Vehicle</th>
-                  <th scope="col">Pick-up Time</th>
-                  <th scope="col">Return Time</th>
-                  <th scope="col">Collect Location</th>
-                  <th scope="col">Return Location</th>
-                  <th scope="col">Day</th>
-                  <th scope="col">Total Price</th>
-                  <th scope="col">Order Time</th>
-                </tr>
-              </thead>
-              <tbody>
-              <?php $orderQ = mysqli_query($dbConnection,"SELECT * from `order`");
-                while($order = mysqli_fetch_assoc($orderQ)){
-                  echo '<tr>
-                  <th scope="row">'.$order['order_id'].'</th>
-                  <td>'.$order['customer_name'].'</td>
-                  <td>'.$order['customer_email'].'</td>
-                  <td>'.$order['customer_phone_number'].'</td>
-                  <td>'.$order['order_car'].'</td>
-                  <td>'.$order['pick_up_time'].'</td>
-                  <td>'.$order['return_time'].'</td>
-                  <td>'.$order['collect_location'].'</td>
-                  <td>'.$order['return_location'].'</td>
-                  <td>'.$order['day'].'</td>
-                  <td>'.$order['total_price'].'</td>
-                  <td>'.$order['order_time'].'</td>
-                </tr>'
-                ;}
-              ?>
-              </tbody>
-            </table>
-          </div>
+        <div class="card my-4">
+          
+        <div class="card-body table-responsive my-4 overflow-auto" style="max-height:600px">
+          <table class="table table-striped table-hover ">
+            <thead>
+              <tr>
+                <th scope="col">Order Number</th>
+                <th scope="col">Customer Name</th>
+                <th scope="col">Customer Email</th>
+                <th scope="col">Customer Phone</th>
+                <th scope="col">Vehicle</th>
+                <th scope="col">Pick-up Time</th>
+                <th scope="col">Return Time</th>
+                <th scope="col">Collect Location</th>
+                <th scope="col">Return Location</th>
+                <th scope="col">Day</th>
+                <th scope="col">Total Price</th>
+                <th scope="col">Order Time</th>
+              </tr>
+            </thead>
+            <tbody>
+            <?php $orderQ = mysqli_query($dbConnection,"SELECT * from `order`");
+              while($order = mysqli_fetch_assoc($orderQ)){
+                echo '<tr>
+                <th scope="row">'.$order['order_id'].'</th>
+                <td>'.$order['customer_name'].'</td>
+                <td>'.$order['customer_email'].'</td>
+                <td>'.$order['customer_phone_number'].'</td>
+                <td>'.$order['order_car'].'</td>
+                <td>'.$order['pick_up_time'].'</td>
+                <td>'.$order['return_time'].'</td>
+                <td>'.$order['collect_location'].'</td>
+                <td>'.$order['return_location'].'</td>
+                <td>'.$order['day'].'</td>
+                <td>'.$order['total_price'].'</td>
+                <td>'.$order['order_time'].'</td>
+              </tr>'
+              ;}
+            ?>
+            </tbody>
+          </table>
         </div>
-    </div>
+      </div>
+</div>
 
 
 
@@ -294,12 +295,25 @@ header("location: ./staff-login.php");?>
 
 </div>
     <!--------- nav content-3 ----------->
-    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"
-      tabindex="0">
-      3
+  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
+
+    <div class="row row-cols-md-3 row-cols-lg-4 ">
+      <?php $messageQ = mysqli_query($dbConnection, 'SELECT * from `message`');
+        while($message = mysqli_fetch_assoc($messageQ)){
+          echo '<div class="messageCard col p-2 my-2">
+                  <h2 class="">'.$message['contact_person'].'</h2>
+                  <p class="messagePhone my-1">'.$message['contact_phone'].'</p>
+                  <p class="messageEmail my-1">'.$message['contact_email'].'</p>
+                  <div style="margin: 24px 0;" class="messageDiv overflow-auto">
+                    '.$message['contact_message'].'
+                  </div>
+                  <button class="replyBtn">Reply</button>
+                </div>'
+        ;}
+      ?>
     </div>
+    
   </div>
-</div>
 
 
 

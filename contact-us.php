@@ -95,12 +95,12 @@
     <p style="text-align: right; margin-right:170px;"><a href="mailto:someone@example.com">CS.Greenrental@gmail.com</a></p>
 
 <div class="container container-ContactUs d-flex justify-content-center w-75 p-5 mb-5" style="border-radius:15px ;">
-  <form action="">
+  <form action="./function.php?op=customerMessage" method="post">
     <label for="name">Name</label>
     <input type="text" id="name" name="name" placeholder="Your name..">
     
     <label for="Phone">Phone</label>
-    <input class="form control" type="text" pattern="[0-9]" id="Phone" name="Phone" placeholder="Number(s) only..">
+    <input class="form control" type="text" id="Phone" name="Phone" placeholder="Number(s) only.." oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');" minlength="8" maxlength="8" required>
 
     <label for="email">Email</label>
     <input type="text" id="email" name="email" placeholder="Your E-mail address..">
