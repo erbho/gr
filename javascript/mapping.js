@@ -17,3 +17,9 @@ if (L2=="上水分店"){
 else{
     M2.setAttribute("href", "https://goo.gl/maps/D1bYPYAGmVsz7H3AA");
 }
+
+// document.querySelector(".pickupDateTime").innerHTML = localStorage.pickuptimeDate;
+// document.querySelector(".pickupBranch").innerHTML = localStorage.pickupBranch;
+
+// document.querySelector(".returnDateTime").innerHTML = localStorage.returntimeDate;
+// document.querySelector(".returnBranch").innerHTML = localStorage.returnBranch;
