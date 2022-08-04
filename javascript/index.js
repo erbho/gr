@@ -50,6 +50,14 @@ function setMinReturnDate () {
     document.querySelector(".returntime").setAttribute("min", pickuptime);
 }
 
+const maxPickupDate = document.querySelector('.returntime');
+maxPickupDate.addEventListener('change',setMaxPickupDate);
+
+function setMaxPickupDate () {
+    let returntime = document.querySelector(".returntime").value;
+    document.querySelector(".pickuptime").setAttribute("max", returntime);
+}
+
 
 // document.querySelector(".rentDay").innerHTML = dayceil_between;
 document.querySelector(".rentDay").innerHTML = JSON.parse(localStorage.rentDay);
