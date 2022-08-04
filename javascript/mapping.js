@@ -1,5 +1,7 @@
-let L1=document.querySelector('.locationcheck1').innerHTML;
-let L2=document.querySelector('.locationcheck2').innerHTML;
+// let L1=document.querySelector('.locationcheck1').innerHTML;
+// let L2=document.querySelector('.locationcheck2').innerHTML;
+let L1=localStorage.pickupBranch;
+let L2=localStorage.returnBranch;
 let M1=document.querySelector('.showmap1');
 let M2=document.querySelector('.showmap2');
 console.log(L1,L2,M1,M2)
