@@ -38,8 +38,9 @@
 // let dayceil_between = Math.ceil(day_between);
 
 let today = new Date();
-document.querySelector(".pickuptime").setAttribute("min", today);
-document.querySelector(".returntime").setAttribute("min", today);
+minDate = new Date(today.getTime() - today.getTimezoneOffset() * 60000).toISOString().substring(0, 19)
+document.querySelector(".pickuptime").setAttribute("min", minDate);
+document.querySelector(".returntime").setAttribute("min", minDate);
 
 
 // document.querySelector(".rentDay").innerHTML = dayceil_between;
