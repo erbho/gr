@@ -42,6 +42,14 @@ minDate = new Date(today.getTime() - today.getTimezoneOffset() * 60000).toISOStr
 document.querySelector(".pickuptime").setAttribute("min", minDate);
 document.querySelector(".returntime").setAttribute("min", minDate);
 
+const minReturnDate= document.querySelector('.pickuptime');
+minReturnDate.addEventListener('change',setMinReturnDate);
+
+function setMinReturnDate () {
+    let pickuptime = document.querySelector(".pickuptime").value;
+    document.querySelector(".returntime").setAttribute("min", pickuptime);
+}
+
 
 // document.querySelector(".rentDay").innerHTML = dayceil_between;
 document.querySelector(".rentDay").innerHTML = JSON.parse(localStorage.rentDay);
@@ -54,7 +62,7 @@ const rentDay = JSON.parse(localStorage.rentDay);
 const deposit = Number(document.querySelector(".deposit").innerHTML);
 const total = rentFee * rentDay + deposit;
 
-document.querySelector(".totalPrice").innerHTML =rentFee * rentDay + deposit;
+document.querySelector(".totalPrice").innerHTML = rentFee * rentDay + deposit;
 //***will affect posting in cart.php/ document.querySelector(".totalPrice").innerHTML = total.toLocaleString();
 
 localStorage.rentFee = rentFee;
