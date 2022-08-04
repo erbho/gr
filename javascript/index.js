@@ -37,6 +37,11 @@
 // let day_between = time_between / (1000*3600*24);
 // let dayceil_between = Math.ceil(day_between);
 
+let today = new Date();
+document.querySelector(".pickuptime").setAttribute("min", today);
+document.querySelector(".returntime").setAttribute("min", today);
+
+
 // document.querySelector(".rentDay").innerHTML = dayceil_between;
 document.querySelector(".rentDay").innerHTML = JSON.parse(localStorage.rentDay);
 
