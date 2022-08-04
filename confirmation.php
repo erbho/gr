@@ -60,7 +60,7 @@ $car = mysqli_fetch_assoc($carQ);
           <div class="card col-4 me-5 mb-5" style="width: 26rem;border-color: black;border-style: solid; border-radius: 15px; border-width: 1px; background-color: rgb(253, 247, 239);">
             <div class="card-body">
              <h3 id="取車地點" style="margin-left: 20px; text-align: start;font-weight: 450; font-size: 25px;"><br><i style="margin-right: 10px;" class="fa-solid fa-location-dot"></i>取車地點 :</h3>
-             <p class="py-2" style="margin-left: 20px; font-size: 17px;"><span class="fw-bold pickupBranch"></span><a class="showmap1" href="https://goo.gl/maps/D1bYPYAGmVsz7H3AA">按此顯示地圖</a></p>
+             <p class="py-2" style="margin-left: 20px; font-size: 17px;"><span class="fw-bold pickupBranch"></span><br><a class="showmap1" target="_blank" href="https://goo.gl/maps/D1bYPYAGmVsz7H3AA">按此顯示地圖</a></p>
                   
                
              <h3 id="取車日期和時間" style="margin-left: 20px;  text-align: start;font-weight: 450; font-size: 25px;"><br><i style="margin-right: 10px;" class="fa-solid fa-clock"></i>取車日期和時間 :</h3>
@@ -72,7 +72,7 @@ $car = mysqli_fetch_assoc($carQ);
           <div class="card col-4 me-5 mb-5" style="width: 26rem;border-color: black;border-style: solid; border-radius: 15px; border-width: 1px; background-color: rgb(253, 247, 239);">
             <div class="card-body">
              <h3 id="還車地點" style="margin-left: 20px; text-align: start;font-weight: 450; font-size: 25px;"><br><i style="margin-right: 10px;" class="fa-solid fa-location-dot"></i>還車地點 :</h3>
-             <p class="py-2" style="margin-left: 20px; font-size: 17px;"><span class="fw-bold returnBranch"></span><a class="showmap2" href="https://goo.gl/maps/hMskNwCdmrrGaPy19">按此顯示地圖</a></p>
+             <p class="py-2" style="margin-left: 20px; font-size: 17px;"><span class="fw-bold returnBranch"></span><br><a class="showmap2" target="_blank" href="https://goo.gl/maps/hMskNwCdmrrGaPy19">按此顯示地圖</a></p>
                   
                   
              <h3 id="還車日期和時間" style="margin-left: 20px;  text-align: start;font-weight: 450; font-size: 25px;"><br><i style="margin-right: 10px;" class="fa-solid fa-clock"></i>還車日期和時間 :</h3>
