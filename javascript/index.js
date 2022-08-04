@@ -48,8 +48,8 @@ const rentDay = JSON.parse(localStorage.rentDay);
 const deposit = Number(document.querySelector(".deposit").innerHTML);
 const total = rentFee * rentDay + deposit;
 
-document.querySelector(".totalPrice").innerHTML =rentFee * rentDay + deposit;
-// document.querySelector(".totalPrice").innerHTML = total.toLocaleString();
+// document.querySelector(".totalPrice").innerHTML =rentFee * rentDay + deposit;
+document.querySelector(".totalPrice").innerHTML = total.toLocaleString();
 
 localStorage.rentFee = rentFee;
 localStorage.total = total.toLocaleString();
