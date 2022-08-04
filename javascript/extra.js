@@ -34,6 +34,7 @@ if (pickuptime=="" || returntime==""){
     alert("錯誤! 請選擇正確時間");
     btnCkeck.setAttribute('type','button');
 } else {
+    btnCkeck.setAttribute('type','submit');
     localStorage.clear();
     localStorage.pickuptimeDate = puDate + ", " + puHour + " " + puAMPM
     localStorage.returntimeDate = rtDate + ", " + rtHour + " " + rtAMPM
@@ -42,6 +43,5 @@ if (pickuptime=="" || returntime==""){
     localStorage.rttd = returntimeDate;
     localStorage.pickupBranch = document.querySelector("#pickupBranch").value;
     localStorage.returnBranch = document.querySelector("#returnBranch").value; 
-    btnCkeck.setAttribute('type','submit');
 }
 }
