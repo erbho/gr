@@ -27,15 +27,15 @@
 
 
 
-let date1=document.querySelector(".date1").value;
-let date2=document.querySelector(".date2").value;
+// let date1=document.querySelector(".date1").value;
+// let date2=document.querySelector(".date2").value;
 
-let diffdate1 = new Date (date1)
-let diffdate2 = new Date(date2)
+// let diffdate1 = new Date (date1)
+// let diffdate2 = new Date(date2)
 
-let time_between = diffdate2.getTime() - diffdate1.getTime();
-let day_between = time_between / (1000*3600*24);
-let dayceil_between = Math.ceil(day_between);
+// let time_between = diffdate2.getTime() - diffdate1.getTime();
+// let day_between = time_between / (1000*3600*24);
+// let dayceil_between = Math.ceil(day_between);
 
 // document.querySelector(".rentDay").innerHTML = dayceil_between;
 document.querySelector(".rentDay").innerHTML = JSON.parse(localStorage.rentDay);

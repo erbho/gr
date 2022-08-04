@@ -51,7 +51,7 @@
                 <form class="row g-3" style="margin: 12px;" action="./select-car.php" method="get">
                   <div class="col-md-6">
                     <p style="font-size:20px ;margin-bottom: 10px;">取車地點</p>
-                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="pickupLocation" required>
+                    <select id="pickupBranch" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="pickupLocation" required>
                       <option selected="">請選擇分店</option>
                       <option value="觀塘分店">觀塘分店: 九龍觀塘海濱道167-169號</option>
                       <option value="上水分店">上水分店: 新界上水嘉富坊3號上水貿易廣場</option>
@@ -59,7 +59,7 @@
                   </div>
                   <div class="col-md-6">
                     <p style="font-size:20px ;margin-bottom: 10px;">還車地點</p>
-                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="returnLocation" required>
+                    <select id="returnBranch" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="returnLocation" required>
                       <option selected="">請選擇分店</option>
                       <option value="觀塘分店">觀塘分店 九龍觀塘海濱道167-169號</option>
                       <option value="上水分店">上水分店: 新界上水嘉富坊3號上水貿易廣場</option>
