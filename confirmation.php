@@ -64,7 +64,8 @@ $car = mysqli_fetch_assoc($carQ);
                   
                
              <h3 id="取車日期和時間" style="margin-left: 20px;  text-align: start;font-weight: 450; font-size: 25px;"><br><i style="margin-right: 10px;" class="fa-solid fa-clock"></i>取車日期和時間 :</h3>
-             <p style="margin-left: 20px; margin-bottom: 30px; font-size: 17px;"><input readonly class="form-control-plaintext date1" type="datetime-local" value="<?php echo $order['pick_up_time'];?>"></p>
+             <!-- <p style="margin-left: 20px; margin-bottom: 30px; font-size: 17px;"><input readonly class="form-control-plaintext date1" type="datetime-local" value="<?php echo $order['pick_up_time'];?>"></p> -->
+             <p style="margin-left: 20px; margin-bottom: 30px; font-size: 17px;"><span class="pickupDateTime"></span></p>
             </div>
           </div>
 
@@ -75,7 +76,8 @@ $car = mysqli_fetch_assoc($carQ);
                   
                   
              <h3 id="還車日期和時間" style="margin-left: 20px;  text-align: start;font-weight: 450; font-size: 25px;"><br><i style="margin-right: 10px;" class="fa-solid fa-clock"></i>還車日期和時間 :</h3>
-             <p  style="margin-left: 20px; margin-bottom: 30px; font-size: 17px;"><input readonly class="form-control-plaintext date2" type="datetime-local" value="<?php echo $order['return_time'];?>"></p>
+             <!-- <p  style="margin-left: 20px; margin-bottom: 30px; font-size: 17px;"><input readonly class="form-control-plaintext date2" type="datetime-local" value="<?php echo $order['return_time'];?>"></p> -->
+             <p style="margin-left: 20px; margin-bottom: 30px; font-size: 17px;"><span class="returnDateTime"></span></p>
             </div>
           </div>
      </div>
