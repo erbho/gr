@@ -58,14 +58,24 @@ $car = mysqli_fetch_assoc($carQ);
 
               </th>
               <td>
+              <div class="d-flex justify-content-between flex-wrap">取車</div>
                 <div class="d-flex justify-content-between flex-wrap">
-                  <input readonly class="form-control-plaintext date1" type="datetime-local" value="<?php echo $_GET['pickupTime'];?>">
-                  <input readonly class="form-control-plaintext" type="text" value="<?php echo $_GET['pickUpLocation'];?>">
+                  <!-- <input readonly class="form-control-plaintext date1" type="datetime-local" value="<?php echo $_GET['pickupTime'];?>">
+                  <input readonly class="form-control-plaintext" type="text" value="<?php echo $_GET['pickUpLocation'];?>"> -->
+                  <div class="pickupDateTime"></div>
+                </div>
+                <div class="d-flex justify-content-between flex-wrap">
+                  <div class="pickupBranch"></div>
                 </div>
                   - 
+                  <div class="d-flex justify-content-between flex-wrap">還車</div>
+                  <div class="d-flex justify-content-between flex-wrap">
+                  <!-- <input readonly class="form-control-plaintext date2" type="datetime-local" value="<?php echo $_GET['returnTime'];?>">
+                  <input readonly class="form-control-plaintext" type="text" value="<?php echo $_GET['returnLocation'];?>"> -->
+                  <div class="returnDateTime"></div>
+                </div>
                 <div class="d-flex justify-content-between flex-wrap">
-                  <input readonly class="form-control-plaintext date2" type="datetime-local" value="<?php echo $_GET['returnTime'];?>">
-                  <input readonly class="form-control-plaintext" type="text" value="<?php echo $_GET['returnLocation'];?>">
+                  <div class="returnBranch"></div>
                 </div>
 
               </td>
@@ -81,7 +91,7 @@ $car = mysqli_fetch_assoc($carQ);
             </tr>
             <tr>
               <th class="m-0 py-4" style="text-align:right" scope="row" colspan="3" > 
-              <h5>合共：<span class="totalPrice"></span></h5>
+              <h5>合共：$<span class="totalPrice"></span></h5>
               </th>
             </tr>
           </tbody>

@@ -21,5 +21,5 @@ else{
 // document.querySelector(".pickupDateTime").innerHTML = localStorage.pickuptimeDate;
 // document.querySelector(".pickupBranch").innerHTML = localStorage.pickupBranch;
 
-// document.querySelector(".returnDateTime").innerHTML = localStorage.returntimeDate;
-// document.querySelector(".returnBranch").innerHTML = localStorage.returnBranch;
+document.querySelector(".returnDateTime").innerHTML = localStorage.returntimeDate;
+document.querySelector(".returnBranch").innerHTML = localStorage.returnBranch;
