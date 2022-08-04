@@ -37,8 +37,8 @@ let time_between = diffdate2.getTime() - diffdate1.getTime();
 let day_between = time_between / (1000*3600*24);
 let dayceil_between = Math.ceil(day_between);
 
-document.querySelector(".rentDay").innerHTML = dayceil_between;
-// document.querySelector(".rentDay").innerHTML = JSON.parse(localStorage.rentDay);
+// document.querySelector(".rentDay").innerHTML = dayceil_between;
+document.querySelector(".rentDay").innerHTML = JSON.parse(localStorage.rentDay);
 
 
 // const rentFee = document.querySelector(".rentFee").innerHTML;
