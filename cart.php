@@ -125,13 +125,13 @@ $car = mysqli_fetch_assoc($carQ);
               </div>
             </div>
 
-            <input type="hidden" name="pickupTime" value="<?php echo $_GET['pickupTime'];?>">
+            <!-- <input type="hidden" name="pickupTime" value="<?php echo $_GET['pickupTime'];?>">
             <input type="hidden" name="returnTime" value="<?php echo $_GET['returnTime'];?>">
             <input type="hidden" name="pickupLocation" value="<?php echo $_GET['pickUpLocation'];?>">
             <input type="hidden" name="returnLocation" value="<?php echo $_GET['returnLocation'];?>">
             <input type="hidden" name="car_id" value="<?php echo $_GET['car_id'];?>">
             <input type="hidden" class="getrentDayValue" name="day" value="">
-            <input type="hidden" class="getTotalPriceValue" name="total_price" value="">
+            <input type="hidden" class="getTotalPriceValue" name="total_price" value=""> -->
             
 
             <div class="form-floating">
