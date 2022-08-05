@@ -7,19 +7,8 @@ document.querySelector(".returntime").setAttribute("min", minDate);
 let maxPickup = document.querySelector(".returntime");
 maxPickup.addEventListener("change",setMaxPickupDate);
 
-function setMaxPickupDate () {
-    let returntime = document.querySelector(".returntime").value;
-    document.querySelector(".pickuptime").setAttribute("max", returntime);
-}
-
 let minReturn = document.querySelector(".pickuptime");
 minReturn.addEventListener("change",setMinReturnDate);
-
-function setMinReturnDate () {
-    let pickuptime = document.querySelector(".pickuptime").value;
-    document.querySelector(".returntime").setAttribute("min", pickuptime);
-}
-
 
 const rentFee = Number(document.querySelector(".rentFee").innerHTML);
 const rentDay = JSON.parse(localStorage.rentDay);
@@ -43,3 +32,12 @@ document.querySelector(".rentDay").innerHTML = JSON.parse(localStorage.rentDay);
 document.querySelector(".getrentDayValue").value = rentDay;
 document.querySelector(".getTotalPriceValue").value = document.querySelector(".totalPrice").innerHTML;
 
+function setMaxPickupDate () {
+    let returntime = document.querySelector(".returntime").value;
+    document.querySelector(".pickuptime").setAttribute("max", returntime);
+}
+
+function setMinReturnDate () {
+    let pickuptime = document.querySelector(".pickuptime").value;
+    document.querySelector(".returntime").setAttribute("min", pickuptime);
+}
