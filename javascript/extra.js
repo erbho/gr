@@ -26,11 +26,11 @@ let rtTimeLength = rtTime.length;
 let rtHour = rtTime.slice(0,(rtTimeLength-6));
 let rtAMPM = rtTime.slice(-2);
 
-if (pickuptime=="" || returntime==""){
+if (pickuptime=="" || returntime=="") {
     alert("請選取時間");
     btnCkeck.setAttribute('type','button');
     
-}else if(numberOfPickuptime>numberOfReturntime || numberOfPickuptime==numberOfReturntime) {
+} else if (numberOfPickuptime>numberOfReturntime || numberOfPickuptime==numberOfReturntime) {
     alert("錯誤! 請選擇正確時間");
     btnCkeck.setAttribute('type','button');
 } else {
@@ -41,5 +41,4 @@ if (pickuptime=="" || returntime==""){
     localStorage.rentDay = Math.ceil((numberOfReturntime - numberOfPickuptime)/(1000*3600*24));
     localStorage.pickupBranch = document.querySelector("#pickupBranch").value;
     localStorage.returnBranch = document.querySelector("#returnBranch").value; 
-}
 }
