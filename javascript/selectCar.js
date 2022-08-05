@@ -19,3 +19,5 @@ function allCar(){
         carList[i].classList.replace('d-none','d-flex');
     }
 }
+
+
