@@ -50,13 +50,13 @@ function setMaxPickupDate () {
     document.querySelector(".pickuptime").setAttribute("max", returntime);
 }
 
-let minReturn= document.querySelector('.pickuptime');
-minReturn.addEventListener('change',setMinReturnDate);
+// let minReturn = document.querySelector('.pickuptime');
+// minReturn.addEventListener('change',setMinReturnDate);
 
-function setMinReturnDate () {
-    let pickuptime = document.querySelector(".pickuptime").value;
-    document.querySelector(".returntime").setAttribute("min", pickuptime);
-}
+// function setMinReturnDate () {
+//     let pickuptime = document.querySelector(".pickuptime").value;
+//     document.querySelector(".returntime").setAttribute("min", pickuptime);
+// }
 
 // let maxPickupDate = document.querySelector('.returntime');
 // maxPickupDate.addEventListener('change',setMaxPickupDate);
