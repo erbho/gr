@@ -42,7 +42,7 @@ minDate = new Date(today.getTime() - today.getTimezoneOffset() * 60000).toISOStr
 document.querySelector(".pickuptime").setAttribute("min", minDate);
 document.querySelector(".returntime").setAttribute("min", minDate);
 
-const maxPickup = document.querySelector('.returntime');
+let maxPickup = document.querySelector('.returntime');
 maxPickup.addEventListener('change',setMaxPickupDate);
 
 function setMaxPickupDate () {
@@ -50,7 +50,7 @@ function setMaxPickupDate () {
     document.querySelector(".pickuptime").setAttribute("max", returntime);
 }
 
-const minReturn= document.querySelector('.pickuptime');
+let minReturn= document.querySelector('.pickuptime');
 minReturn.addEventListener('change',setMinReturnDate);
 
 function setMinReturnDate () {
@@ -58,7 +58,7 @@ function setMinReturnDate () {
     document.querySelector(".returntime").setAttribute("min", pickuptime);
 }
 
-const maxPickupDate = document.querySelector('.returntime');
+let maxPickupDate = document.querySelector('.returntime');
 maxPickupDate.addEventListener('change',setMaxPickupDate);
 
 function setMaxPickupDate () {
