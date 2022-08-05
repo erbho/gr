@@ -73,7 +73,7 @@ document.querySelector(".totalPrice").innerHTML = rentFee * rentDay + deposit;
 //***will affect posting in cart.php/ document.querySelector(".totalPrice").innerHTML = total.toLocaleString();
 
 localStorage.rentFee = rentFee;
-localStorage.total = total.toLocaleString();
+localStorage.total = total;
 
 
 document.querySelector(".pickupDateTime").innerHTML = localStorage.pickuptimeDate;
