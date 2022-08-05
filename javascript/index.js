@@ -37,7 +37,7 @@
 // let day_between = time_between / (1000*3600*24);
 // let dayceil_between = Math.ceil(day_between);
 
-let today = new Date();
+// let today = new Date();
 let minDate = moment().format(); 
 // minDate = new Date(today.getTime() - today.getTimezoneOffset() * 60000).toISOString().substring(0, 19)
 document.querySelector(".pickuptime").setAttribute("min", minDate);
