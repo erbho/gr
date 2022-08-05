@@ -58,23 +58,17 @@ function setMinReturnDate () {
     document.querySelector(".returntime").setAttribute("min", pickuptime);
 }
 
-// document.querySelector(".rentDay").innerHTML = dayceil_between;
 document.querySelector(".rentDay").innerHTML = JSON.parse(localStorage.rentDay);
 
-
-// const rentFee = document.querySelector(".rentFee").innerHTML;
-// const rentDay = document.querySelector(".rentDay").innerHTML;
 const rentFee = Number(document.querySelector(".rentFee").innerHTML);
 const rentDay = JSON.parse(localStorage.rentDay);
 const deposit = Number(document.querySelector(".deposit").innerHTML);
 const total = rentFee * rentDay + deposit;
 
 document.querySelector(".totalPrice").innerHTML = rentFee * rentDay + deposit;
-//***will affect posting in cart.php/ document.querySelector(".totalPrice").innerHTML = total.toLocaleString();
 
 localStorage.rentFee = rentFee;
 localStorage.total = total;
-
 
 document.querySelector(".pickupDateTime").innerHTML = localStorage.pickuptimeDate;
 document.querySelector(".pickupBranch").innerHTML = localStorage.pickupBranch;

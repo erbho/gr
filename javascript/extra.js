@@ -39,8 +39,6 @@ if (pickuptime=="" || returntime==""){
     localStorage.pickuptimeDate = puDate + ", " + puHour + " " + puAMPM;
     localStorage.returntimeDate = rtDate + ", " + rtHour + " " + rtAMPM;
     localStorage.rentDay = Math.ceil((numberOfReturntime - numberOfPickuptime)/(1000*3600*24));
-    localStorage.pktd = pickuptimeDate;
-    localStorage.rttd = returntimeDate;
     localStorage.pickupBranch = document.querySelector("#pickupBranch").value;
     localStorage.returnBranch = document.querySelector("#returnBranch").value; 
 }
