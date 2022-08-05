@@ -69,12 +69,12 @@
                     <div class="col">
                       <label for="pickuptime" style="font-size:20px ;margin-bottom: 10px;">取車日期和時間</label>
                       <br>
-                      <input class="pickuptime" type="datetime-local" id="pickuptime" name="pickuptime" required>
+                      <input class="pickuptime" type="datetime-local" id="pickuptime" name="pickuptime" step="any" required>
                     </div>
                     <div class="col">
                       <label for="returntime" style="font-size:20px ;margin-bottom: 10px;">還車日期和時間</label>
                       <br>
-                      <input class="returntime" type="datetime-local" id="returntime" name="returntime" required>
+                      <input class="returntime" type="datetime-local" id="returntime" name="returntime" step="any" required>
                     </div>
                     <div class="col">
                       <label for="inputage" style="font-size:20px ;margin-bottom: 10px;"class="form-label">取車時的年齡</label>
