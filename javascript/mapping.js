@@ -1,3 +1,21 @@
+const rentFee = Number(document.querySelector(".rentFee").innerHTML);
+const rentDay = JSON.parse(localStorage.rentDay);
+const deposit = Number(document.querySelector(".deposit").innerHTML);
+const total = rentFee * rentDay + deposit;
+
+document.querySelector(".totalPrice").innerHTML = rentFee * rentDay + deposit;
+
+localStorage.rentFee = rentFee;
+localStorage.total = total;
+
+document.querySelector(".pickupDateTime").innerHTML = localStorage.pickuptimeDate;
+document.querySelector(".pickupBranch").innerHTML = localStorage.pickupBranch;
+
+document.querySelector(".returnDateTime").innerHTML = localStorage.returntimeDate;
+document.querySelector(".returnBranch").innerHTML = localStorage.returnBranch;
+
+document.querySelector(".rentDay").innerHTML = JSON.parse(localStorage.rentDay);
+
 // let L1=document.querySelector('.locationcheck1').innerHTML;
 // let L2=document.querySelector('.locationcheck2').innerHTML;
 let L1=localStorage.pickupBranch;
