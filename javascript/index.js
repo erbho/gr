@@ -37,26 +37,26 @@
 // let day_between = time_between / (1000*3600*24);
 // let dayceil_between = Math.ceil(day_between);
 
-// let today = new Date();
-// minDate = new Date(today.getTime() - today.getTimezoneOffset() * 60000).toISOString().substring(0, 19);
-// document.querySelector(".pickuptime").setAttribute("min", minDate);
-// document.querySelector(".returntime").setAttribute("min", minDate);
+let today = new Date();
+minDate = new Date(today.getTime() - today.getTimezoneOffset() * 60000).toISOString().substring(0, 19);
+document.querySelector(".pickuptime").setAttribute("min", minDate);
+document.querySelector(".returntime").setAttribute("min", minDate);
 
-// let maxPickup = document.querySelector('.returntime');
-// maxPickup.addEventListener('change',setMaxPickupDate);
+let maxPickup = document.querySelector('.returntime');
+maxPickup.addEventListener('change',setMaxPickupDate);
 
-// function setMaxPickupDate () {
-//     let returntime = document.querySelector(".returntime").value;
-//     document.querySelector(".pickuptime").setAttribute("max", returntime);
-// }
+function setMaxPickupDate () {
+    let returntime = document.querySelector(".returntime").value;
+    document.querySelector(".pickuptime").setAttribute("max", returntime);
+}
 
-// let minReturn = document.querySelector('.pickuptime');
-// minReturn.addEventListener('change',setMinReturnDate);
+let minReturn = document.querySelector('.pickuptime');
+minReturn.addEventListener('change',setMinReturnDate);
 
-// function setMinReturnDate () {
-//     let pickuptime = document.querySelector(".pickuptime").value;
-//     document.querySelector(".returntime").setAttribute("min", pickuptime);
-// }
+function setMinReturnDate () {
+    let pickuptime = document.querySelector(".pickuptime").value;
+    document.querySelector(".returntime").setAttribute("min", pickuptime);
+}
 
 // document.querySelector(".rentDay").innerHTML = dayceil_between;
 document.querySelector(".rentDay").innerHTML = JSON.parse(localStorage.rentDay);
