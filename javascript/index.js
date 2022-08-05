@@ -38,8 +38,8 @@
 // let dayceil_between = Math.ceil(day_between);
 
 let today = new Date();
-
-minDate = new Date(today.getTime() - today.getTimezoneOffset() * 60000).toISOString().substring(0, 19)
+minDate = today.moment().format(); 
+// minDate = new Date(today.getTime() - today.getTimezoneOffset() * 60000).toISOString().substring(0, 19)
 document.querySelector(".pickuptime").setAttribute("min", minDate);
 document.querySelector(".returntime").setAttribute("min", minDate);
 
