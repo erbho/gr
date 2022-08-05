@@ -57,10 +57,6 @@ document.querySelector(".pickupBranch").innerHTML = localStorage.pickupBranch;
 document.querySelector(".returnDateTime").innerHTML = localStorage.returntimeDate;
 document.querySelector(".returnBranch").innerHTML = localStorage.returnBranch;
 
-/* input day & total price for db */
-document.querySelector('.getrentDayValue').value = rentDay;
-document.querySelector('.getTotalPriceValue').value = document.querySelector(".totalPrice").innerHTML;
-
 let today = new Date();
 minDate = new Date(today.getTime() - today.getTimezoneOffset() * 60000).toISOString().substring(0, 19);
 document.querySelector(".pickuptime").setAttribute("min", minDate);
@@ -81,3 +77,9 @@ function setMinReturnDate () {
     let pickuptime = document.querySelector(".pickuptime").value;
     document.querySelector(".returntime").setAttribute("min", pickuptime);
 }
+
+
+/* input day & total price for db */
+document.querySelector('.getrentDayValue').value = rentDay;
+document.querySelector('.getTotalPriceValue').value = document.querySelector(".totalPrice").innerHTML;
+
