@@ -1,23 +1,6 @@
 const btnCkeck= document.querySelector('.submitCheck');
 btnCkeck.addEventListener('click',dateCheck);
 
-const rentFee = Number(document.querySelector(".rentFee").innerHTML);
-const rentDay = JSON.parse(localStorage.rentDay);
-const deposit = Number(document.querySelector(".deposit").innerHTML);
-const total = rentFee * rentDay + deposit;
-
-document.querySelector(".totalPrice").innerHTML = rentFee * rentDay + deposit;
-
-localStorage.rentFee = rentFee;
-localStorage.total = total;
-
-document.querySelector(".pickupDateTime").innerHTML = localStorage.pickuptimeDate;
-document.querySelector(".pickupBranch").innerHTML = localStorage.pickupBranch;
-
-document.querySelector(".returnDateTime").innerHTML = localStorage.returntimeDate;
-document.querySelector(".returnBranch").innerHTML = localStorage.returnBranch;
-
-document.querySelector(".rentDay").innerHTML = JSON.parse(localStorage.rentDay);
 
 
 /* date check */
@@ -58,6 +41,7 @@ let rtAMPM = rtTime.slice(-2);
         localStorage.returntimeDate = rtDate + ", " + rtHour + " " + rtAMPM;
         localStorage.rentDay = Math.ceil((numberOfReturntime - numberOfPickuptime)/(1000*3600*24));
         localStorage.pickupBranch = document.querySelector("#pickupBranch").value;
-        localStorage.returnBranch = document.querySelector("#returnBranch").value; 
+        localStorage.returnBranch = document.querySelector("#returnBranch").value;
     }
 }
+
