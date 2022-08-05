@@ -39,8 +39,8 @@
 
 let today = new Date().toISOString;
 // minDate = new Date(today.getTime() - today.getTimezoneOffset() * 60000).toISOString().substring(0, 19)
-document.querySelector(".pickuptime").setAttribute("min", minDate);
-document.querySelector(".returntime").setAttribute("min", minDate);
+document.querySelector(".pickuptime").setAttribute("min", today);
+document.querySelector(".returntime").setAttribute("min", today);
 
 // let maxPickup = document.querySelector('.returntime');
 // maxPickup.addEventListener('change',setMaxPickupDate);
