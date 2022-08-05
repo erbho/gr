@@ -13,7 +13,7 @@
                   <li class="my-2"><a href="./promotions.php">最新優惠</a></li>
                   <li class="my-2"><a href="./about-us.php">關於我們</a></li>
                   <li class="my-2"><a href="./contact-us.php">聯絡我們</a></li>
-                  <li class="my-2"><a href="https://6b8c0e2d.greenrental-incruitment.pages.dev/">加入我們</a></li>
+                  <li class="my-2"><a href="https://greenrental-incruitment.pages.dev/">加入我們</a></li>
                 </ui>
               </div>
               <div class="col">
@@ -53,7 +53,7 @@
         </footer>
 
 <script src="./javascript/index.js"></script>
-<script src="./javascript/extra.js"></script>
+<!-- <script src="./javascript/extra.js"></script> -->
 <script src="./javascript/selectCar.js"></script>
 <script src="./javascript/mapping.js"></script>
 <script src="./javascript/cart.js"></script>
