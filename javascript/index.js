@@ -42,13 +42,13 @@ minDate = new Date(today.getTime() - today.getTimezoneOffset() * 60000).toISOStr
 document.querySelector(".pickuptime").setAttribute("min", minDate);
 document.querySelector(".returntime").setAttribute("min", minDate);
 
-let maxPickup = document.querySelector('.returntime');
-maxPickup.addEventListener('change',setMaxPickupDate);
+// let maxPickup = document.querySelector('.returntime');
+// maxPickup.addEventListener('change',setMaxPickupDate);
 
-function setMaxPickupDate () {
-    let returntime = document.querySelector(".returntime").value;
-    document.querySelector(".pickuptime").setAttribute("max", returntime);
-}
+// function setMaxPickupDate () {
+//     let returntime = document.querySelector(".returntime").value;
+//     document.querySelector(".pickuptime").setAttribute("max", returntime);
+// }
 
 // let minReturn = document.querySelector('.pickuptime');
 // minReturn.addEventListener('change',setMinReturnDate);
