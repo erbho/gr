@@ -43,30 +43,21 @@ let minDate = moment().format();
 document.querySelector(".pickuptime").setAttribute("min", minDate);
 document.querySelector(".returntime").setAttribute("min", minDate);
 
-// let maxPickup = document.querySelector('.returntime');
-// maxPickup.addEventListener('change',setMaxPickupDate);
+let maxPickup = document.querySelector('.returntime');
+maxPickup.addEventListener('change',setMaxPickupDate);
 
-// function setMaxPickupDate () {
-//     let returntime = document.querySelector(".returntime").value;
-//     document.querySelector(".pickuptime").setAttribute("max", returntime);
-// }
+function setMaxPickupDate () {
+    let returntime = document.querySelector(".returntime").value;
+    document.querySelector(".pickuptime").setAttribute("max", returntime);
+}
 
-// let minReturn = document.querySelector('.pickuptime');
-// minReturn.addEventListener('change',setMinReturnDate);
+let minReturn = document.querySelector('.pickuptime');
+minReturn.addEventListener('change',setMinReturnDate);
 
-// function setMinReturnDate () {
-//     let pickuptime = document.querySelector(".pickuptime").value;
-//     document.querySelector(".returntime").setAttribute("min", pickuptime);
-// }
-
-// let maxPickupDate = document.querySelector('.returntime');
-// maxPickupDate.addEventListener('change',setMaxPickupDate);
-
-// function setMaxPickupDate () {
-//     let returntime = document.querySelector(".returntime").value;
-//     document.querySelector(".pickuptime").setAttribute("max", returntime);
-// }
-
+function setMinReturnDate () {
+    let pickuptime = document.querySelector(".pickuptime").value;
+    document.querySelector(".returntime").setAttribute("min", pickuptime);
+}
 
 // document.querySelector(".rentDay").innerHTML = dayceil_between;
 document.querySelector(".rentDay").innerHTML = JSON.parse(localStorage.rentDay);
