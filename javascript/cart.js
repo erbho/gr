@@ -15,3 +15,7 @@ document.querySelector(".returnDateTime").innerHTML = localStorage.returntimeDat
 document.querySelector(".returnBranch").innerHTML = localStorage.returnBranch;
 
 document.querySelector(".rentDay").innerHTML = JSON.parse(localStorage.rentDay);
+
+/* input day & total price for db */
+document.querySelector(".getrentDayValue").value = rentDay;
+document.querySelector(".getTotalPriceValue").value = document.querySelector(".totalPrice").innerHTML;

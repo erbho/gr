@@ -10,9 +10,6 @@ maxPickup.addEventListener("change",setMaxPickupDate);
 let minReturn = document.querySelector(".pickuptime");
 minReturn.addEventListener("change",setMinReturnDate);
 
-/* input day & total price for db */
-document.querySelector(".getrentDayValue").value = rentDay;
-document.querySelector(".getTotalPriceValue").value = document.querySelector(".totalPrice").innerHTML;
 
 function setMaxPickupDate () {
     let returntime = document.querySelector(".returntime").value;
