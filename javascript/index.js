@@ -58,13 +58,13 @@ function setMinReturnDate () {
     document.querySelector(".returntime").setAttribute("min", pickuptime);
 }
 
-let maxPickupDate = document.querySelector('.returntime');
-maxPickupDate.addEventListener('change',setMaxPickupDate);
+// let maxPickupDate = document.querySelector('.returntime');
+// maxPickupDate.addEventListener('change',setMaxPickupDate);
 
-function setMaxPickupDate () {
-    let returntime = document.querySelector(".returntime").value;
-    document.querySelector(".pickuptime").setAttribute("max", returntime);
-}
+// function setMaxPickupDate () {
+//     let returntime = document.querySelector(".returntime").value;
+//     document.querySelector(".pickuptime").setAttribute("max", returntime);
+// }
 
 
 // document.querySelector(".rentDay").innerHTML = dayceil_between;
