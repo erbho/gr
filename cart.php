@@ -58,7 +58,7 @@ $car = mysqli_fetch_assoc($carQ);
 
               </th>
               <td>
-              <div class="d-flex justify-content-between flex-wrap">取車</div>
+              <div class="d-flex justify-content-between flex-wrap">取車點:</div>
                 <div class="d-flex justify-content-between flex-wrap">
                   <!-- <input readonly class="form-control-plaintext date1" type="datetime-local" value="<?php echo $_GET['pickupTime'];?>">
                   <input readonly class="form-control-plaintext" type="text" value="<?php echo $_GET['pickUpLocation'];?>"> -->
@@ -68,7 +68,7 @@ $car = mysqli_fetch_assoc($carQ);
                   <div class="pickupBranch"></div>
                 </div>
                   - 
-                  <div class="d-flex justify-content-between flex-wrap">還車</div>
+                  <div class="d-flex justify-content-between flex-wrap">還車點:</div>
                   <div class="d-flex justify-content-between flex-wrap">
                   <!-- <input readonly class="form-control-plaintext date2" type="datetime-local" value="<?php echo $_GET['returnTime'];?>">
                   <input readonly class="form-control-plaintext" type="text" value="<?php echo $_GET['returnLocation'];?>"> -->
