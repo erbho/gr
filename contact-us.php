@@ -70,7 +70,7 @@
             </li>
             <li class="nav-item mx-3">
                 <div class="d-flex justify-content-center"><img src="./image/index-img/navcar.png" alt="navcar" class="navcar d-none d-lg-inline-block"></div>
-             <a class="nav-link active" aria-current="page" href="./contact-us.html">聯絡我們</a>
+             <a class="nav-link active" aria-current="page" href="./contact-us.php">聯絡我們</a>
             </li>
         </ul>
         </div>
