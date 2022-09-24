@@ -163,8 +163,6 @@ header("location: ./staff-login.php");?>
                 <td>'.$order['return_time'].'</td>
                 <td>'.$order['collect_location'].'</td>
                 <td>'.$order['return_location'].'</td>
-                <td>'.$order['day'].'</td>
-                <td>'.$order['total_price'].'</td>
                 <td>'.$order['order_time'].'</td>
               </tr>'
               ;}
